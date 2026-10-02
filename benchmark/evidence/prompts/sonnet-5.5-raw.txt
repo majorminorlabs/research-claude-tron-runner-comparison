@@ -1,0 +1,9 @@
+
+
+<pasted_content id="cd8e">
+Build an endless runner in Tron visual style.
+3 lanes, jump/slide/dodge, obstacles, rewards, etc.
+Web browser based game. No Login. No leaderboard.
+Keep track of token usage and total time spent building the game.
+Do not stop until it passes all tests and is ready to release.
+</pasted_content id="cd8e">

@@ -1,0 +1,12 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {planTimeline,validateManifest,parseArgs,loadConfig} from '../scripts/config.mjs';
+const ids=['a','b','c','d'];
+const manifest=()=>({schemaVersion:1,fps:30,durationSeconds:null,audioModel:null,branding:{label:'MAJOR//MINOR',subtitle:'Gameplay comparison'},matchup:['a','b'],clips:ids.map(id=>({id,file:`gameplay/${id}.mp4`,offsetSeconds:0,durationSeconds:null}))});
+test('different lengths use the shortest selected remaining clip',()=>{const m=manifest();m.clips[0].offsetSeconds=10;assert.equal(planTimeline(m,ids,{a:40,b:25,c:60,d:50}).durationInFrames,750);});
+test('matchup ignores unselected short clips',()=>assert.equal(planTimeline(manifest(),['a','b'],{a:50,b:40,c:3,d:2}).durationInFrames,1200));
+test('explicit source segment and composition durations are honored',()=>{const m=manifest();m.clips[0].durationSeconds=8;m.durationSeconds=6;assert.equal(planTimeline(m,ids,{a:20,b:20,c:20,d:20}).durationInFrames,180);});
+test('overlong segment, offset and composition are rejected',()=>{let m=manifest();m.clips[0].durationSeconds=21;assert.throws(()=>planTimeline(m,ids,{a:20,b:20,c:20,d:20}),/exceeds/);m=manifest();m.clips[0].offsetSeconds=20;assert.throws(()=>planTimeline(m,ids,{a:20,b:20,c:20,d:20}),/no footage/);m=manifest();m.durationSeconds=21;assert.throws(()=>planTimeline(m,ids,{a:20,b:20,c:20,d:20}),/shortest/);});
+test('sub-frame and invalid manifest values are rejected',()=>{const m=manifest();m.durationSeconds=.01;assert.throws(()=>planTimeline(m,ids,{a:20,b:20,c:20,d:20}),/one frame/);m.fps=0;assert.throws(()=>validateManifest(m,ids),/fps/);});
+test('path escape and duplicate IDs are rejected',()=>{let m=manifest();m.clips[0].file='../secret.mp4';assert.throws(()=>validateManifest(m,ids),/inside/);m=manifest();m.clips[1].id='a';assert.throws(()=>validateManifest(m,ids),/duplicate/);});
+test('CLI matchup selection is explicit',()=>{assert.deepEqual(parseArgs(['--kind','Matchup','--format','4x3','--models','a,b']).selectedIds,['a','b']);assert.throws(()=>parseArgs(['--models','a,b']),/only supported/);});
+test('production preflight rejects missing real footage',()=>{const c=loadConfig({allowMissing:true});if(c.missing.length)assert.throws(()=>loadConfig(),/Missing original gameplay/);});

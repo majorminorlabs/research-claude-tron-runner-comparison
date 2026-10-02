@@ -1,0 +1,51 @@
+{
+  "install": {
+    "status": "not_required",
+    "reason": "No dependencies declared."
+  },
+  "test": {
+    "status": "passed",
+    "command": [
+      "npm",
+      "run",
+      "test"
+    ],
+    "cwd": "benchmark/validation/workspaces/sonnet5-runner",
+    "exit_code": 0,
+    "started_at_utc": "2026-10-01T20:36:27.052619+00:00",
+    "elapsed_seconds": 0.226,
+    "log": "validation/sonnet-5/test.log"
+  },
+  "build": {
+    "status": "unavailable",
+    "reason": "No build script declared."
+  },
+  "lint": {
+    "status": "unavailable",
+    "reason": "No lint script declared."
+  },
+  "typecheck": {
+    "status": "unavailable",
+    "reason": "No typecheck script declared."
+  },
+  "javascript_syntax": {
+    "status": "passed",
+    "command": [
+      "node",
+      "benchmark-set/benchmark/scripts/syntax-check.mjs",
+      "tools/serve.js",
+      "test/logic.test.js",
+      "src/game.js",
+      "src/logic.js"
+    ],
+    "cwd": "benchmark/validation/workspaces/sonnet5-runner",
+    "exit_code": 0,
+    "started_at_utc": "2026-10-01T20:36:27.279492+00:00",
+    "elapsed_seconds": 0.114,
+    "log": "validation/sonnet-5/javascript_syntax.log"
+  },
+  "static_delivery": {
+    "status": "passed",
+    "reason": "Unbundled ES modules and CSS; no build step required. Runtime validated by common browser smoke."
+  }
+}

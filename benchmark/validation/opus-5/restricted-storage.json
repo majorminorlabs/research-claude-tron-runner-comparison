@@ -1,0 +1,6 @@
+{
+  "scenario": "localStorage getter throws, representing denied browser storage",
+  "errors": [],
+  "start_button_visible": true,
+  "status": "passed"
+}

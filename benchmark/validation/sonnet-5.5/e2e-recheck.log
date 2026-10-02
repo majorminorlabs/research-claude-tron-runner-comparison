@@ -1,0 +1,37 @@
+
+> neon-grid-runner@1.0.0 test:e2e
+> playwright test --workers=1
+
+[WebServer] (node:12704) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 24 tests using 1 worker
+
+  ✓   1 tests/e2e/game.spec.ts:5:3 › boot & title › loads cleanly, renders the Grid and shows the title screen (14.1s)
+  ✓   2 tests/e2e/game.spec.ts:19:3 › boot & title › attract-mode demo runs behind the title and never crashes (13.0s)
+  ✓   3 tests/e2e/game.spec.ts:29:3 › boot & title › has no horizontal scrollbars and the controls legend is listed (11.5s)
+  ✓   4 tests/e2e/game.spec.ts:38:3 › gameplay flow › Enter starts: 3-2-1 countdown, then HUD and a running game (16.4s)
+  ✓   5 tests/e2e/game.spec.ts:52:3 › gameplay flow › PLAY button works too (17.0s)
+  ✓   6 tests/e2e/game.spec.ts:58:3 › gameplay flow › keyboard: lanes, jump and slide change the player state (20.6s)
+  ✓   7 tests/e2e/game.spec.ts:86:3 › gameplay flow › swipe gestures drive the player on touch devices (21.3s)
+  ✓   8 tests/e2e/game.spec.ts:116:3 › gameplay flow › autopilot survives and collects bits through the real render loop (23.0s)
+  ✓   9 tests/e2e/game.spec.ts:133:3 › gameplay flow › hazards appear on the track as orange; player and grid as cyan (17.5s)
+  ✓  10 tests/e2e/game.spec.ts:161:3 › death, retry, records › standing still crashes into an obstacle -> game over screen with stats (23.9s)
+  ✓  11 tests/e2e/game.spec.ts:176:3 › death, retry, records › retry via Enter starts a fresh run immediately; best score persists across reload (35.8s)
+  ✓  12 tests/e2e/game.spec.ts:195:3 › death, retry, records › menu button returns to the title and the demo resumes (25.2s)
+  ✓  13 tests/e2e/game.spec.ts:205:3 › death, retry, records › pressing Enter right after a crash cannot instantly skip the game over screen (20.5s)
+  ✓  14 tests/e2e/game.spec.ts:216:3 › pause, sound, quality › P pauses the world, resume counts down and continues (21.5s)
+  ✓  15 tests/e2e/game.spec.ts:234:3 › pause, sound, quality › Escape pauses and the RESUME / RESTART / QUIT buttons work (21.0s)
+  ✓  16 tests/e2e/game.spec.ts:251:3 › pause, sound, quality › hiding the tab auto-pauses (15.3s)
+  ✓  17 tests/e2e/game.spec.ts:261:3 › pause, sound, quality › sound toggle (M key and button) persists across reloads (17.5s)
+  ✓  18 tests/e2e/game.spec.ts:273:3 › pause, sound, quality › graphics toggle switches between high and low and still renders (17.3s)
+  ✓  19 tests/e2e/game.spec.ts:290:3 › audio & render budget › audio context starts on the first user gesture without errors (19.5s)
+  ✓  20 tests/e2e/game.spec.ts:302:3 › audio & render budget › draw calls and triangles stay inside a mobile-friendly budget at full speed (25.2s)
+  ✓  21 tests/e2e/game.spec.ts:316:3 › audio & render budget › high quality (bloom) run with real power-ups stays error free (30.8s)
+  ✓  22 tests/e2e/game.spec.ts:338:3 › layouts › portrait phone: title fits, game runs, HUD is visible (24.5s)
+  ✓  23 tests/e2e/game.spec.ts:356:3 › layouts › short landscape phone: play button reachable (14.1s)
+  ✓  24 tests/e2e/game.spec.ts:365:1 › title shows the build-time and token credit (13.6s)
+
+  Slow test file: tests/e2e/game.spec.ts (8.0m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  24 passed (8.1m)

@@ -1,0 +1,633 @@
+
+> grid-runner@1.0.0 test:e2e
+> playwright test --workers=1
+
+
+Running 22 tests using 1 worker
+
+  ✘   1 [desktop] › tests/e2e/game.spec.js:31:1 › boots to the title screen with a running attract demo and no errors (12.0s)
+  ✘   2 [desktop] › tests/e2e/game.spec.js:48:1 › starting a run shows the HUD and the score climbs (10.3s)
+  ✘   3 [desktop] › tests/e2e/game.spec.js:60:1 › keyboard controls: lanes, jump and slide (254ms)
+  ✘   4 [desktop] › tests/e2e/game.spec.js:82:1 › swipe controls work with pointer drags (239ms)
+  ✘   5 [desktop] › tests/e2e/game.spec.js:103:1 › pause freezes the run and resume continues it (224ms)
+  ✘   6 [desktop] › tests/e2e/game.spec.js:119:1 › losing focus auto-pauses (226ms)
+  ✘   7 [desktop] › tests/e2e/game.spec.js:126:1 › crashing shows results, saves the best score and allows a retry (186ms)
+  ✘   8 [desktop] › tests/e2e/game.spec.js:144:1 › menu button returns to the title screen (216ms)
+  ✘   9 [desktop] › tests/e2e/game.spec.js:153:1 › mute toggle persists across reloads (182ms)
+  ✘  10 [desktop] › tests/e2e/game.spec.js:163:1 › shows a friendly message when WebGL is unavailable (184ms)
+  ✘  11 [desktop] › tests/e2e/game.spec.js:176:1 › works without localStorage (185ms)
+  ✘  12 [mobile] › tests/e2e/game.spec.js:31:1 › boots to the title screen with a running attract demo and no errors (229ms)
+  ✘  13 [mobile] › tests/e2e/game.spec.js:48:1 › starting a run shows the HUD and the score climbs (293ms)
+  -  14 [mobile] › tests/e2e/game.spec.js:60:1 › keyboard controls: lanes, jump and slide
+  ✘  15 [mobile] › tests/e2e/game.spec.js:82:1 › swipe controls work with pointer drags (127ms)
+  ✘  16 [mobile] › tests/e2e/game.spec.js:103:1 › pause freezes the run and resume continues it (294ms)
+  ✘  17 [mobile] › tests/e2e/game.spec.js:119:1 › losing focus auto-pauses (308ms)
+  ✘  18 [mobile] › tests/e2e/game.spec.js:126:1 › crashing shows results, saves the best score and allows a retry (282ms)
+  ✘  19 [mobile] › tests/e2e/game.spec.js:144:1 › menu button returns to the title screen (313ms)
+  ✘  20 [mobile] › tests/e2e/game.spec.js:153:1 › mute toggle persists across reloads (285ms)
+  ✘  21 [mobile] › tests/e2e/game.spec.js:163:1 › shows a friendly message when WebGL is unavailable (307ms)
+  ✘  22 [mobile] › tests/e2e/game.spec.js:176:1 › works without localStorage (242ms)
+
+
+  1) [desktop] › tests/e2e/game.spec.js:31:1 › boots to the title screen with a running attract demo and no errors 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByTestId('title')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByTestId('title') with timeout 5000ms
+      - waiting for getByTestId('title')
+
+
+      20 | async function boot(page, query = '') {
+      21 |   await page.goto(`/${query}`);
+    > 22 |   await expect(page.getByTestId('title')).toBeVisible();
+         |                                           ^
+      23 |   await page.waitForFunction(() => window.__gridRunner?.phase === 'title');
+      24 | }
+      25 |
+        at boot (benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:22:43)
+        at benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:33:3
+
+    Error Context: test-results/game-boots-to-the-title-sc-4809e--attract-demo-and-no-errors-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/game-boots-to-the-title-sc-4809e--attract-demo-and-no-errors-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/game-boots-to-the-title-sc-4809e--attract-demo-and-no-errors-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [desktop] › tests/e2e/game.spec.js:48:1 › starting a run shows the HUD and the score climbs ───
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByTestId('title')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByTestId('title') with timeout 5000ms
+      - waiting for getByTestId('title')
+
+
+      20 | async function boot(page, query = '') {
+      21 |   await page.goto(`/${query}`);
+    > 22 |   await expect(page.getByTestId('title')).toBeVisible();
+         |                                           ^
+      23 |   await page.waitForFunction(() => window.__gridRunner?.phase === 'title');
+      24 | }
+      25 |
+        at boot (benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:22:43)
+        at benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:50:3
+
+    Error Context: test-results/game-starting-a-run-shows-the-HUD-and-the-score-climbs-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/game-starting-a-run-shows-the-HUD-and-the-score-climbs-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/game-starting-a-run-shows-the-HUD-and-the-score-climbs-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [desktop] › tests/e2e/game.spec.js:60:1 › keyboard controls: lanes, jump and slide ────────────
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:4173/?seed=35
+    Call log:
+      - navigating to "http://localhost:4173/?seed=35", waiting until "load"
+
+
+      19 |
+      20 | async function boot(page, query = '') {
+    > 21 |   await page.goto(`/${query}`);
+         |              ^
+      22 |   await expect(page.getByTestId('title')).toBeVisible();
+      23 |   await page.waitForFunction(() => window.__gridRunner?.phase === 'title');
+      24 | }
+        at boot (benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:21:14)
+        at benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:62:9
+
+    Error Context: test-results/game-keyboard-controls-lanes-jump-and-slide-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/game-keyboard-controls-lanes-jump-and-slide-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/game-keyboard-controls-lanes-jump-and-slide-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [desktop] › tests/e2e/game.spec.js:82:1 › swipe controls work with pointer drags ──────────────
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:4173/?seed=35
+    Call log:
+      - navigating to "http://localhost:4173/?seed=35", waiting until "load"
+
+
+      19 |
+      20 | async function boot(page, query = '') {
+    > 21 |   await page.goto(`/${query}`);
+         |              ^
+      22 |   await expect(page.getByTestId('title')).toBeVisible();
+      23 |   await page.waitForFunction(() => window.__gridRunner?.phase === 'title');
+      24 | }
+        at boot (benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:21:14)
+        at benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:83:9
+
+    Error Context: test-results/game-swipe-controls-work-with-pointer-drags-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/game-swipe-controls-work-with-pointer-drags-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/game-swipe-controls-work-with-pointer-drags-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [desktop] › tests/e2e/game.spec.js:103:1 › pause freezes the run and resume continues it ──────
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:4173/?seed=35
+    Call log:
+      - navigating to "http://localhost:4173/?seed=35", waiting until "load"
+
+
+      19 |
+      20 | async function boot(page, query = '') {
+    > 21 |   await page.goto(`/${query}`);
+         |              ^
+      22 |   await expect(page.getByTestId('title')).toBeVisible();
+      23 |   await page.waitForFunction(() => window.__gridRunner?.phase === 'title');
+      24 | }
+        at boot (benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:21:14)
+        at benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:104:9
+
+    Error Context: test-results/game-pause-freezes-the-run-and-resume-continues-it-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/game-pause-freezes-the-run-and-resume-continues-it-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/game-pause-freezes-the-run-and-resume-continues-it-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6) [desktop] › tests/e2e/game.spec.js:119:1 › losing focus auto-pauses ───────────────────────────
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:4173/?seed=35
+    Call log:
+      - navigating to "http://localhost:4173/?seed=35", waiting until "load"
+
+
+      19 |
+      20 | async function boot(page, query = '') {
+    > 21 |   await page.goto(`/${query}`);
+         |              ^
+      22 |   await expect(page.getByTestId('title')).toBeVisible();
+      23 |   await page.waitForFunction(() => window.__gridRunner?.phase === 'title');
+      24 | }
+        at boot (benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:21:14)
+        at benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:120:9
+
+    Error Context: test-results/game-losing-focus-auto-pauses-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/game-losing-focus-auto-pauses-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/game-losing-focus-auto-pauses-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  7) [desktop] › tests/e2e/game.spec.js:126:1 › crashing shows results, saves the best score and allows a retry 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:4173/?seed=3
+    Call log:
+      - navigating to "http://localhost:4173/?seed=3", waiting until "load"
+
+
+      19 |
+      20 | async function boot(page, query = '') {
+    > 21 |   await page.goto(`/${query}`);
+         |              ^
+      22 |   await expect(page.getByTestId('title')).toBeVisible();
+      23 |   await page.waitForFunction(() => window.__gridRunner?.phase === 'title');
+      24 | }
+        at boot (benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:21:14)
+        at benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:128:9
+
+    Error Context: test-results/game-crashing-shows-result-8b41f-st-score-and-allows-a-retry-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/game-crashing-shows-result-8b41f-st-score-and-allows-a-retry-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/game-crashing-shows-result-8b41f-st-score-and-allows-a-retry-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  8) [desktop] › tests/e2e/game.spec.js:144:1 › menu button returns to the title screen ────────────
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:4173/?seed=3
+    Call log:
+      - navigating to "http://localhost:4173/?seed=3", waiting until "load"
+
+
+      19 |
+      20 | async function boot(page, query = '') {
+    > 21 |   await page.goto(`/${query}`);
+         |              ^
+      22 |   await expect(page.getByTestId('title')).toBeVisible();
+      23 |   await page.waitForFunction(() => window.__gridRunner?.phase === 'title');
+      24 | }
+        at boot (benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:21:14)
+        at benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:145:9
+
+    Error Context: test-results/game-menu-button-returns-to-the-title-screen-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/game-menu-button-returns-to-the-title-screen-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/game-menu-button-returns-to-the-title-screen-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  9) [desktop] › tests/e2e/game.spec.js:153:1 › mute toggle persists across reloads ────────────────
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:4173/
+    Call log:
+      - navigating to "http://localhost:4173/", waiting until "load"
+
+
+      19 |
+      20 | async function boot(page, query = '') {
+    > 21 |   await page.goto(`/${query}`);
+         |              ^
+      22 |   await expect(page.getByTestId('title')).toBeVisible();
+      23 |   await page.waitForFunction(() => window.__gridRunner?.phase === 'title');
+      24 | }
+        at boot (benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:21:14)
+        at benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:154:9
+
+    Error Context: test-results/game-mute-toggle-persists-across-reloads-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/game-mute-toggle-persists-across-reloads-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/game-mute-toggle-persists-across-reloads-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  10) [desktop] › tests/e2e/game.spec.js:163:1 › shows a friendly message when WebGL is unavailable 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:4173/
+    Call log:
+      - navigating to "http://localhost:4173/", waiting until "load"
+
+
+      169 |     };
+      170 |   });
+    > 171 |   await page.goto('/');
+          |              ^
+      172 |   await expect(page.getByText('Grid offline')).toBeVisible();
+      173 |   await expect(page.getByTestId('title')).toBeHidden();
+      174 | });
+        at benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:171:14
+
+    Error Context: test-results/game-shows-a-friendly-message-when-WebGL-is-unavailable-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/game-shows-a-friendly-message-when-WebGL-is-unavailable-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/game-shows-a-friendly-message-when-WebGL-is-unavailable-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  11) [desktop] › tests/e2e/game.spec.js:176:1 › works without localStorage ────────────────────────
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:4173/?seed=3
+    Call log:
+      - navigating to "http://localhost:4173/?seed=3", waiting until "load"
+
+
+      19 |
+      20 | async function boot(page, query = '') {
+    > 21 |   await page.goto(`/${query}`);
+         |              ^
+      22 |   await expect(page.getByTestId('title')).toBeVisible();
+      23 |   await page.waitForFunction(() => window.__gridRunner?.phase === 'title');
+      24 | }
+        at boot (benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:21:14)
+        at benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:185:9
+
+    Error Context: test-results/game-works-without-localStorage-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/game-works-without-localStorage-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/game-works-without-localStorage-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  12) [mobile] › tests/e2e/game.spec.js:31:1 › boots to the title screen with a running attract demo and no errors 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:4173/
+    Call log:
+      - navigating to "http://localhost:4173/", waiting until "load"
+
+
+      19 |
+      20 | async function boot(page, query = '') {
+    > 21 |   await page.goto(`/${query}`);
+         |              ^
+      22 |   await expect(page.getByTestId('title')).toBeVisible();
+      23 |   await page.waitForFunction(() => window.__gridRunner?.phase === 'title');
+      24 | }
+        at boot (benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:21:14)
+        at benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:33:9
+
+    Error Context: test-results/game-boots-to-the-title-sc-4809e--attract-demo-and-no-errors-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/game-boots-to-the-title-sc-4809e--attract-demo-and-no-errors-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/game-boots-to-the-title-sc-4809e--attract-demo-and-no-errors-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  13) [mobile] › tests/e2e/game.spec.js:48:1 › starting a run shows the HUD and the score climbs ───
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:4173/?seed=35
+    Call log:
+      - navigating to "http://localhost:4173/?seed=35", waiting until "load"
+
+
+      19 |
+      20 | async function boot(page, query = '') {
+    > 21 |   await page.goto(`/${query}`);
+         |              ^
+      22 |   await expect(page.getByTestId('title')).toBeVisible();
+      23 |   await page.waitForFunction(() => window.__gridRunner?.phase === 'title');
+      24 | }
+        at boot (benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:21:14)
+        at benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:50:9
+
+    Error Context: test-results/game-starting-a-run-shows-the-HUD-and-the-score-climbs-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/game-starting-a-run-shows-the-HUD-and-the-score-climbs-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/game-starting-a-run-shows-the-HUD-and-the-score-climbs-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  14) [mobile] › tests/e2e/game.spec.js:82:1 › swipe controls work with pointer drags ──────────────
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:4173/?seed=35
+    Call log:
+      - navigating to "http://localhost:4173/?seed=35", waiting until "load"
+
+
+      19 |
+      20 | async function boot(page, query = '') {
+    > 21 |   await page.goto(`/${query}`);
+         |              ^
+      22 |   await expect(page.getByTestId('title')).toBeVisible();
+      23 |   await page.waitForFunction(() => window.__gridRunner?.phase === 'title');
+      24 | }
+        at boot (benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:21:14)
+        at benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:83:9
+
+    Error Context: test-results/game-swipe-controls-work-with-pointer-drags-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/game-swipe-controls-work-with-pointer-drags-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/game-swipe-controls-work-with-pointer-drags-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  15) [mobile] › tests/e2e/game.spec.js:103:1 › pause freezes the run and resume continues it ──────
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:4173/?seed=35
+    Call log:
+      - navigating to "http://localhost:4173/?seed=35", waiting until "load"
+
+
+      19 |
+      20 | async function boot(page, query = '') {
+    > 21 |   await page.goto(`/${query}`);
+         |              ^
+      22 |   await expect(page.getByTestId('title')).toBeVisible();
+      23 |   await page.waitForFunction(() => window.__gridRunner?.phase === 'title');
+      24 | }
+        at boot (benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:21:14)
+        at benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:104:9
+
+    Error Context: test-results/game-pause-freezes-the-run-and-resume-continues-it-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/game-pause-freezes-the-run-and-resume-continues-it-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/game-pause-freezes-the-run-and-resume-continues-it-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  16) [mobile] › tests/e2e/game.spec.js:119:1 › losing focus auto-pauses ───────────────────────────
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:4173/?seed=35
+    Call log:
+      - navigating to "http://localhost:4173/?seed=35", waiting until "load"
+
+
+      19 |
+      20 | async function boot(page, query = '') {
+    > 21 |   await page.goto(`/${query}`);
+         |              ^
+      22 |   await expect(page.getByTestId('title')).toBeVisible();
+      23 |   await page.waitForFunction(() => window.__gridRunner?.phase === 'title');
+      24 | }
+        at boot (benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:21:14)
+        at benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:120:9
+
+    Error Context: test-results/game-losing-focus-auto-pauses-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/game-losing-focus-auto-pauses-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/game-losing-focus-auto-pauses-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  17) [mobile] › tests/e2e/game.spec.js:126:1 › crashing shows results, saves the best score and allows a retry 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:4173/?seed=3
+    Call log:
+      - navigating to "http://localhost:4173/?seed=3", waiting until "load"
+
+
+      19 |
+      20 | async function boot(page, query = '') {
+    > 21 |   await page.goto(`/${query}`);
+         |              ^
+      22 |   await expect(page.getByTestId('title')).toBeVisible();
+      23 |   await page.waitForFunction(() => window.__gridRunner?.phase === 'title');
+      24 | }
+        at boot (benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:21:14)
+        at benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:128:9
+
+    Error Context: test-results/game-crashing-shows-result-8b41f-st-score-and-allows-a-retry-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/game-crashing-shows-result-8b41f-st-score-and-allows-a-retry-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/game-crashing-shows-result-8b41f-st-score-and-allows-a-retry-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  18) [mobile] › tests/e2e/game.spec.js:144:1 › menu button returns to the title screen ────────────
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:4173/?seed=3
+    Call log:
+      - navigating to "http://localhost:4173/?seed=3", waiting until "load"
+
+
+      19 |
+      20 | async function boot(page, query = '') {
+    > 21 |   await page.goto(`/${query}`);
+         |              ^
+      22 |   await expect(page.getByTestId('title')).toBeVisible();
+      23 |   await page.waitForFunction(() => window.__gridRunner?.phase === 'title');
+      24 | }
+        at boot (benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:21:14)
+        at benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:145:9
+
+    Error Context: test-results/game-menu-button-returns-to-the-title-screen-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/game-menu-button-returns-to-the-title-screen-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/game-menu-button-returns-to-the-title-screen-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  19) [mobile] › tests/e2e/game.spec.js:153:1 › mute toggle persists across reloads ────────────────
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:4173/
+    Call log:
+      - navigating to "http://localhost:4173/", waiting until "load"
+
+
+      19 |
+      20 | async function boot(page, query = '') {
+    > 21 |   await page.goto(`/${query}`);
+         |              ^
+      22 |   await expect(page.getByTestId('title')).toBeVisible();
+      23 |   await page.waitForFunction(() => window.__gridRunner?.phase === 'title');
+      24 | }
+        at boot (benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:21:14)
+        at benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:154:9
+
+    Error Context: test-results/game-mute-toggle-persists-across-reloads-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/game-mute-toggle-persists-across-reloads-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/game-mute-toggle-persists-across-reloads-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  20) [mobile] › tests/e2e/game.spec.js:163:1 › shows a friendly message when WebGL is unavailable ─
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:4173/
+    Call log:
+      - navigating to "http://localhost:4173/", waiting until "load"
+
+
+      169 |     };
+      170 |   });
+    > 171 |   await page.goto('/');
+          |              ^
+      172 |   await expect(page.getByText('Grid offline')).toBeVisible();
+      173 |   await expect(page.getByTestId('title')).toBeHidden();
+      174 | });
+        at benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:171:14
+
+    Error Context: test-results/game-shows-a-friendly-message-when-WebGL-is-unavailable-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/game-shows-a-friendly-message-when-WebGL-is-unavailable-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/game-shows-a-friendly-message-when-WebGL-is-unavailable-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  21) [mobile] › tests/e2e/game.spec.js:176:1 › works without localStorage ─────────────────────────
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:4173/?seed=3
+    Call log:
+      - navigating to "http://localhost:4173/?seed=3", waiting until "load"
+
+
+      19 |
+      20 | async function boot(page, query = '') {
+    > 21 |   await page.goto(`/${query}`);
+         |              ^
+      22 |   await expect(page.getByTestId('title')).toBeVisible();
+      23 |   await page.waitForFunction(() => window.__gridRunner?.phase === 'title');
+      24 | }
+        at boot (benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:21:14)
+        at benchmark-set/benchmark/validation/workspaces/opus55-runner/tests/e2e/game.spec.js:185:9
+
+    Error Context: test-results/game-works-without-localStorage-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/game-works-without-localStorage-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/game-works-without-localStorage-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  21 failed
+    [desktop] › tests/e2e/game.spec.js:31:1 › boots to the title screen with a running attract demo and no errors 
+    [desktop] › tests/e2e/game.spec.js:48:1 › starting a run shows the HUD and the score climbs ────
+    [desktop] › tests/e2e/game.spec.js:60:1 › keyboard controls: lanes, jump and slide ─────────────
+    [desktop] › tests/e2e/game.spec.js:82:1 › swipe controls work with pointer drags ───────────────
+    [desktop] › tests/e2e/game.spec.js:103:1 › pause freezes the run and resume continues it ───────
+    [desktop] › tests/e2e/game.spec.js:119:1 › losing focus auto-pauses ────────────────────────────
+    [desktop] › tests/e2e/game.spec.js:126:1 › crashing shows results, saves the best score and allows a retry 
+    [desktop] › tests/e2e/game.spec.js:144:1 › menu button returns to the title screen ─────────────
+    [desktop] › tests/e2e/game.spec.js:153:1 › mute toggle persists across reloads ─────────────────
+    [desktop] › tests/e2e/game.spec.js:163:1 › shows a friendly message when WebGL is unavailable ──
+    [desktop] › tests/e2e/game.spec.js:176:1 › works without localStorage ──────────────────────────
+    [mobile] › tests/e2e/game.spec.js:31:1 › boots to the title screen with a running attract demo and no errors 
+    [mobile] › tests/e2e/game.spec.js:48:1 › starting a run shows the HUD and the score climbs ─────
+    [mobile] › tests/e2e/game.spec.js:82:1 › swipe controls work with pointer drags ────────────────
+    [mobile] › tests/e2e/game.spec.js:103:1 › pause freezes the run and resume continues it ────────
+    [mobile] › tests/e2e/game.spec.js:119:1 › losing focus auto-pauses ─────────────────────────────
+    [mobile] › tests/e2e/game.spec.js:126:1 › crashing shows results, saves the best score and allows a retry 
+    [mobile] › tests/e2e/game.spec.js:144:1 › menu button returns to the title screen ──────────────
+    [mobile] › tests/e2e/game.spec.js:153:1 › mute toggle persists across reloads ──────────────────
+    [mobile] › tests/e2e/game.spec.js:163:1 › shows a friendly message when WebGL is unavailable ───
+    [mobile] › tests/e2e/game.spec.js:176:1 › works without localStorage ───────────────────────────
+  1 skipped

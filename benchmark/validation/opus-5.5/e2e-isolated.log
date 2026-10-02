@@ -1,0 +1,34 @@
+
+> grid-runner@1.0.0 test:e2e
+> playwright test --config benchmark-set/benchmark/validation/opus-5.5/native-playwright.config.js --workers=1 --retries=0
+
+[WebServer] (node:13158) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 22 tests using 1 worker
+
+  ✓   1 [desktop] › tests/e2e/game.spec.js:31:1 › boots to the title screen with a running attract demo and no errors (5.0s)
+  ✓   2 [desktop] › tests/e2e/game.spec.js:48:1 › starting a run shows the HUD and the score climbs (2.6s)
+  ✓   3 [desktop] › tests/e2e/game.spec.js:60:1 › keyboard controls: lanes, jump and slide (3.6s)
+  ✓   4 [desktop] › tests/e2e/game.spec.js:82:1 › swipe controls work with pointer drags (3.5s)
+  ✓   5 [desktop] › tests/e2e/game.spec.js:103:1 › pause freezes the run and resume continues it (4.2s)
+  ✓   6 [desktop] › tests/e2e/game.spec.js:119:1 › losing focus auto-pauses (3.9s)
+  ✓   7 [desktop] › tests/e2e/game.spec.js:126:1 › crashing shows results, saves the best score and allows a retry (9.7s)
+  ✓   8 [desktop] › tests/e2e/game.spec.js:144:1 › menu button returns to the title screen (8.5s)
+  ✓   9 [desktop] › tests/e2e/game.spec.js:153:1 › mute toggle persists across reloads (4.9s)
+  ✓  10 [desktop] › tests/e2e/game.spec.js:163:1 › shows a friendly message when WebGL is unavailable (205ms)
+  ✓  11 [desktop] › tests/e2e/game.spec.js:176:1 › works without localStorage (8.4s)
+  ✓  12 [mobile] › tests/e2e/game.spec.js:31:1 › boots to the title screen with a running attract demo and no errors (3.9s)
+  ✓  13 [mobile] › tests/e2e/game.spec.js:48:1 › starting a run shows the HUD and the score climbs (2.7s)
+  -  14 [mobile] › tests/e2e/game.spec.js:60:1 › keyboard controls: lanes, jump and slide
+  ✓  15 [mobile] › tests/e2e/game.spec.js:82:1 › swipe controls work with pointer drags (4.1s)
+  ✓  16 [mobile] › tests/e2e/game.spec.js:103:1 › pause freezes the run and resume continues it (3.6s)
+  ✓  17 [mobile] › tests/e2e/game.spec.js:119:1 › losing focus auto-pauses (2.6s)
+  ✓  18 [mobile] › tests/e2e/game.spec.js:126:1 › crashing shows results, saves the best score and allows a retry (11.1s)
+  ✓  19 [mobile] › tests/e2e/game.spec.js:144:1 › menu button returns to the title screen (9.3s)
+  ✓  20 [mobile] › tests/e2e/game.spec.js:153:1 › mute toggle persists across reloads (4.8s)
+  ✓  21 [mobile] › tests/e2e/game.spec.js:163:1 › shows a friendly message when WebGL is unavailable (269ms)
+  ✓  22 [mobile] › tests/e2e/game.spec.js:176:1 › works without localStorage (7.3s)
+
+  1 skipped
+  21 passed (1.8m)

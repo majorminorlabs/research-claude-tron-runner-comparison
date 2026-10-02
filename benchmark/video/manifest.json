@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "fps": 30,
+  "durationSeconds": 90,
+  "audioModel": null,
+  "branding": {
+    "label": "MAJOR//MINOR",
+    "subtitle": "Gameplay comparison"
+  },
+  "clips": [
+    {
+      "id": "sonnet-5",
+      "file": "gameplay/sonnet-5.mp4",
+      "offsetSeconds": 0,
+      "durationSeconds": null
+    },
+    {
+      "id": "sonnet-5.5",
+      "file": "gameplay/sonnet-5.5.mp4",
+      "offsetSeconds": 0,
+      "durationSeconds": null
+    },
+    {
+      "id": "opus-5",
+      "file": "gameplay/opus-5.mp4",
+      "offsetSeconds": 0,
+      "durationSeconds": null
+    },
+    {
+      "id": "opus-5.5",
+      "file": "gameplay/opus-5.5.mp4",
+      "offsetSeconds": 0,
+      "durationSeconds": null
+    }
+  ],
+  "matchup": [
+    "sonnet-5.5",
+    "opus-5.5"
+  ],
+  "notes": "Four real 1920\u00d71080/60fps desktop recordings, remuxed from original MOV containers without changing H.264 video packets. First 90 continuous seconds of each recording, all offsets zero; no selective cuts, speed changes or loops. Not synchronized to identical gameplay states; seed/input/graphics parity was not recorded. Final composition is 30fps and muted. Raw source filenames/hashes are in release validation media-provenance.json."
+}

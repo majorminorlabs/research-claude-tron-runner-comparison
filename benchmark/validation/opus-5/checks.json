@@ -1,0 +1,71 @@
+{
+  "install": {
+    "status": "passed",
+    "command": [
+      "npm",
+      "ci",
+      "--no-audit",
+      "--no-fund"
+    ],
+    "cwd": "benchmark/validation/workspaces/opus5-runner",
+    "exit_code": 0,
+    "started_at_utc": "2026-10-01T20:36:27.052629+00:00",
+    "elapsed_seconds": 0.985,
+    "log": "validation/opus-5/install.log"
+  },
+  "test": {
+    "status": "passed",
+    "command": [
+      "npm",
+      "run",
+      "test"
+    ],
+    "cwd": "benchmark/validation/workspaces/opus5-runner",
+    "exit_code": 0,
+    "started_at_utc": "2026-10-01T20:36:28.038388+00:00",
+    "elapsed_seconds": 1.998,
+    "log": "validation/opus-5/test.log"
+  },
+  "build": {
+    "status": "passed",
+    "command": [
+      "npm",
+      "run",
+      "build"
+    ],
+    "cwd": "benchmark/validation/workspaces/opus5-runner",
+    "exit_code": 0,
+    "started_at_utc": "2026-10-01T20:36:30.036660+00:00",
+    "elapsed_seconds": 1.289,
+    "log": "validation/opus-5/build.log"
+  },
+  "lint": {
+    "status": "unavailable",
+    "reason": "No lint script declared."
+  },
+  "typecheck": {
+    "status": "passed",
+    "command": [
+      "npm",
+      "run",
+      "typecheck"
+    ],
+    "cwd": "benchmark/validation/workspaces/opus5-runner",
+    "exit_code": 0,
+    "started_at_utc": "2026-10-01T20:36:31.325397+00:00",
+    "elapsed_seconds": 0.743,
+    "log": "validation/opus-5/typecheck.log"
+  },
+  "javascript_syntax": {
+    "status": "passed",
+    "command": [
+      "node",
+      "benchmark-set/benchmark/scripts/syntax-check.mjs"
+    ],
+    "cwd": "benchmark/validation/workspaces/opus5-runner",
+    "exit_code": 0,
+    "started_at_utc": "2026-10-01T20:36:32.076034+00:00",
+    "elapsed_seconds": 0.022,
+    "log": "validation/opus-5/javascript_syntax.log"
+  }
+}

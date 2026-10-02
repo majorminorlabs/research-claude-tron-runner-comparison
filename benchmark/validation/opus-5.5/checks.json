@@ -1,0 +1,91 @@
+{
+  "install": {
+    "status": "passed",
+    "command": [
+      "npm",
+      "ci",
+      "--no-audit",
+      "--no-fund"
+    ],
+    "cwd": "benchmark/validation/workspaces/opus55-runner",
+    "exit_code": 0,
+    "started_at_utc": "2026-10-01T20:36:27.052615+00:00",
+    "elapsed_seconds": 1.193,
+    "log": "validation/opus-5.5/install.log"
+  },
+  "test": {
+    "status": "passed",
+    "command": [
+      "npm",
+      "run",
+      "test"
+    ],
+    "cwd": "benchmark/validation/workspaces/opus55-runner",
+    "exit_code": 0,
+    "started_at_utc": "2026-10-01T20:36:28.245980+00:00",
+    "elapsed_seconds": 1.848,
+    "log": "validation/opus-5.5/test.log"
+  },
+  "build": {
+    "status": "passed",
+    "command": [
+      "npm",
+      "run",
+      "build"
+    ],
+    "cwd": "benchmark/validation/workspaces/opus55-runner",
+    "exit_code": 0,
+    "started_at_utc": "2026-10-01T20:36:30.094240+00:00",
+    "elapsed_seconds": 0.809,
+    "log": "validation/opus-5.5/build.log"
+  },
+  "lint": {
+    "status": "passed",
+    "command": [
+      "npm",
+      "run",
+      "lint"
+    ],
+    "cwd": "benchmark/validation/workspaces/opus55-runner",
+    "exit_code": 0,
+    "started_at_utc": "2026-10-01T20:36:30.903462+00:00",
+    "elapsed_seconds": 0.578,
+    "log": "validation/opus-5.5/lint.log"
+  },
+  "typecheck": {
+    "status": "unavailable",
+    "reason": "No typecheck script declared."
+  },
+  "javascript_syntax": {
+    "status": "passed",
+    "command": [
+      "node",
+      "benchmark-set/benchmark/scripts/syntax-check.mjs",
+      "playwright.config.js",
+      "vite.config.js",
+      "eslint.config.js",
+      "src/main.js",
+      "src/audio.js",
+      "src/input.js",
+      "src/storage.js",
+      "src/render/materials.js",
+      "src/render/scenery.js",
+      "src/render/floor.js",
+      "src/render/trail.js",
+      "src/render/cycle.js",
+      "src/render/view.js",
+      "src/render/particles.js",
+      "src/game/rng.js",
+      "src/game/game.js",
+      "src/game/autopilot.js",
+      "src/game/config.js",
+      "tests/unit/game.test.js",
+      "tests/e2e/game.spec.js"
+    ],
+    "cwd": "benchmark/validation/workspaces/opus55-runner",
+    "exit_code": 0,
+    "started_at_utc": "2026-10-01T20:36:31.508552+00:00",
+    "elapsed_seconds": 0.431,
+    "log": "validation/opus-5.5/javascript_syntax.log"
+  }
+}

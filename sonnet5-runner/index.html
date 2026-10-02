@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+<title>TRON RUNNER — Endless Grid Runner</title>
+<meta name="description" content="A Tron-style endless runner. Dodge, jump, and slide through the grid. No login, no leaderboard — just you and the circuit." />
+<meta name="theme-color" content="#01050a" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%2301050a%22/><path d=%22M20 50 L80 50 M50 20 L50 80%22 stroke=%22%232df8ff%22 stroke-width=%228%22/></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="app">
+  <header id="hud">
+    <div class="hud-block">
+      <span class="label">SCORE</span>
+      <span class="value" id="score">0</span>
+    </div>
+    <div class="hud-block">
+      <span class="label">BEST</span>
+      <span class="value" id="best">0</span>
+    </div>
+    <div class="hud-block">
+      <span class="label">SPEED</span>
+      <span class="value" id="speed">100%</span>
+    </div>
+  </header>
+
+  <canvas id="game"></canvas>
+
+  <div id="overlay" class="hidden">
+    <div class="overlay-panel">
+      <h1 id="overlay-title">TRON RUNNER</h1>
+      <p id="overlay-body"></p>
+      <button id="overlay-button" type="button">Start Run</button>
+      <p class="hint">Keyboard: &larr;&rarr; dodge &middot; &uarr; jump &middot; &darr; slide &middot; P pause<br/>Touch: swipe to move, tap to jump</p>
+    </div>
+  </div>
+
+  <div id="touch-controls" aria-hidden="true">
+    <button id="btn-left" class="tbtn" type="button" aria-label="Move left">&#9664;</button>
+    <button id="btn-slide" class="tbtn" type="button" aria-label="Slide">&#9660;</button>
+    <button id="btn-jump" class="tbtn" type="button" aria-label="Jump">&#9650;</button>
+    <button id="btn-right" class="tbtn" type="button" aria-label="Move right">&#9654;</button>
+  </div>
+</div>
+<script type="module" src="src/game.js"></script>
+</body>
+</html>

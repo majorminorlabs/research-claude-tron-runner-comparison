@@ -1,0 +1,315 @@
+{
+  "status": "passed",
+  "game_originals_unchanged": true,
+  "game_source_reproduction": {
+    "scope": "Declared unit/build/lint/typecheck and JS syntax on disposable copies of public source. Original validation/browser findings retained separately.",
+    "models": [
+      {
+        "model": "sonnet-5.5",
+        "checks": {
+          "install": {
+            "status": "passed",
+            "exit_code": 0
+          },
+          "test": {
+            "status": "passed",
+            "exit_code": 0
+          },
+          "build": {
+            "status": "passed",
+            "exit_code": 0
+          },
+          "lint": {
+            "status": "unavailable"
+          },
+          "typecheck": {
+            "status": "passed",
+            "exit_code": 0
+          },
+          "javascript_syntax": {
+            "status": "passed",
+            "exit_code": 0
+          }
+        }
+      },
+      {
+        "model": "sonnet-5",
+        "checks": {
+          "install": {
+            "status": "not_required"
+          },
+          "test": {
+            "status": "passed",
+            "exit_code": 0
+          },
+          "build": {
+            "status": "unavailable"
+          },
+          "lint": {
+            "status": "unavailable"
+          },
+          "typecheck": {
+            "status": "unavailable"
+          },
+          "javascript_syntax": {
+            "status": "passed",
+            "exit_code": 0
+          },
+          "static_delivery": {
+            "status": "passed"
+          }
+        }
+      },
+      {
+        "model": "opus-5.5",
+        "checks": {
+          "install": {
+            "status": "passed",
+            "exit_code": 0
+          },
+          "test": {
+            "status": "passed",
+            "exit_code": 0
+          },
+          "build": {
+            "status": "passed",
+            "exit_code": 0
+          },
+          "lint": {
+            "status": "passed",
+            "exit_code": 0
+          },
+          "typecheck": {
+            "status": "unavailable"
+          },
+          "javascript_syntax": {
+            "status": "passed",
+            "exit_code": 0
+          }
+        }
+      },
+      {
+        "model": "opus-5",
+        "checks": {
+          "install": {
+            "status": "passed",
+            "exit_code": 0
+          },
+          "test": {
+            "status": "passed",
+            "exit_code": 0
+          },
+          "build": {
+            "status": "passed",
+            "exit_code": 0
+          },
+          "lint": {
+            "status": "unavailable"
+          },
+          "typecheck": {
+            "status": "passed",
+            "exit_code": 0
+          },
+          "javascript_syntax": {
+            "status": "passed",
+            "exit_code": 0
+          }
+        }
+      }
+    ],
+    "status": "passed"
+  },
+  "secrets": {
+    "scope": "All public text files and site overlay, plus manual inspection of original artifact manifests and recording samples. No full private conversations or captured audio included. Pattern scan is not a guarantee of exhaustive credential detection.",
+    "text_files_scanned": 250,
+    "patterns": [
+      "private_key",
+      "anthropic_key",
+      "openai_key",
+      "github_pat",
+      "aws_access_key",
+      "google_api_key",
+      "slack_token",
+      "stripe_secret",
+      "credential_in_url",
+      "personal_home_path"
+    ],
+    "findings": [],
+    "high_confidence_credential_matches": 0
+  },
+  "media": [
+    {
+      "file": "benchmark/video/gameplay/sonnet-5.mp4",
+      "packet_hash_matches_original": true,
+      "audio_tracks": 0,
+      "duration_seconds": 109.416667
+    },
+    {
+      "file": "benchmark/video/gameplay/sonnet-5.5.mp4",
+      "packet_hash_matches_original": true,
+      "audio_tracks": 0,
+      "duration_seconds": 152.916667
+    },
+    {
+      "file": "benchmark/video/gameplay/opus-5.mp4",
+      "packet_hash_matches_original": true,
+      "audio_tracks": 0,
+      "duration_seconds": 97.5
+    },
+    {
+      "file": "benchmark/video/gameplay/opus-5.5.mp4",
+      "packet_hash_matches_original": true,
+      "audio_tracks": 0,
+      "duration_seconds": 105.633333
+    }
+  ],
+  "master_and_web_full_decode": "passed (ffmpeg -v error -i <file> -f null -)",
+  "comparison": {
+    "duration_seconds": 90,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "audio_tracks": 0,
+    "sampled_frames_seconds": [
+      8,
+      50,
+      89
+    ],
+    "visual_review": "passed; all four real clips, names, session metrics and cache-read caveat visible; full frames/HUDs retained"
+  },
+  "renderer_typecheck_and_tests": "passed; 8 timing/preflight tests",
+  "publication_status": "approved_ready_to_publish",
+  "license_decision": {
+    "code_and_tooling": "MIT",
+    "documentation_and_media": "MIT"
+  },
+  "site_checks": [
+    {
+      "name": "typecheck",
+      "command": [
+        "npm",
+        "run",
+        "typecheck"
+      ],
+      "exit_code": 0,
+      "status": "passed",
+      "scope": "Isolated copy of existing mm-labs site plus proposed article overlay; live site untouched. This is Next build, not OpenNext deployment."
+    },
+    {
+      "name": "next-build",
+      "command": [
+        "npm",
+        "run",
+        "build",
+        "--",
+        "--webpack"
+      ],
+      "exit_code": 0,
+      "status": "passed",
+      "scope": "Isolated copy of existing mm-labs site plus proposed article overlay; live site untouched. This is Next build, not OpenNext deployment."
+    },
+    {
+      "name": "index-post-integration-build",
+      "command": [
+        "npm",
+        "run",
+        "build",
+        "--",
+        "--webpack"
+      ],
+      "exit_code": 0,
+      "status": "passed",
+      "scope": "Proposed post merged only in the isolated QA site; production content unchanged. Build validates existing publication index/sitemap integration."
+    }
+  ],
+  "site_browser": {
+    "scope": "Local isolated built site; no production deployment",
+    "cases": [
+      {
+        "name": "desktop",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "metadata": {
+          "duration": 90,
+          "width": 1920,
+          "height": 1080,
+          "muted": true,
+          "controls": true,
+          "source": "http://127.0.0.1:4586/research/claude-tron-runner-comparison/comparison-web.mp4"
+        },
+        "checks": {
+          "exact_prompt": true,
+          "video_duration": true,
+          "video_size": true,
+          "video_muted": true,
+          "video_controls": true,
+          "video_advances": true,
+          "no_horizontal_overflow": true,
+          "github_link": true,
+          "canonical": true,
+          "no_page_errors": true,
+          "two_comparison_tables": true
+        },
+        "errors": []
+      },
+      {
+        "name": "mobile",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "metadata": {
+          "duration": 90,
+          "width": 1920,
+          "height": 1080,
+          "muted": true,
+          "controls": true,
+          "source": "http://127.0.0.1:4586/research/claude-tron-runner-comparison/comparison-web.mp4"
+        },
+        "checks": {
+          "exact_prompt": true,
+          "video_duration": true,
+          "video_size": true,
+          "video_muted": true,
+          "video_controls": true,
+          "video_advances": true,
+          "no_horizontal_overflow": true,
+          "github_link": true,
+          "canonical": true,
+          "no_page_errors": true,
+          "two_comparison_tables": true
+        },
+        "errors": []
+      }
+    ],
+    "status": "passed"
+  },
+  "site_index": {
+    "scope": "Local QA site with proposed record; production publication file untouched",
+    "status": "passed",
+    "routes": [
+      {
+        "path": "/",
+        "article_link_or_canonical_present": true
+      },
+      {
+        "path": "/blog",
+        "article_link_or_canonical_present": true
+      },
+      {
+        "path": "/research/ai-agents",
+        "article_link_or_canonical_present": true
+      },
+      {
+        "path": "/research/generative-systems",
+        "article_link_or_canonical_present": true
+      },
+      {
+        "path": "/sitemap.xml",
+        "article_link_or_canonical_present": true
+      }
+    ]
+  }
+}

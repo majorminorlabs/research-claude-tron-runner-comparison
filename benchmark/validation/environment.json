@@ -1,0 +1,17 @@
+{
+  "platform": "macOS-26.6.2-arm64-i386-64bit-Mach-O",
+  "machine": "arm64",
+  "versions": {
+    "node": "v20.19.4",
+    "npm": "10.8.2",
+    "ffprobe": "ffprobe version 8.0.1 Copyright (c) 2007-2025 the FFmpeg developers",
+    "ffmpeg": "ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers"
+  },
+  "common_browser": "Google Chrome 154.0.8037.59, installed application",
+  "common_browser_args": [
+    "--use-angle=swiftshader",
+    "--enable-unsafe-swiftshader",
+    "--ignore-gpu-blocklist"
+  ],
+  "performance_ranking_performed": false
+}

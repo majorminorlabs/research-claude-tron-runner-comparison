@@ -1,0 +1,98 @@
+{
+  "browser": "Installed Google Chrome, headless, SwiftShader",
+  "query": "?debug&seed=35 (only honored by Sonnet 5.5 / Opus 5.5)",
+  "cases": [
+    {
+      "viewport": "desktop",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "touch_emulated": false,
+      "checks": {
+        "start_button_visible": true,
+        "canvas_nonzero": true,
+        "no_horizontal_overflow": true,
+        "score_advances": true,
+        "keyboard_left": true,
+        "keyboard_right": true,
+        "jump": true,
+        "slide": true,
+        "pause": true,
+        "resume": true,
+        "no_uncaught_or_console_errors": true
+      },
+      "observations": {
+        "canvas": {
+          "width": 1280,
+          "height": 720,
+          "rect": {
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "start_state": {
+          "phase": "playing",
+          "score": 11,
+          "lane": 1,
+          "jumping": false,
+          "sliding": false,
+          "distance": 11.15313652707459
+        },
+        "blur_phase": "paused"
+      },
+      "errors": [],
+      "warnings": [
+        "[.WebGL-0x114007d8800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+        "[.WebGL-0x114007d8800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+        "[.WebGL-0x114007d8800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+        "[.WebGL-0x114007d8800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+      ],
+      "failed_requests": []
+    },
+    {
+      "viewport": "portrait",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      },
+      "touch_emulated": true,
+      "checks": {
+        "start_button_visible": true,
+        "canvas_nonzero": true,
+        "no_horizontal_overflow": true,
+        "score_advances": true,
+        "keyboard_left": true,
+        "keyboard_right": true,
+        "jump": true,
+        "slide": true,
+        "pause": true,
+        "resume": true,
+        "no_uncaught_or_console_errors": true
+      },
+      "observations": {
+        "canvas": {
+          "width": 390,
+          "height": 844,
+          "rect": {
+            "width": 390,
+            "height": 844
+          }
+        },
+        "start_state": {
+          "phase": "playing",
+          "score": 9,
+          "lane": 1,
+          "jumping": false,
+          "sliding": false,
+          "distance": 9.871640257881458
+        },
+        "blur_phase": "paused"
+      },
+      "errors": [],
+      "warnings": [],
+      "failed_requests": []
+    }
+  ],
+  "status": "passed"
+}

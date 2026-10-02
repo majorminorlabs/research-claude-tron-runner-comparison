@@ -1,0 +1,15 @@
+{
+  "status": "invalid",
+  "command": [
+    "npm",
+    "run",
+    "test:e2e",
+    "--",
+    "--workers=1"
+  ],
+  "started_at_utc": "2026-10-01T20:45:55.693239+00:00",
+  "elapsed_seconds": 36.552,
+  "exit_code": 1,
+  "log": "validation/opus-5.5/e2e.log",
+  "reason": "Port 4173 reused Sonnet 5.5 preview after its suite timed out. Missing Opus-specific data-testid=title and Sonnet page snapshot confirm wrong application. These failures are harness contamination, not Opus gameplay failures."
+}

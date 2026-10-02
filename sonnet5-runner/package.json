@@ -1,0 +1,11 @@
+{
+  "name": "tron-runner",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tron-style endless runner — browser game, no backend, no login.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/",
+    "serve": "node tools/serve.js"
+  }
+}

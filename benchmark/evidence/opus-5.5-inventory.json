@@ -1,0 +1,224 @@
+{
+  "source_repo": "benchmark-set/opus55-runner",
+  "files": [
+    {
+      "path": ".claude/launch.json",
+      "bytes": 175,
+      "sha256": "763ab9b030b76a57c2263cd0c8acf56c689e2e2f420bfdda68fc24fed5b0f23f",
+      "loc": null
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 59,
+      "sha256": "1963d7e4b6f5d2878b91ed9067e8ca688ba6302b19c1c168e09e6473efb7778b",
+      "loc": null
+    },
+    {
+      "path": "BUILD_LOG.md",
+      "bytes": 1869,
+      "sha256": "322b3ddab56a7f6ffa43f5347ab753c00b0c0438fffcfd4eef1a84c7d7f0e960",
+      "loc": null
+    },
+    {
+      "path": "README.md",
+      "bytes": 3201,
+      "sha256": "6696c0a802e5c1229f4f37c5f3b4e5d44aabdee31bc20d7f7bf8f8246739ee68",
+      "loc": null
+    },
+    {
+      "path": "eslint.config.js",
+      "bytes": 497,
+      "sha256": "a9fff446151332fe59545e1543720a0a5afa6fc94644b3b7a1ecaa43c3370eca",
+      "loc": 21
+    },
+    {
+      "path": "index.html",
+      "bytes": 5150,
+      "sha256": "d79646a5dd1f76769a096085d8acb3bc1aeda9c2849cda53ecf02f6279bc8f08",
+      "loc": 103
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 76120,
+      "sha256": "81074df1ae73f00b1906566d34faa4a86aac23023c4cce2d2c32494cb44a0fdf",
+      "loc": null
+    },
+    {
+      "path": "package.json",
+      "bytes": 747,
+      "sha256": "18a865029615a6eb7d42990c9f4bdbe613908c5c67754ed5d7895cdf6e2824d4",
+      "loc": null
+    },
+    {
+      "path": "playwright.config.js",
+      "bytes": 825,
+      "sha256": "93976fa513e0e8569847f2ca1dc6111c663b4aa185aacf80ce7ff9d20235401e",
+      "loc": 26
+    },
+    {
+      "path": "public/favicon.svg",
+      "bytes": 340,
+      "sha256": "772ee0e999188e45af033eb169660f9fb93ca4ad11c7eacf29189a4f733a686c",
+      "loc": 1
+    },
+    {
+      "path": "src/audio.js",
+      "bytes": 6574,
+      "sha256": "2651f197dfb397d4380c3870c9322bb4b234405b69eaefdd8747ddad03a79d41",
+      "loc": 179
+    },
+    {
+      "path": "src/game/autopilot.js",
+      "bytes": 870,
+      "sha256": "56fdc7a38b8816c272223f23a25cbeefb0b4e90309a4b980669ae1020783d093",
+      "loc": 22
+    },
+    {
+      "path": "src/game/config.js",
+      "bytes": 1341,
+      "sha256": "81049b33fe075097fa434386c60b35e6e683fd2a6a8bcd6566b06d0a71d974a2",
+      "loc": 43
+    },
+    {
+      "path": "src/game/game.js",
+      "bytes": 12259,
+      "sha256": "b0732947ee2b25da991882d28978bc7cd9ec66cd5aa452108f5667d4309b00e9",
+      "loc": 424
+    },
+    {
+      "path": "src/game/rng.js",
+      "bytes": 647,
+      "sha256": "9488c3b81f7919cfb21144a7e91e34ac1f73ad32e89ca665e37d5994fdf1e699",
+      "loc": 19
+    },
+    {
+      "path": "src/input.js",
+      "bytes": 2407,
+      "sha256": "ff78a8aabcbaac55af76d97ed8852869324e15c9b9bc55f1d30a81447fcdb194",
+      "loc": 71
+    },
+    {
+      "path": "src/main.js",
+      "bytes": 9948,
+      "sha256": "50e48e6d1eb4f94f4a6d3eb29eb520f3a9119d517ed8388448387310f9626fc5",
+      "loc": 353
+    },
+    {
+      "path": "src/render/cycle.js",
+      "bytes": 4978,
+      "sha256": "1bd7dd26d22439c3e2161ed2c93b534c068735eb5007e1583e1ae200009c1783",
+      "loc": 132
+    },
+    {
+      "path": "src/render/floor.js",
+      "bytes": 3031,
+      "sha256": "a00a2b56267b9fbc0bfa9b7574d96c99c7cbd322821408122c064ea472087b39",
+      "loc": 86
+    },
+    {
+      "path": "src/render/materials.js",
+      "bytes": 3161,
+      "sha256": "848558c5e80bc066e9ae5e9b2e0a5009c3670fb3eacc227f0062e03de96db5d8",
+      "loc": 115
+    },
+    {
+      "path": "src/render/particles.js",
+      "bytes": 3676,
+      "sha256": "81a5b746748632f9348c5b756b23449525de828911ca843456789de37f49afe8",
+      "loc": 110
+    },
+    {
+      "path": "src/render/scenery.js",
+      "bytes": 4860,
+      "sha256": "0e9fb7768f788fcf1dd78bcd86bcc330dd7420a123ee9132e2d78c68c828e93d",
+      "loc": 133
+    },
+    {
+      "path": "src/render/trail.js",
+      "bytes": 2759,
+      "sha256": "9cbdd262f4ffeb150a0ad9c67728dfe63e7df7ba6415e2c497bb40cf95549e5e",
+      "loc": 85
+    },
+    {
+      "path": "src/render/view.js",
+      "bytes": 11838,
+      "sha256": "3513734b49f62909bc06d66380012a29b50253df1512c13c559e70394a93c3f3",
+      "loc": 357
+    },
+    {
+      "path": "src/storage.js",
+      "bytes": 571,
+      "sha256": "44a3c8bc1f93e32024c0007405837bb4e74ef6bbfb40b2004276328b7c82d13e",
+      "loc": 20
+    },
+    {
+      "path": "src/style.css",
+      "bytes": 10597,
+      "sha256": "af1c2fadad576d07158de6e35858d6a21f96ce02877c1246f9bb440410e5ca4a",
+      "loc": 527
+    },
+    {
+      "path": "tests/e2e/game.spec.js",
+      "bytes": 7421,
+      "sha256": "e308a504bc32ebded14e926be2210cd9ec95987d763b4f9f6a060b1b3e6dd510",
+      "loc": 189
+    },
+    {
+      "path": "tests/unit/game.test.js",
+      "bytes": 11687,
+      "sha256": "76d8c094cb4d405cdb98097883abfa88905801d3bc6ee85fa5a7be04a0db439b",
+      "loc": 386
+    },
+    {
+      "path": "vite.config.js",
+      "bytes": 213,
+      "sha256": "88fafbe2aa11ea4a85bcacdb2b53c328ed43c43d4960cc60dbbd187db1992cbb",
+      "loc": 12
+    }
+  ],
+  "artifact_hashes": {
+    ".claude/launch.json": "763ab9b030b76a57c2263cd0c8acf56c689e2e2f420bfdda68fc24fed5b0f23f",
+    ".gitignore": "1963d7e4b6f5d2878b91ed9067e8ca688ba6302b19c1c168e09e6473efb7778b",
+    "BUILD_LOG.md": "322b3ddab56a7f6ffa43f5347ab753c00b0c0438fffcfd4eef1a84c7d7f0e960",
+    "README.md": "6696c0a802e5c1229f4f37c5f3b4e5d44aabdee31bc20d7f7bf8f8246739ee68",
+    "dist/assets/index-CKp5PSQN.css": "8cc86b3e3afc6df2d771459aac803a009b1d8d6d13029bbad8b7a12e1401aaa9",
+    "dist/assets/index-z2fh8UH1.js": "fad5f40b1faf7c40d65f61a4daaf361a4932365085f9b4ab87c39bc835fd3aa4",
+    "dist/assets/orbitron-latin-500-normal-BCCupJ8c.woff": "4f1f90caf378bef2463fe2eb62dba99dd91b10f21b214da1b24e5088e0d07120",
+    "dist/assets/orbitron-latin-500-normal-DQ2gt4P1.woff2": "c13360768270c65d6c97701b100a88993885671dfdfd2a400aa58ea0195381ea",
+    "dist/assets/orbitron-latin-700-normal-4jsRXGGJ.woff2": "ee6acc5ad5349018f9ca71fab8118144160e110838931874150a1ac3f97db38d",
+    "dist/assets/orbitron-latin-700-normal-DmYOh-W9.woff": "f01cf5cf431e6d9dd10db7291bc2284eb123984e74785a05ef4e034aee82c558",
+    "dist/assets/orbitron-latin-900-normal-BbJatbhp.woff": "d85a2d2e0c8eb3badf419f27b29e8ac8517d84999bcecd609774a421de26b938",
+    "dist/assets/orbitron-latin-900-normal-DrIi7unX.woff2": "ce87e6a1b1955bbc7b1d2d1c30fb5b53af5e34edb5b93a33e28068054892ef74",
+    "dist/assets/view-Ci9YkRUh.js": "ce94a80baf140f40ac8d3fddf7cd37817c7307110b15306a323798e06707dc33",
+    "dist/favicon.svg": "772ee0e999188e45af033eb169660f9fb93ca4ad11c7eacf29189a4f733a686c",
+    "dist/index.html": "de791e5c8c88b755824df266566a7a17925f5bceabb1626a62cfb9ee2d392d14",
+    "eslint.config.js": "a9fff446151332fe59545e1543720a0a5afa6fc94644b3b7a1ecaa43c3370eca",
+    "index.html": "d79646a5dd1f76769a096085d8acb3bc1aeda9c2849cda53ecf02f6279bc8f08",
+    "package-lock.json": "81074df1ae73f00b1906566d34faa4a86aac23023c4cce2d2c32494cb44a0fdf",
+    "package.json": "18a865029615a6eb7d42990c9f4bdbe613908c5c67754ed5d7895cdf6e2824d4",
+    "playwright.config.js": "93976fa513e0e8569847f2ca1dc6111c663b4aa185aacf80ce7ff9d20235401e",
+    "public/favicon.svg": "772ee0e999188e45af033eb169660f9fb93ca4ad11c7eacf29189a4f733a686c",
+    "src/audio.js": "2651f197dfb397d4380c3870c9322bb4b234405b69eaefdd8747ddad03a79d41",
+    "src/game/autopilot.js": "56fdc7a38b8816c272223f23a25cbeefb0b4e90309a4b980669ae1020783d093",
+    "src/game/config.js": "81049b33fe075097fa434386c60b35e6e683fd2a6a8bcd6566b06d0a71d974a2",
+    "src/game/game.js": "b0732947ee2b25da991882d28978bc7cd9ec66cd5aa452108f5667d4309b00e9",
+    "src/game/rng.js": "9488c3b81f7919cfb21144a7e91e34ac1f73ad32e89ca665e37d5994fdf1e699",
+    "src/input.js": "ff78a8aabcbaac55af76d97ed8852869324e15c9b9bc55f1d30a81447fcdb194",
+    "src/main.js": "50e48e6d1eb4f94f4a6d3eb29eb520f3a9119d517ed8388448387310f9626fc5",
+    "src/render/cycle.js": "1bd7dd26d22439c3e2161ed2c93b534c068735eb5007e1583e1ae200009c1783",
+    "src/render/floor.js": "a00a2b56267b9fbc0bfa9b7574d96c99c7cbd322821408122c064ea472087b39",
+    "src/render/materials.js": "848558c5e80bc066e9ae5e9b2e0a5009c3670fb3eacc227f0062e03de96db5d8",
+    "src/render/particles.js": "81a5b746748632f9348c5b756b23449525de828911ca843456789de37f49afe8",
+    "src/render/scenery.js": "0e9fb7768f788fcf1dd78bcd86bcc330dd7420a123ee9132e2d78c68c828e93d",
+    "src/render/trail.js": "9cbdd262f4ffeb150a0ad9c67728dfe63e7df7ba6415e2c497bb40cf95549e5e",
+    "src/render/view.js": "3513734b49f62909bc06d66380012a29b50253df1512c13c559e70394a93c3f3",
+    "src/storage.js": "44a3c8bc1f93e32024c0007405837bb4e74ef6bbfb40b2004276328b7c82d13e",
+    "src/style.css": "af1c2fadad576d07158de6e35858d6a21f96ce02877c1246f9bb440410e5ca4a",
+    "test-results/.last-run.json": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903",
+    "tests/e2e/game.spec.js": "e308a504bc32ebded14e926be2210cd9ec95987d763b4f9f6a060b1b3e6dd510",
+    "tests/unit/game.test.js": "76d8c094cb4d405cdb98097883abfa88905801d3bc6ee85fa5a7be04a0db439b",
+    "vite.config.js": "88fafbe2aa11ea4a85bcacdb2b53c328ed43c43d4960cc60dbbd187db1992cbb"
+  },
+  "full_repo_logical_bytes": 90739223,
+  "full_repo_file_count": 3411
+}

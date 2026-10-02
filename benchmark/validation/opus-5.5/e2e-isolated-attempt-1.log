@@ -1,0 +1,8 @@
+
+> grid-runner@1.0.0 test:e2e
+> playwright test --config benchmark-set/benchmark/validation/opus-5.5/native-playwright.config.js --workers=1 --retries=0
+
+[WebServer] (node:12858) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+Error: Timed out waiting 120000ms from config.webServer.
+

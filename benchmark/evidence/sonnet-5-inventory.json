@@ -1,0 +1,65 @@
+{
+  "source_repo": "benchmark-set/sonnet5-runner",
+  "files": [
+    {
+      "path": ".claude/launch.json",
+      "bytes": 188,
+      "sha256": "21c644f2cfe93aba6f67d4e0f17e49ce3f29e967ab094e8f31063a55f5671253",
+      "loc": null
+    },
+    {
+      "path": "index.html",
+      "bytes": 2360,
+      "sha256": "c7da734347b199ed57ed2c65e333f5e1a57030f0eed196d6f37a6d187bf719d3",
+      "loc": 52
+    },
+    {
+      "path": "package.json",
+      "bytes": 263,
+      "sha256": "7d93c8004075c9c4bebc5df1b4bc4cc5acb691a88f10137fef2eda9862c13684",
+      "loc": null
+    },
+    {
+      "path": "src/game.js",
+      "bytes": 18417,
+      "sha256": "46ddabb35046c3c29e8fdf557db1d59114e88be57f4b59fe6767f844e7ebe3cd",
+      "loc": 655
+    },
+    {
+      "path": "src/logic.js",
+      "bytes": 4392,
+      "sha256": "dea0355ae8e6f4ee27720abfa5bdd99bc4631f8997fd968e2c1e101f82df41ac",
+      "loc": 135
+    },
+    {
+      "path": "style.css",
+      "bytes": 3776,
+      "sha256": "5d2c16c342fe42977d5962efcf0aca17875ddc6525854de100dd16954fac9226",
+      "loc": 187
+    },
+    {
+      "path": "test/logic.test.js",
+      "bytes": 5111,
+      "sha256": "2d22c3f96bb53dbf4853fbc8e03609ea7f75569403dd22102347b9dfe116d3e3",
+      "loc": 139
+    },
+    {
+      "path": "tools/serve.js",
+      "bytes": 1386,
+      "sha256": "f36509007d987c38ee5cc7fc0c16cf17d052a82cc350130a07eec5bffbe4d56d",
+      "loc": 41
+    }
+  ],
+  "artifact_hashes": {
+    ".claude/launch.json": "21c644f2cfe93aba6f67d4e0f17e49ce3f29e967ab094e8f31063a55f5671253",
+    "index.html": "c7da734347b199ed57ed2c65e333f5e1a57030f0eed196d6f37a6d187bf719d3",
+    "package.json": "7d93c8004075c9c4bebc5df1b4bc4cc5acb691a88f10137fef2eda9862c13684",
+    "src/game.js": "46ddabb35046c3c29e8fdf557db1d59114e88be57f4b59fe6767f844e7ebe3cd",
+    "src/logic.js": "dea0355ae8e6f4ee27720abfa5bdd99bc4631f8997fd968e2c1e101f82df41ac",
+    "style.css": "5d2c16c342fe42977d5962efcf0aca17875ddc6525854de100dd16954fac9226",
+    "test/logic.test.js": "2d22c3f96bb53dbf4853fbc8e03609ea7f75569403dd22102347b9dfe116d3e3",
+    "tools/serve.js": "f36509007d987c38ee5cc7fc0c16cf17d052a82cc350130a07eec5bffbe4d56d"
+  },
+  "full_repo_logical_bytes": 35893,
+  "full_repo_file_count": 8
+}

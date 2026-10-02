@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#02050b" />
+    <meta
+      name="description"
+      content="GRIDRUNNER - a three-lane endless runner on the light grid. Jump, slide and dodge through the city."
+    />
+    <title>GRIDRUNNER</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2302050b'/%3E%3Cpath d='M6 26 16 6l10 20z' fill='none' stroke='%2339e7ff' stroke-width='2.5'/%3E%3C/svg%3E"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="stage" aria-label="Gridrunner game view" role="img"></canvas>
+
+      <!-- Heads-up display -->
+      <div id="hud" class="hud" aria-live="off">
+        <div class="hud__row hud__row--top">
+          <div class="hud__block">
+            <span class="hud__label">Score</span>
+            <span class="hud__value hud__value--score" id="score">0</span>
+          </div>
+          <div class="hud__block hud__block--center">
+            <span class="hud__label">Integrity</span>
+            <div class="integrity" id="integrity" aria-label="Integrity"></div>
+          </div>
+          <div class="hud__block hud__block--right">
+            <span class="hud__label">Distance</span>
+            <span class="hud__value" id="distance">0 m</span>
+          </div>
+        </div>
+
+        <div class="hud__row hud__row--second">
+          <div class="chip chip--combo" id="combo" hidden>
+            <span id="comboText">x1.0</span>
+          </div>
+          <div class="chip chip--shield" id="shieldChip" hidden>SHIELD</div>
+          <div class="chip chip--boost" id="boostChip" hidden>
+            OVERDRIVE
+            <span class="chip__bar"><i id="boostBar"></i></span>
+          </div>
+        </div>
+
+        <div class="hud__speed">
+          <span class="hud__label">Velocity</span>
+          <div class="speed"><i id="speedBar"></i></div>
+          <span class="hud__value hud__value--small" id="speedText">0</span>
+        </div>
+
+        <button class="iconbtn" id="muteBtn" type="button" aria-label="Mute sound">
+          <span id="muteIcon">◉</span>
+        </button>
+      </div>
+
+      <!-- Title screen -->
+      <div class="overlay" id="titleScreen">
+        <div class="panel">
+          <h1 class="title">
+            <span class="title__grid">GRID</span><span class="title__runner">RUNNER</span>
+          </h1>
+          <p class="tagline">Three lanes. One light cycle. No end.</p>
+          <div class="keys">
+            <div class="keys__row">
+              <kbd>&larr;</kbd><kbd>&rarr;</kbd><span>switch lane</span>
+            </div>
+            <div class="keys__row"><kbd>&uarr;</kbd><kbd>Space</kbd><span>jump</span></div>
+            <div class="keys__row"><kbd>&darr;</kbd><kbd>Shift</kbd><span>slide</span></div>
+            <div class="keys__row"><kbd>P</kbd><span>pause</span><kbd>M</kbd><span>mute</span></div>
+          </div>
+          <p class="hint hint--touch">On touch: swipe to move, tap to jump.</p>
+          <div class="legend">
+            <div class="legend__item">
+              <i class="swatch swatch--amber"></i><span>Barrier &mdash; jump it</span>
+            </div>
+            <div class="legend__item">
+              <i class="swatch swatch--violet"></i><span>Beam &mdash; slide under</span>
+            </div>
+            <div class="legend__item">
+              <i class="swatch swatch--danger"></i><span>Block &mdash; change lane</span>
+            </div>
+            <div class="legend__item">
+              <i class="swatch swatch--cyan"></i><span>Orbs &mdash; build the multiplier</span>
+            </div>
+          </div>
+          <button class="cta" id="startBtn" type="button">Enter the grid</button>
+        </div>
+      </div>
+
+      <!-- Pause -->
+      <div class="overlay" id="pauseScreen" hidden>
+        <div class="panel panel--slim">
+          <h2 class="heading">Paused</h2>
+          <p class="hint">Press <kbd>P</kbd> or tap to resume.</p>
+          <button class="cta" id="resumeBtn" type="button">Resume</button>
+        </div>
+      </div>
+
+      <!-- Game over -->
+      <div class="overlay" id="overScreen" hidden>
+        <div class="panel">
+          <h2 class="heading heading--danger">Derezzed</h2>
+          <div class="results">
+            <div class="result result--big">
+              <span class="result__label">Score</span>
+              <span class="result__value" id="finalScore">0</span>
+            </div>
+            <div class="result">
+              <span class="result__label">Best</span>
+              <span class="result__value" id="bestScore">0</span>
+            </div>
+            <div class="result">
+              <span class="result__label">Distance</span>
+              <span class="result__value" id="finalDistance">0 m</span>
+            </div>
+            <div class="result">
+              <span class="result__label">Orbs</span>
+              <span class="result__value" id="finalOrbs">0</span>
+            </div>
+            <div class="result">
+              <span class="result__label">Best combo</span>
+              <span class="result__value" id="finalCombo">x1.0</span>
+            </div>
+            <div class="result result--wide">
+              <span class="result__label">Top speed</span>
+              <span class="result__value" id="finalSpeed">0</span>
+            </div>
+          </div>
+          <p class="hint" id="newBest" hidden>New personal best.</p>
+          <button class="cta" id="retryBtn" type="button">Run again</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "status": "incomplete",
+  "command": [
+    "npm",
+    "run",
+    "test:e2e",
+    "--",
+    "--workers=1"
+  ],
+  "started_at_utc": "2026-10-01T20:37:35.643918+00:00",
+  "elapsed_seconds": 500.011,
+  "exit_code": 124,
+  "log": "validation/sonnet-5.5/e2e.log",
+  "reason": "Whole suite hit benchmark 500-second timeout while other browser validation was running. Four test failure contexts preserved; result cannot establish an overall suite outcome."
+}

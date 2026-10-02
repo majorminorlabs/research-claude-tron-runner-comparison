@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+    <meta name="theme-color" content="#01030a" />
+    <meta name="description" content="GRID RUNNER — a neon, Tron-styled 3-lane endless runner. Jump, slide and dodge across the grid. Plays in your browser, no login." />
+    <meta property="og:title" content="GRID RUNNER" />
+    <meta property="og:description" content="A neon 3-lane endless runner on the grid. Jump, slide, dodge." />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <title>GRID RUNNER</title>
+  </head>
+  <body>
+    <canvas id="game" aria-label="Game view"></canvas>
+
+    <div id="hud" class="hud" hidden>
+      <div class="hud-block hud-score">
+        <div class="hud-label">Score</div>
+        <div id="score" class="hud-value" data-testid="score">0</div>
+        <div id="mult" class="hud-mult" hidden>×2</div>
+      </div>
+      <div class="hud-block hud-bits">
+        <div class="hud-label">Bits</div>
+        <div id="bits" class="hud-value" data-testid="bits">0</div>
+      </div>
+      <div id="powers" class="powers">
+        <div class="power power-shield" data-power="shield" hidden><span>Shield</span></div>
+        <div class="power power-magnet" data-power="magnet" hidden><span>Magnet</span><i><b></b></i></div>
+        <div class="power power-multiplier" data-power="multiplier" hidden><span>Score ×2</span><i><b></b></i></div>
+      </div>
+      <div class="hud-speed"><span id="speed">0</span> <small>km/h</small></div>
+    </div>
+
+    <div id="toasts" class="toasts" aria-live="polite"></div>
+
+    <div class="corner">
+      <button id="btn-mute" class="icon-btn" aria-label="Mute sound" title="Sound (M)">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path class="on" d="M4 9v6h4l5 4V5L8 9H4zm12.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/><path class="off" d="M4 9v6h4l5 4V5L8 9H4zm12.6 3 2.7-2.7-1.4-1.4-2.7 2.7-2.7-2.7-1.4 1.4 2.7 2.7-2.7 2.7 1.4 1.4 2.7-2.7 2.7 2.7 1.4-1.4z"/></svg>
+      </button>
+      <button id="btn-pause" class="icon-btn" aria-label="Pause" title="Pause (P / Esc)" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+      </button>
+    </div>
+
+    <section id="screen-title" class="overlay" data-testid="title">
+      <div class="panel">
+        <h1 class="logo"><span>GRID</span><span>RUNNER</span></h1>
+        <p class="tagline">Enter the grid. Outrun everything.</p>
+        <button id="btn-start" class="btn primary" data-testid="start">Start run</button>
+        <div class="controls">
+          <div class="controls-keys">
+            <div><kbd>←</kbd><kbd>→</kbd> <span>Switch lane</span></div>
+            <div><kbd>↑</kbd><kbd>Space</kbd> <span>Jump</span></div>
+            <div><kbd>↓</kbd> <span>Slide</span></div>
+            <div><kbd>P</kbd> <span>Pause</span> <kbd>M</kbd> <span>Sound</span></div>
+          </div>
+          <div class="controls-touch">Swipe <b>left / right</b> to switch lanes, <b>up</b> to jump, <b>down</b> to slide.</div>
+        </div>
+        <ul class="legend">
+          <li><i class="sw barrier"></i>Low barrier — jump</li>
+          <li><i class="sw beam"></i>High gate — slide</li>
+          <li><i class="sw wall"></i>Wall — change lane</li>
+          <li><i class="sw bit"></i>Bits &amp; power-ups — grab</li>
+        </ul>
+        <p class="best">Best <span id="best-title">0</span></p>
+      </div>
+    </section>
+
+    <section id="screen-pause" class="overlay" data-testid="paused" hidden>
+      <div class="panel small">
+        <h2>Paused</h2>
+        <button id="btn-resume" class="btn primary">Resume</button>
+        <button id="btn-quit" class="btn">Quit to menu</button>
+      </div>
+    </section>
+
+    <section id="screen-over" class="overlay" data-testid="gameover" hidden>
+      <div class="panel">
+        <h2 class="derez">Derezzed</h2>
+        <p id="new-best" class="new-best" hidden>New best!</p>
+        <dl class="stats">
+          <div><dt>Score</dt><dd id="final-score" data-testid="final-score">0</dd></div>
+          <div><dt>Best</dt><dd id="final-best">0</dd></div>
+          <div><dt>Distance</dt><dd id="final-distance">0 m</dd></div>
+          <div><dt>Bits</dt><dd id="final-bits">0</dd></div>
+          <div><dt>Clean dodges</dt><dd id="final-clears">0</dd></div>
+          <div><dt>Time</dt><dd id="final-time">0s</dd></div>
+        </dl>
+        <button id="btn-retry" class="btn primary" data-testid="retry">Run again</button>
+        <button id="btn-menu" class="btn">Menu</button>
+      </div>
+    </section>
+
+    <section id="screen-error" class="overlay" hidden>
+      <div class="panel small">
+        <h2>Grid offline</h2>
+        <p>Your browser couldn’t start WebGL, which GRID RUNNER needs. Try enabling hardware acceleration or using a current version of Chrome, Firefox, Safari or Edge.</p>
+      </div>
+    </section>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "gridrunner",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "GRIDRUNNER — a Tron-style 3-lane endless runner for the browser.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --port 4173",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10",
+    "vitest": "^2.1.4"
+  }
+}

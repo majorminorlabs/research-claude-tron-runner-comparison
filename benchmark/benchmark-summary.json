@@ -1,0 +1,1825 @@
+{
+  "schema_version": "1.0.0",
+  "collected_at_utc": "2026-10-01T20:35:57.292785+00:00",
+  "benchmark_date_local": "2026-10-01",
+  "models": [
+    {
+      "id": "sonnet-5",
+      "model": "Sonnet 5",
+      "model_id": "claude-sonnet-5",
+      "repo": "sonnet5-runner",
+      "reasoning_effort": "high",
+      "per_turn_effort_raw": "unavailable",
+      "original_prompt": "Build an endless runner in Tron visual style.\n3 lanes, jump/slide/dodge, obstacles, rewards, etc.\nWeb browser based game. No Login. No leaderboard.\nKeep track of token usage and total time spent building the game.\nDo not stop until it passes all tests and is ready to release.",
+      "run": {
+        "start_timestamp": "2026-10-01T19:25:42.364Z",
+        "end_timestamp": "2026-10-01T19:39:44.103Z",
+        "wall_clock_build_seconds": 841.739,
+        "scope": "observed session: first user prompt to final assistant response",
+        "queue_start_timestamp": "2026-10-01T19:25:42.348Z",
+        "stop_hook_timestamp": "2026-10-01T19:39:45.616Z"
+      },
+      "tokens": {
+        "input_tokens": 226,
+        "output_tokens": 59771,
+        "cache_creation_input_tokens": 128114,
+        "cache_read_input_tokens": 14759815,
+        "cached_tokens": 14759815,
+        "input_tokens_including_cache": 14888155,
+        "total_tokens": 14947926
+      },
+      "files": {
+        "artifact_file_count": 8,
+        "files_created_during_run": "unavailable",
+        "files_changed_during_run": "unavailable",
+        "direct_write_edit_unique_paths": 8,
+        "loc_production": 1029,
+        "loc_tests": 139,
+        "loc_code_and_config": 1209,
+        "size_source_bytes": 35893,
+        "size_repo_logical_bytes": 35893,
+        "full_repo_file_count": 8,
+        "rebuilt_bundle_bytes": "not_applicable"
+      },
+      "dependencies": {
+        "runtime": {},
+        "development": {},
+        "locked_direct_versions": {},
+        "scripts": {
+          "test": "node --test test/",
+          "serve": "node tools/serve.js"
+        }
+      },
+      "validation": {
+        "install": {
+          "status": "not_required",
+          "reason": "No dependencies declared."
+        },
+        "test": {
+          "status": "passed",
+          "command": [
+            "npm",
+            "run",
+            "test"
+          ],
+          "cwd": "benchmark/validation/workspaces/sonnet5-runner",
+          "exit_code": 0,
+          "started_at_utc": "2026-10-01T20:36:27.052619+00:00",
+          "elapsed_seconds": 0.226,
+          "log": "validation/sonnet-5/test.log",
+          "passed_test_count": 15
+        },
+        "build": {
+          "status": "unavailable",
+          "reason": "No build script declared."
+        },
+        "lint": {
+          "status": "unavailable",
+          "reason": "No lint script declared."
+        },
+        "typecheck": {
+          "status": "unavailable",
+          "reason": "No typecheck script declared."
+        },
+        "javascript_syntax": {
+          "status": "passed",
+          "command": [
+            "node",
+            "benchmark-set/benchmark/scripts/syntax-check.mjs",
+            "tools/serve.js",
+            "test/logic.test.js",
+            "src/game.js",
+            "src/logic.js"
+          ],
+          "cwd": "benchmark/validation/workspaces/sonnet5-runner",
+          "exit_code": 0,
+          "started_at_utc": "2026-10-01T20:36:27.279492+00:00",
+          "elapsed_seconds": 0.114,
+          "log": "validation/sonnet-5/javascript_syntax.log"
+        },
+        "static_delivery": {
+          "status": "passed",
+          "reason": "Unbundled ES modules and CSS; no build step required. Runtime validated by common browser smoke."
+        },
+        "e2e_attempts": [],
+        "e2e": {
+          "status": "unavailable",
+          "reason": "No authored browser e2e suite."
+        },
+        "browser_smoke": {
+          "browser": "Installed Google Chrome, headless, SwiftShader",
+          "query": "?debug&seed=35 (only honored by Sonnet 5.5 / Opus 5.5)",
+          "cases": [
+            {
+              "viewport": "desktop",
+              "dimensions": {
+                "width": 1280,
+                "height": 720
+              },
+              "touch_emulated": false,
+              "checks": {
+                "start_button_visible": true,
+                "canvas_nonzero": true,
+                "no_horizontal_overflow": true,
+                "score_advances": true,
+                "keyboard_left": true,
+                "keyboard_right": true,
+                "jump": true,
+                "slide": true,
+                "pause": true,
+                "resume": true,
+                "no_uncaught_or_console_errors": true
+              },
+              "observations": {
+                "canvas": {
+                  "width": 1280,
+                  "height": 720,
+                  "rect": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                "start_state": {
+                  "phase": "playing",
+                  "score": 7,
+                  "lane": 1,
+                  "jumping": false,
+                  "sliding": false,
+                  "distance": 7.327596542399997
+                },
+                "blur_phase": "playing"
+              },
+              "errors": [],
+              "warnings": [],
+              "failed_requests": []
+            },
+            {
+              "viewport": "portrait",
+              "dimensions": {
+                "width": 390,
+                "height": 844
+              },
+              "touch_emulated": true,
+              "checks": {
+                "start_button_visible": true,
+                "canvas_nonzero": true,
+                "no_horizontal_overflow": true,
+                "score_advances": true,
+                "keyboard_left": true,
+                "keyboard_right": true,
+                "jump": true,
+                "slide": true,
+                "pause": true,
+                "resume": true,
+                "no_uncaught_or_console_errors": true
+              },
+              "observations": {
+                "canvas": {
+                  "width": 390,
+                  "height": 844,
+                  "rect": {
+                    "width": 390,
+                    "height": 844
+                  }
+                },
+                "start_state": {
+                  "phase": "playing",
+                  "score": 10,
+                  "lane": 1,
+                  "jumping": false,
+                  "sliding": false,
+                  "distance": 10.170800015999992
+                },
+                "blur_phase": "playing"
+              },
+              "errors": [],
+              "warnings": [],
+              "failed_requests": []
+            }
+          ],
+          "status": "passed"
+        },
+        "restricted_storage": {
+          "scenario": "localStorage getter throws, representing denied browser storage",
+          "errors": [
+            "benchmark: localStorage blocked"
+          ],
+          "start_button_visible": true,
+          "status": "failed"
+        }
+      },
+      "implementation": {
+        "renderer": "Canvas 2D with procedural perspective projection; JavaScript; zero npm dependencies",
+        "simulation": "Variable render delta capped at 50 ms; Math.random in runtime; pure helper functions tested separately",
+        "features": [
+          "Three lanes, jump/slide/dodge, three obstacle types",
+          "Energy orbs and bonus orbs, distance score, speed ramp",
+          "Keyboard, swipes, tap to jump, on-screen touch buttons",
+          "Start, pause/resume, game-over/retry, locally stored best score"
+        ],
+        "optional_absent": [
+          "No procedural audio or mute control",
+          "No shield/magnet/boost power-ups; bonus orbs are score rewards",
+          "No seeded replay or title autopilot",
+          "No automatic pause on hidden tab or blur",
+          "No guard when localStorage access throws"
+        ],
+        "sources": [
+          "src/logic.js",
+          "src/game.js",
+          "index.html",
+          "test/logic.test.js"
+        ],
+        "defects": [
+          "Restricted-storage bootstrap throws an uncaught error (reproduced).",
+          "Score HUD/best update happens after collision handling; endRun returns before updating HUD, so the old HUD may remain on death (source observation, manual severity unassessed)."
+        ],
+        "audio": {
+          "present": false,
+          "kind": "none",
+          "source": [],
+          "audibility_in_comparison": "muted by release policy; not evaluated"
+        }
+      },
+      "quality_review": {
+        "prompt_compliance": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        },
+        "feature_completeness": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        },
+        "controls_gameplay_correctness": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        },
+        "visual_polish": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        },
+        "ui_completeness": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        },
+        "bugs": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        },
+        "crashes": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        },
+        "responsiveness": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        },
+        "implementation_defects": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        }
+      },
+      "sources": {
+        "session": "evidence/sonnet-5-session.json",
+        "inventory": "evidence/sonnet-5-inventory.json",
+        "package": "sonnet5-runner/package.json"
+      },
+      "unavailable": [
+        "Exact files created/changed across original run (no committed baseline; Bash writes not fully enumerated)",
+        "Original release-ready instant independent of session endpoint",
+        "Model training/version equivalence and original hardware load"
+      ],
+      "self_reported_metrics": {
+        "build_time_seconds": 767,
+        "token_value": 172000,
+        "token_kind": "Approximate final context-window occupancy; includes initial context",
+        "source": "evidence/sonnet-5-final-report.md",
+        "qualifier": "Approximate self-report, not canonical session timing/API aggregate"
+      },
+      "environment_original": {
+        "claude_code_versions": [
+          "2.1.284"
+        ],
+        "entrypoints": [
+          "claude-desktop"
+        ],
+        "skill_invocations": [],
+        "initial_request_input_including_cache": 74382,
+        "sidechain_records": 0
+      },
+      "metric_provenance": {
+        "model_reasoning_effort": {
+          "source": "evidence/sonnet-5-session.json#model_evidence",
+          "method": "Exact assistant message.model and top-level effort; all assistant rows agree."
+        },
+        "original_prompt": {
+          "source": "evidence/sonnet-5-session.json#prompt",
+          "method": "First string user prompt; remove pasted_content wrapper only. Raw text retained."
+        },
+        "run_timestamps_wall_clock": {
+          "source": "evidence/sonnet-5-session.json#timing",
+          "method": "First human prompt to final assistant row; ISO timestamps and line numbers retained."
+        },
+        "tokens": {
+          "source": "evidence/sonnet-5-session.json#usage_records",
+          "method": "One identical raw usage object per unique assistant message.id; never sum repeated streamed blocks, iterations or cache TTL breakdown twice."
+        },
+        "file_count_loc_repo_size": {
+          "source": "evidence/sonnet-5-inventory.json",
+          "method": "Inventory of original filesystem snapshot; byte counts and file hashes. Definitions in methodology.md."
+        },
+        "created_changed_files": {
+          "source": "evidence/sonnet-5-session.json#git",
+          "method": "unavailable: absent/empty Git histories. Direct Write/Edit unique paths are a partial diagnostic only."
+        },
+        "dependencies": {
+          "source": "evidence/sonnet-5/package.json and package-lock.json when present",
+          "method": "Declared requirements and lockfile direct-package resolved versions."
+        },
+        "validation": {
+          "source": "validation/sonnet-5/",
+          "method": "Fresh source copy inside benchmark; commands, raw logs, browser results, screenshots and attempts retained."
+        },
+        "features_defects": {
+          "source": [
+            "sonnet5-runner/src/logic.js",
+            "sonnet5-runner/src/game.js",
+            "sonnet5-runner/index.html",
+            "sonnet5-runner/test/logic.test.js"
+          ],
+          "method": "Source inspection plus explicitly labeled runtime observations; optional absent features are not prompt failures."
+        },
+        "self_reports": {
+          "source": "evidence/sonnet-5-final-report.md",
+          "method": "Raw author report retained separately; cannot substitute context occupancy for cumulative request usage."
+        }
+      }
+    },
+    {
+      "id": "sonnet-5.5",
+      "model": "Sonnet 5.5",
+      "model_id": "claude-sonnet-5-5",
+      "repo": "sonnet55-runner",
+      "reasoning_effort": "high",
+      "per_turn_effort_raw": [
+        "high"
+      ],
+      "original_prompt": "Build an endless runner in Tron visual style.\n3 lanes, jump/slide/dodge, obstacles, rewards, etc.\nWeb browser based game. No Login. No leaderboard.\nKeep track of token usage and total time spent building the game.\nDo not stop until it passes all tests and is ready to release.",
+      "run": {
+        "start_timestamp": "2026-10-01T18:12:38.744Z",
+        "end_timestamp": "2026-10-01T18:47:35.395Z",
+        "wall_clock_build_seconds": 2096.651,
+        "scope": "observed session: first user prompt to final assistant response",
+        "queue_start_timestamp": "2026-10-01T18:12:38.724Z",
+        "stop_hook_timestamp": "2026-10-01T18:47:37.280Z"
+      },
+      "tokens": {
+        "input_tokens": 152,
+        "output_tokens": 174189,
+        "cache_creation_input_tokens": 233440,
+        "cache_read_input_tokens": 14032456,
+        "cached_tokens": 14032456,
+        "input_tokens_including_cache": 14266048,
+        "total_tokens": 14440237
+      },
+      "files": {
+        "artifact_file_count": 44,
+        "files_created_during_run": "unavailable",
+        "files_changed_during_run": "unavailable",
+        "direct_write_edit_unique_paths": 0,
+        "loc_production": 3500,
+        "loc_tests": 1413,
+        "loc_code_and_config": 5058,
+        "size_source_bytes": 247901,
+        "size_repo_logical_bytes": 124540681,
+        "full_repo_file_count": 4085,
+        "rebuilt_bundle_bytes": 1069801
+      },
+      "dependencies": {
+        "runtime": {
+          "@fontsource/orbitron": "^5.3.0",
+          "@fontsource/rajdhani": "^5.3.0",
+          "three": "^0.186.1"
+        },
+        "development": {
+          "@playwright/test": "^1.63.0",
+          "@types/pngjs": "^6.0.5",
+          "@types/three": "^0.186.0",
+          "pngjs": "^7.0.0",
+          "typescript": "^7.0.2",
+          "vite": "^8.3.2",
+          "vitest": "^4.1.11"
+        },
+        "locked_direct_versions": {
+          "@fontsource/orbitron": "5.3.0",
+          "@fontsource/rajdhani": "5.3.0",
+          "three": "0.186.1",
+          "@playwright/test": "1.63.0",
+          "@types/pngjs": "6.0.5",
+          "@types/three": "0.186.0",
+          "pngjs": "7.0.0",
+          "typescript": "7.0.2",
+          "vite": "8.3.2",
+          "vitest": "4.1.11"
+        },
+        "scripts": {
+          "dev": "vite",
+          "build": "tsc --noEmit && vite build",
+          "preview": "vite preview --host 127.0.0.1 --port 4173 --strictPort",
+          "typecheck": "tsc --noEmit",
+          "test": "vitest run",
+          "test:e2e": "playwright test",
+          "test:all": "npm run typecheck && npm test && npm run build && npm run test:e2e",
+          "stats": "node scripts/build-stats.mjs"
+        }
+      },
+      "validation": {
+        "install": {
+          "status": "passed",
+          "command": [
+            "npm",
+            "ci",
+            "--no-audit",
+            "--no-fund"
+          ],
+          "cwd": "benchmark/validation/workspaces/sonnet55-runner",
+          "exit_code": 0,
+          "started_at_utc": "2026-10-01T20:36:27.052615+00:00",
+          "elapsed_seconds": 1.252,
+          "log": "validation/sonnet-5.5/install.log"
+        },
+        "test": {
+          "status": "passed",
+          "command": [
+            "npm",
+            "run",
+            "test"
+          ],
+          "cwd": "benchmark/validation/workspaces/sonnet55-runner",
+          "exit_code": 0,
+          "started_at_utc": "2026-10-01T20:36:28.305193+00:00",
+          "elapsed_seconds": 9.347,
+          "log": "validation/sonnet-5.5/test.log",
+          "passed_test_count": 83
+        },
+        "build": {
+          "status": "passed",
+          "command": [
+            "npm",
+            "run",
+            "build"
+          ],
+          "cwd": "benchmark/validation/workspaces/sonnet55-runner",
+          "exit_code": 0,
+          "started_at_utc": "2026-10-01T20:36:37.652085+00:00",
+          "elapsed_seconds": 1.33,
+          "log": "validation/sonnet-5.5/build.log"
+        },
+        "lint": {
+          "status": "unavailable",
+          "reason": "No lint script declared."
+        },
+        "typecheck": {
+          "status": "passed",
+          "command": [
+            "npm",
+            "run",
+            "typecheck"
+          ],
+          "cwd": "benchmark/validation/workspaces/sonnet55-runner",
+          "exit_code": 0,
+          "started_at_utc": "2026-10-01T20:36:38.982453+00:00",
+          "elapsed_seconds": 0.242,
+          "log": "validation/sonnet-5.5/typecheck.log"
+        },
+        "javascript_syntax": {
+          "status": "passed",
+          "command": [
+            "node",
+            "benchmark-set/benchmark/scripts/syntax-check.mjs",
+            "scripts/build-stats.mjs",
+            "scripts/snapshot.mjs"
+          ],
+          "cwd": "benchmark/validation/workspaces/sonnet55-runner",
+          "exit_code": 0,
+          "started_at_utc": "2026-10-01T20:36:39.250205+00:00",
+          "elapsed_seconds": 0.057,
+          "log": "validation/sonnet-5.5/javascript_syntax.log"
+        },
+        "e2e_attempts": [
+          {
+            "status": "incomplete",
+            "command": [
+              "npm",
+              "run",
+              "test:e2e",
+              "--",
+              "--workers=1"
+            ],
+            "started_at_utc": "2026-10-01T20:37:35.643918+00:00",
+            "elapsed_seconds": 500.011,
+            "exit_code": 124,
+            "log": "validation/sonnet-5.5/e2e.log",
+            "reason": "Whole suite hit benchmark 500-second timeout while other browser validation was running. Four test failure contexts preserved; result cannot establish an overall suite outcome.",
+            "passed_test_count": "unavailable",
+            "skipped_test_count": 0
+          },
+          {
+            "status": "passed",
+            "command": [
+              "npm",
+              "run",
+              "test:e2e",
+              "--",
+              "--workers=1"
+            ],
+            "started_at_utc": "2026-10-01T20:47:47.092010+00:00",
+            "elapsed_seconds": 485.237,
+            "exit_code": 0,
+            "log": "validation/sonnet-5.5/e2e-recheck.log",
+            "reason": "Streamed rerun after common smoke and first renderer layout checks ended; owned Sonnet preview verified by successful native assertions. No claim of exclusive hardware load. Initial timeout/artifacts retained.",
+            "passed_test_count": 24,
+            "skipped_test_count": 0
+          }
+        ],
+        "e2e": {
+          "status": "passed",
+          "command": [
+            "npm",
+            "run",
+            "test:e2e",
+            "--",
+            "--workers=1"
+          ],
+          "started_at_utc": "2026-10-01T20:47:47.092010+00:00",
+          "elapsed_seconds": 485.237,
+          "exit_code": 0,
+          "log": "validation/sonnet-5.5/e2e-recheck.log",
+          "reason": "Streamed rerun after common smoke and first renderer layout checks ended; owned Sonnet preview verified by successful native assertions. No claim of exclusive hardware load. Initial timeout/artifacts retained.",
+          "passed_test_count": 24,
+          "skipped_test_count": 0
+        },
+        "browser_smoke": {
+          "browser": "Installed Google Chrome, headless, SwiftShader",
+          "query": "?debug&seed=35 (only honored by Sonnet 5.5 / Opus 5.5)",
+          "cases": [
+            {
+              "viewport": "desktop",
+              "dimensions": {
+                "width": 1280,
+                "height": 720
+              },
+              "touch_emulated": false,
+              "checks": {
+                "start_button_visible": true,
+                "canvas_nonzero": true,
+                "no_horizontal_overflow": true,
+                "score_advances": true,
+                "keyboard_left": true,
+                "keyboard_right": true,
+                "jump": true,
+                "slide": true,
+                "pause": true,
+                "resume": true,
+                "no_uncaught_or_console_errors": true
+              },
+              "observations": {
+                "canvas": {
+                  "width": 1280,
+                  "height": 720,
+                  "rect": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                "start_state": {
+                  "phase": "playing",
+                  "score": 11,
+                  "lane": 1,
+                  "jumping": false,
+                  "sliding": false,
+                  "distance": 11.15313652707459
+                },
+                "blur_phase": "paused"
+              },
+              "errors": [],
+              "warnings": [
+                "[.WebGL-0x114007d8800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+                "[.WebGL-0x114007d8800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+                "[.WebGL-0x114007d8800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+                "[.WebGL-0x114007d8800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+              ],
+              "failed_requests": []
+            },
+            {
+              "viewport": "portrait",
+              "dimensions": {
+                "width": 390,
+                "height": 844
+              },
+              "touch_emulated": true,
+              "checks": {
+                "start_button_visible": true,
+                "canvas_nonzero": true,
+                "no_horizontal_overflow": true,
+                "score_advances": true,
+                "keyboard_left": true,
+                "keyboard_right": true,
+                "jump": true,
+                "slide": true,
+                "pause": true,
+                "resume": true,
+                "no_uncaught_or_console_errors": true
+              },
+              "observations": {
+                "canvas": {
+                  "width": 390,
+                  "height": 844,
+                  "rect": {
+                    "width": 390,
+                    "height": 844
+                  }
+                },
+                "start_state": {
+                  "phase": "playing",
+                  "score": 9,
+                  "lane": 1,
+                  "jumping": false,
+                  "sliding": false,
+                  "distance": 9.871640257881458
+                },
+                "blur_phase": "paused"
+              },
+              "errors": [],
+              "warnings": [],
+              "failed_requests": []
+            }
+          ],
+          "status": "passed"
+        },
+        "restricted_storage": {
+          "scenario": "localStorage getter throws, representing denied browser storage",
+          "errors": [],
+          "start_button_visible": true,
+          "status": "passed"
+        }
+      },
+      "implementation": {
+        "renderer": "Three.js WebGL, custom floor shader, articulated runner, bloom, bundled Orbitron/Rajdhani; TypeScript",
+        "simulation": "Seeded RNG, deterministic game logic, generator plus independent route solver/autopilot; fixed 120 Hz accumulator in main loop",
+        "features": [
+          "Three lanes, buffered lane changes/jump, slide and fast-fall",
+          "Barriers, gates and walls; bits, clean-dodge bonuses, chains",
+          "Shield, magnet, overclock multiplier and phase invulnerability/speed boost",
+          "Sectors and increasing difficulty; seeded URL replay",
+          "Title autopilot, countdown, HUD, power timers, pause/restart/quit/retry",
+          "Procedural music/SFX, persistent mute/records, graphics toggle and automatic quality fallback",
+          "Keyboard and swipes, fullscreen, hidden-tab and blur pause, reduced-motion handling",
+          "Unit fairness/soak tests and authored desktop/mobile browser tests"
+        ],
+        "optional_absent": [
+          "No backend, login or leaderboard by prompt design",
+          "No external asset/remote font fetch required"
+        ],
+        "sources": [
+          "src/main.ts",
+          "src/game/game.ts",
+          "src/game/config.ts",
+          "src/game/generator.ts",
+          "src/game/solver.ts",
+          "src/render/view.ts",
+          "src/storage.ts",
+          "tests/e2e/game.spec.ts"
+        ],
+        "defects": [],
+        "audio": {
+          "present": true,
+          "kind": "procedural Web Audio",
+          "source": [
+            "sonnet55-runner/src/audio/audio.ts"
+          ],
+          "audibility_in_comparison": "muted by release policy; not evaluated"
+        }
+      },
+      "quality_review": {
+        "prompt_compliance": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        },
+        "feature_completeness": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        },
+        "controls_gameplay_correctness": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        },
+        "visual_polish": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        },
+        "ui_completeness": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        },
+        "bugs": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        },
+        "crashes": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        },
+        "responsiveness": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        },
+        "implementation_defects": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        }
+      },
+      "sources": {
+        "session": "evidence/sonnet-5.5-session.json",
+        "inventory": "evidence/sonnet-5.5-inventory.json",
+        "package": "sonnet55-runner/package.json"
+      },
+      "unavailable": [
+        "Exact files created/changed across original run (no committed baseline; Bash writes not fully enumerated)",
+        "Original release-ready instant independent of session endpoint",
+        "Model training/version equivalence and original hardware load"
+      ],
+      "self_reported_metrics": {
+        "build_time_seconds": 1947,
+        "token_value": 208447,
+        "token_kind": "Context growth: 272743 minus 64296",
+        "source": "evidence/sonnet-5.5/scripts/build-meta.json",
+        "qualifier": "Recorded internal checkpoint ending before final verification/response"
+      },
+      "environment_original": {
+        "claude_code_versions": [
+          "2.1.284"
+        ],
+        "entrypoints": [
+          "claude-desktop"
+        ],
+        "skill_invocations": [],
+        "initial_request_input_including_cache": 62017,
+        "sidechain_records": 0
+      },
+      "metric_provenance": {
+        "model_reasoning_effort": {
+          "source": "evidence/sonnet-5.5-session.json#model_evidence",
+          "method": "Exact assistant message.model and top-level effort; all assistant rows agree."
+        },
+        "original_prompt": {
+          "source": "evidence/sonnet-5.5-session.json#prompt",
+          "method": "First string user prompt; remove pasted_content wrapper only. Raw text retained."
+        },
+        "run_timestamps_wall_clock": {
+          "source": "evidence/sonnet-5.5-session.json#timing",
+          "method": "First human prompt to final assistant row; ISO timestamps and line numbers retained."
+        },
+        "tokens": {
+          "source": "evidence/sonnet-5.5-session.json#usage_records",
+          "method": "One identical raw usage object per unique assistant message.id; never sum repeated streamed blocks, iterations or cache TTL breakdown twice."
+        },
+        "file_count_loc_repo_size": {
+          "source": "evidence/sonnet-5.5-inventory.json",
+          "method": "Inventory of original filesystem snapshot; byte counts and file hashes. Definitions in methodology.md."
+        },
+        "created_changed_files": {
+          "source": "evidence/sonnet-5.5-session.json#git",
+          "method": "unavailable: absent/empty Git histories. Direct Write/Edit unique paths are a partial diagnostic only."
+        },
+        "dependencies": {
+          "source": "evidence/sonnet-5.5/package.json and package-lock.json when present",
+          "method": "Declared requirements and lockfile direct-package resolved versions."
+        },
+        "validation": {
+          "source": "validation/sonnet-5.5/",
+          "method": "Fresh source copy inside benchmark; commands, raw logs, browser results, screenshots and attempts retained."
+        },
+        "features_defects": {
+          "source": [
+            "sonnet55-runner/src/main.ts",
+            "sonnet55-runner/src/game/game.ts",
+            "sonnet55-runner/src/game/config.ts",
+            "sonnet55-runner/src/game/generator.ts",
+            "sonnet55-runner/src/game/solver.ts",
+            "sonnet55-runner/src/render/view.ts",
+            "sonnet55-runner/src/storage.ts",
+            "sonnet55-runner/tests/e2e/game.spec.ts"
+          ],
+          "method": "Source inspection plus explicitly labeled runtime observations; optional absent features are not prompt failures."
+        },
+        "self_reports": {
+          "source": "evidence/sonnet-5.5/scripts/build-meta.json",
+          "method": "Raw author report retained separately; cannot substitute context occupancy for cumulative request usage."
+        }
+      }
+    },
+    {
+      "id": "opus-5",
+      "model": "Opus 5",
+      "model_id": "claude-opus-5",
+      "repo": "opus5-runner",
+      "reasoning_effort": "high",
+      "per_turn_effort_raw": "unavailable",
+      "original_prompt": "Build an endless runner in Tron visual style.\n3 lanes, jump/slide/dodge, obstacles, rewards, etc.\nWeb browser based game. No Login. No leaderboard.\nKeep track of token usage and total time spent building the game.\nDo not stop until it passes all tests and is ready to release.",
+      "run": {
+        "start_timestamp": "2026-10-01T18:51:16.233Z",
+        "end_timestamp": "2026-10-01T19:18:07.788Z",
+        "wall_clock_build_seconds": 1611.555,
+        "scope": "observed session: first user prompt to final assistant response",
+        "queue_start_timestamp": "2026-10-01T18:51:16.194Z",
+        "stop_hook_timestamp": "2026-10-01T19:18:09.747Z"
+      },
+      "tokens": {
+        "input_tokens": 138,
+        "output_tokens": 126291,
+        "cache_creation_input_tokens": 178903,
+        "cache_read_input_tokens": 10193819,
+        "cached_tokens": 10193819,
+        "input_tokens_including_cache": 10372860,
+        "total_tokens": 10499151
+      },
+      "files": {
+        "artifact_file_count": 30,
+        "files_created_during_run": "unavailable",
+        "files_changed_during_run": "unavailable",
+        "direct_write_edit_unique_paths": 0,
+        "loc_production": 3591,
+        "loc_tests": 1003,
+        "loc_code_and_config": 4604,
+        "size_source_bytes": 195268,
+        "size_repo_logical_bytes": 66450861,
+        "full_repo_file_count": 915,
+        "rebuilt_bundle_bytes": 53806
+      },
+      "dependencies": {
+        "runtime": {},
+        "development": {
+          "typescript": "^5.6.3",
+          "vite": "^5.4.10",
+          "vitest": "^2.1.4"
+        },
+        "locked_direct_versions": {
+          "typescript": "5.9.3",
+          "vite": "5.4.21",
+          "vitest": "2.1.9"
+        },
+        "scripts": {
+          "dev": "vite",
+          "build": "tsc --noEmit && vite build",
+          "preview": "vite preview --port 4173",
+          "typecheck": "tsc --noEmit",
+          "test": "vitest run",
+          "test:watch": "vitest"
+        }
+      },
+      "validation": {
+        "install": {
+          "status": "passed",
+          "command": [
+            "npm",
+            "ci",
+            "--no-audit",
+            "--no-fund"
+          ],
+          "cwd": "benchmark/validation/workspaces/opus5-runner",
+          "exit_code": 0,
+          "started_at_utc": "2026-10-01T20:36:27.052629+00:00",
+          "elapsed_seconds": 0.985,
+          "log": "validation/opus-5/install.log"
+        },
+        "test": {
+          "status": "passed",
+          "command": [
+            "npm",
+            "run",
+            "test"
+          ],
+          "cwd": "benchmark/validation/workspaces/opus5-runner",
+          "exit_code": 0,
+          "started_at_utc": "2026-10-01T20:36:28.038388+00:00",
+          "elapsed_seconds": 1.998,
+          "log": "validation/opus-5/test.log",
+          "passed_test_count": 96
+        },
+        "build": {
+          "status": "passed",
+          "command": [
+            "npm",
+            "run",
+            "build"
+          ],
+          "cwd": "benchmark/validation/workspaces/opus5-runner",
+          "exit_code": 0,
+          "started_at_utc": "2026-10-01T20:36:30.036660+00:00",
+          "elapsed_seconds": 1.289,
+          "log": "validation/opus-5/build.log"
+        },
+        "lint": {
+          "status": "unavailable",
+          "reason": "No lint script declared."
+        },
+        "typecheck": {
+          "status": "passed",
+          "command": [
+            "npm",
+            "run",
+            "typecheck"
+          ],
+          "cwd": "benchmark/validation/workspaces/opus5-runner",
+          "exit_code": 0,
+          "started_at_utc": "2026-10-01T20:36:31.325397+00:00",
+          "elapsed_seconds": 0.743,
+          "log": "validation/opus-5/typecheck.log"
+        },
+        "javascript_syntax": {
+          "status": "passed",
+          "command": [
+            "node",
+            "benchmark-set/benchmark/scripts/syntax-check.mjs"
+          ],
+          "cwd": "benchmark/validation/workspaces/opus5-runner",
+          "exit_code": 0,
+          "started_at_utc": "2026-10-01T20:36:32.076034+00:00",
+          "elapsed_seconds": 0.022,
+          "log": "validation/opus-5/javascript_syntax.log"
+        },
+        "e2e_attempts": [],
+        "e2e": {
+          "status": "unavailable",
+          "reason": "No authored browser e2e suite."
+        },
+        "browser_smoke": {
+          "browser": "Installed Google Chrome, headless, SwiftShader",
+          "query": "?debug&seed=35 (only honored by Sonnet 5.5 / Opus 5.5)",
+          "cases": [
+            {
+              "viewport": "desktop",
+              "dimensions": {
+                "width": 1280,
+                "height": 720
+              },
+              "touch_emulated": false,
+              "checks": {
+                "start_button_visible": true,
+                "canvas_nonzero": true,
+                "no_horizontal_overflow": true,
+                "score_advances": true,
+                "keyboard_left": "unavailable: no public state hook",
+                "keyboard_right": "unavailable: no public state hook",
+                "jump": "unavailable: no public state hook",
+                "slide": "unavailable: no public state hook",
+                "pause": true,
+                "resume": true,
+                "no_uncaught_or_console_errors": true
+              },
+              "observations": {
+                "canvas": {
+                  "width": 1280,
+                  "height": 720,
+                  "rect": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                "start_state": {
+                  "phase": "playing",
+                  "score": 16
+                },
+                "blur_phase": "playing"
+              },
+              "errors": [],
+              "warnings": [],
+              "failed_requests": []
+            },
+            {
+              "viewport": "portrait",
+              "dimensions": {
+                "width": 390,
+                "height": 844
+              },
+              "touch_emulated": true,
+              "checks": {
+                "start_button_visible": true,
+                "canvas_nonzero": true,
+                "no_horizontal_overflow": true,
+                "score_advances": true,
+                "keyboard_left": "unavailable: no public state hook",
+                "keyboard_right": "unavailable: no public state hook",
+                "jump": "unavailable: no public state hook",
+                "slide": "unavailable: no public state hook",
+                "pause": true,
+                "resume": true,
+                "no_uncaught_or_console_errors": true
+              },
+              "observations": {
+                "canvas": {
+                  "width": 390,
+                  "height": 844,
+                  "rect": {
+                    "width": 390,
+                    "height": 844
+                  }
+                },
+                "start_state": {
+                  "phase": "playing",
+                  "score": 18
+                },
+                "blur_phase": "playing"
+              },
+              "errors": [],
+              "warnings": [],
+              "failed_requests": []
+            }
+          ],
+          "status": "passed"
+        },
+        "restricted_storage": {
+          "scenario": "localStorage getter throws, representing denied browser storage",
+          "errors": [],
+          "start_button_visible": true,
+          "status": "passed"
+        }
+      },
+      "implementation": {
+        "renderer": "Canvas 2D procedural city/light-cycle, camera projection, particles; TypeScript; no runtime npm dependencies",
+        "simulation": "Pure seeded simulation, fixed 1/120-second timestep; structurally restricted survivable row patterns; shared production autopilot",
+        "features": [
+          "Three lanes, jump-hold, buffered jump, slide and fast-fall",
+          "Barrier/beam/block obstacles; orbs with up-to-3\u00d7 combo",
+          "Three integrity segments, hit slowdown, temporary invulnerability",
+          "Shield and overdrive (speed plus score boost)",
+          "Title autopilot, HUD, pause/resume, game-over/retry, local best",
+          "Procedural audio, mute, keyboard/swipes/tap, hidden-tab pause",
+          "Determinism, generator, physics, invariant and autopilot-survival unit tests"
+        ],
+        "optional_absent": [
+          "No magnet or fullscreen control found",
+          "No authored browser e2e or lint script",
+          "Runtime chooses random seeds without URL seed option or public state hook"
+        ],
+        "sources": [
+          "src/main.ts",
+          "src/core/constants.ts",
+          "src/core/game.ts",
+          "src/core/track.ts",
+          "src/ui/input.ts",
+          "src/render/renderer.ts",
+          "tests/invariants.test.ts"
+        ],
+        "defects": [],
+        "audio": {
+          "present": true,
+          "kind": "procedural Web Audio",
+          "source": [
+            "opus5-runner/src/audio.ts"
+          ],
+          "audibility_in_comparison": "muted by release policy; not evaluated"
+        }
+      },
+      "quality_review": {
+        "prompt_compliance": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        },
+        "feature_completeness": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        },
+        "controls_gameplay_correctness": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        },
+        "visual_polish": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        },
+        "ui_completeness": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        },
+        "bugs": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        },
+        "crashes": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        },
+        "responsiveness": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        },
+        "implementation_defects": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        }
+      },
+      "sources": {
+        "session": "evidence/opus-5-session.json",
+        "inventory": "evidence/opus-5-inventory.json",
+        "package": "opus5-runner/package.json"
+      },
+      "unavailable": [
+        "Exact files created/changed across original run (no committed baseline; Bash writes not fully enumerated)",
+        "Original release-ready instant independent of session endpoint",
+        "Model training/version equivalence and original hardware load"
+      ],
+      "self_reported_metrics": {
+        "build_time_seconds": 1500,
+        "token_value": 210000,
+        "token_kind": "Approximate total context consumed, includes initial overhead",
+        "source": "evidence/opus-5/README.md",
+        "qualifier": "Rounded self-report, not canonical session timing/API aggregate"
+      },
+      "environment_original": {
+        "claude_code_versions": [
+          "2.1.284"
+        ],
+        "entrypoints": [
+          "claude-desktop"
+        ],
+        "skill_invocations": [],
+        "initial_request_input_including_cache": 63007,
+        "sidechain_records": 0
+      },
+      "metric_provenance": {
+        "model_reasoning_effort": {
+          "source": "evidence/opus-5-session.json#model_evidence",
+          "method": "Exact assistant message.model and top-level effort; all assistant rows agree."
+        },
+        "original_prompt": {
+          "source": "evidence/opus-5-session.json#prompt",
+          "method": "First string user prompt; remove pasted_content wrapper only. Raw text retained."
+        },
+        "run_timestamps_wall_clock": {
+          "source": "evidence/opus-5-session.json#timing",
+          "method": "First human prompt to final assistant row; ISO timestamps and line numbers retained."
+        },
+        "tokens": {
+          "source": "evidence/opus-5-session.json#usage_records",
+          "method": "One identical raw usage object per unique assistant message.id; never sum repeated streamed blocks, iterations or cache TTL breakdown twice."
+        },
+        "file_count_loc_repo_size": {
+          "source": "evidence/opus-5-inventory.json",
+          "method": "Inventory of original filesystem snapshot; byte counts and file hashes. Definitions in methodology.md."
+        },
+        "created_changed_files": {
+          "source": "evidence/opus-5-session.json#git",
+          "method": "unavailable: absent/empty Git histories. Direct Write/Edit unique paths are a partial diagnostic only."
+        },
+        "dependencies": {
+          "source": "evidence/opus-5/package.json and package-lock.json when present",
+          "method": "Declared requirements and lockfile direct-package resolved versions."
+        },
+        "validation": {
+          "source": "validation/opus-5/",
+          "method": "Fresh source copy inside benchmark; commands, raw logs, browser results, screenshots and attempts retained."
+        },
+        "features_defects": {
+          "source": [
+            "opus5-runner/src/main.ts",
+            "opus5-runner/src/core/constants.ts",
+            "opus5-runner/src/core/game.ts",
+            "opus5-runner/src/core/track.ts",
+            "opus5-runner/src/ui/input.ts",
+            "opus5-runner/src/render/renderer.ts",
+            "opus5-runner/tests/invariants.test.ts"
+          ],
+          "method": "Source inspection plus explicitly labeled runtime observations; optional absent features are not prompt failures."
+        },
+        "self_reports": {
+          "source": "evidence/opus-5/README.md",
+          "method": "Raw author report retained separately; cannot substitute context occupancy for cumulative request usage."
+        }
+      }
+    },
+    {
+      "id": "opus-5.5",
+      "model": "Opus 5.5",
+      "model_id": "claude-opus-5-5",
+      "repo": "opus55-runner",
+      "reasoning_effort": "high",
+      "per_turn_effort_raw": [
+        "high"
+      ],
+      "original_prompt": "Build an endless runner in Tron visual style.\n3 lanes, jump/slide/dodge, obstacles, rewards, etc.\nWeb browser based game. No Login. No leaderboard.\nKeep track of token usage and total time spent building the game.\nDo not stop until it passes all tests and is ready to release.",
+      "run": {
+        "start_timestamp": "2026-10-01T18:11:46.690Z",
+        "end_timestamp": "2026-10-01T18:34:49.212Z",
+        "wall_clock_build_seconds": 1382.522,
+        "scope": "observed session: first user prompt to final assistant response",
+        "queue_start_timestamp": "2026-10-01T18:11:46.662Z",
+        "stop_hook_timestamp": "2026-10-01T18:34:50.761Z"
+      },
+      "tokens": {
+        "input_tokens": 118,
+        "output_tokens": 100631,
+        "cache_creation_input_tokens": 156524,
+        "cache_read_input_tokens": 8022765,
+        "cached_tokens": 8022765,
+        "input_tokens_including_cache": 8179407,
+        "total_tokens": 8280038
+      },
+      "files": {
+        "artifact_file_count": 29,
+        "files_created_during_run": "unavailable",
+        "files_changed_during_run": "unavailable",
+        "direct_write_edit_unique_paths": 21,
+        "loc_production": 2779,
+        "loc_tests": 575,
+        "loc_code_and_config": 3414,
+        "size_source_bytes": 187821,
+        "size_repo_logical_bytes": 90739223,
+        "full_repo_file_count": 3411,
+        "rebuilt_bundle_bytes": 694554
+      },
+      "dependencies": {
+        "runtime": {
+          "@fontsource/orbitron": "^5.3.0",
+          "three": "^0.186.1"
+        },
+        "development": {
+          "@eslint/js": "^10.0.1",
+          "@playwright/test": "^1.63.0",
+          "eslint": "^10.11.0",
+          "globals": "^17.13.0",
+          "vite": "^8.3.2",
+          "vitest": "^4.1.11"
+        },
+        "locked_direct_versions": {
+          "@fontsource/orbitron": "5.3.0",
+          "three": "0.186.1",
+          "@eslint/js": "10.0.1",
+          "@playwright/test": "1.63.0",
+          "eslint": "10.11.0",
+          "globals": "17.13.0",
+          "vite": "8.3.2",
+          "vitest": "4.1.11"
+        },
+        "scripts": {
+          "dev": "vite",
+          "build": "vite build",
+          "preview": "vite preview --port 4173 --strictPort",
+          "lint": "eslint .",
+          "test": "vitest run",
+          "test:e2e": "playwright test",
+          "test:all": "npm run lint && npm run test && npm run build && npm run test:e2e"
+        }
+      },
+      "validation": {
+        "install": {
+          "status": "passed",
+          "command": [
+            "npm",
+            "ci",
+            "--no-audit",
+            "--no-fund"
+          ],
+          "cwd": "benchmark/validation/workspaces/opus55-runner",
+          "exit_code": 0,
+          "started_at_utc": "2026-10-01T20:36:27.052615+00:00",
+          "elapsed_seconds": 1.193,
+          "log": "validation/opus-5.5/install.log"
+        },
+        "test": {
+          "status": "passed",
+          "command": [
+            "npm",
+            "run",
+            "test"
+          ],
+          "cwd": "benchmark/validation/workspaces/opus55-runner",
+          "exit_code": 0,
+          "started_at_utc": "2026-10-01T20:36:28.245980+00:00",
+          "elapsed_seconds": 1.848,
+          "log": "validation/opus-5.5/test.log",
+          "passed_test_count": 29
+        },
+        "build": {
+          "status": "passed",
+          "command": [
+            "npm",
+            "run",
+            "build"
+          ],
+          "cwd": "benchmark/validation/workspaces/opus55-runner",
+          "exit_code": 0,
+          "started_at_utc": "2026-10-01T20:36:30.094240+00:00",
+          "elapsed_seconds": 0.809,
+          "log": "validation/opus-5.5/build.log"
+        },
+        "lint": {
+          "status": "passed",
+          "command": [
+            "npm",
+            "run",
+            "lint"
+          ],
+          "cwd": "benchmark/validation/workspaces/opus55-runner",
+          "exit_code": 0,
+          "started_at_utc": "2026-10-01T20:36:30.903462+00:00",
+          "elapsed_seconds": 0.578,
+          "log": "validation/opus-5.5/lint.log"
+        },
+        "typecheck": {
+          "status": "unavailable",
+          "reason": "No typecheck script declared."
+        },
+        "javascript_syntax": {
+          "status": "passed",
+          "command": [
+            "node",
+            "benchmark-set/benchmark/scripts/syntax-check.mjs",
+            "playwright.config.js",
+            "vite.config.js",
+            "eslint.config.js",
+            "src/main.js",
+            "src/audio.js",
+            "src/input.js",
+            "src/storage.js",
+            "src/render/materials.js",
+            "src/render/scenery.js",
+            "src/render/floor.js",
+            "src/render/trail.js",
+            "src/render/cycle.js",
+            "src/render/view.js",
+            "src/render/particles.js",
+            "src/game/rng.js",
+            "src/game/game.js",
+            "src/game/autopilot.js",
+            "src/game/config.js",
+            "tests/unit/game.test.js",
+            "tests/e2e/game.spec.js"
+          ],
+          "cwd": "benchmark/validation/workspaces/opus55-runner",
+          "exit_code": 0,
+          "started_at_utc": "2026-10-01T20:36:31.508552+00:00",
+          "elapsed_seconds": 0.431,
+          "log": "validation/opus-5.5/javascript_syntax.log"
+        },
+        "e2e_attempts": [
+          {
+            "status": "invalid",
+            "command": [
+              "npm",
+              "run",
+              "test:e2e",
+              "--",
+              "--workers=1"
+            ],
+            "started_at_utc": "2026-10-01T20:45:55.693239+00:00",
+            "elapsed_seconds": 36.552,
+            "exit_code": 1,
+            "log": "validation/opus-5.5/e2e.log",
+            "reason": "Port 4173 reused Sonnet 5.5 preview after its suite timed out. Missing Opus-specific data-testid=title and Sonnet page snapshot confirm wrong application. These failures are harness contamination, not Opus gameplay failures.",
+            "passed_test_count": "unavailable",
+            "skipped_test_count": 1
+          },
+          {
+            "status": "invalid",
+            "command": [
+              "npm",
+              "run",
+              "test:e2e",
+              "--",
+              "--config",
+              "benchmark-set/benchmark/validation/opus-5.5/native-playwright.config.js",
+              "--workers=1",
+              "--retries=0"
+            ],
+            "started_at_utc": "2026-10-01T20:48:51.214954+00:00",
+            "elapsed_seconds": 120.656,
+            "exit_code": 1,
+            "log": "validation/opus-5.5/e2e-isolated-attempt-1.log",
+            "config": "validation/opus-5.5/native-playwright.config.js",
+            "reason": "Benchmark wrapper readiness address was 127.0.0.1 but inherited Opus preview bound localhost; no tests ran before webServer readiness timed out. Wrapper now explicitly binds 127.0.0.1.",
+            "passed_test_count": "unavailable",
+            "skipped_test_count": 0
+          },
+          {
+            "status": "passed",
+            "command": [
+              "npm",
+              "run",
+              "test:e2e",
+              "--",
+              "--config",
+              "benchmark-set/benchmark/validation/opus-5.5/native-playwright.config.js",
+              "--workers=1",
+              "--retries=0"
+            ],
+            "started_at_utc": "2026-10-01T20:54:11.949092+00:00",
+            "elapsed_seconds": 106.117,
+            "exit_code": 0,
+            "log": "validation/opus-5.5/e2e-isolated.log",
+            "config": "validation/opus-5.5/native-playwright.config.js",
+            "reason": "Native tests unchanged; benchmark wrapper isolates port and server ownership, uses already-built production bundle, one worker, zero retries, native browser flags.",
+            "passed_test_count": 21,
+            "skipped_test_count": 1
+          }
+        ],
+        "e2e": {
+          "status": "passed",
+          "command": [
+            "npm",
+            "run",
+            "test:e2e",
+            "--",
+            "--config",
+            "benchmark-set/benchmark/validation/opus-5.5/native-playwright.config.js",
+            "--workers=1",
+            "--retries=0"
+          ],
+          "started_at_utc": "2026-10-01T20:54:11.949092+00:00",
+          "elapsed_seconds": 106.117,
+          "exit_code": 0,
+          "log": "validation/opus-5.5/e2e-isolated.log",
+          "config": "validation/opus-5.5/native-playwright.config.js",
+          "reason": "Native tests unchanged; benchmark wrapper isolates port and server ownership, uses already-built production bundle, one worker, zero retries, native browser flags.",
+          "passed_test_count": 21,
+          "skipped_test_count": 1
+        },
+        "browser_smoke": {
+          "browser": "Installed Google Chrome, headless, SwiftShader",
+          "query": "?debug&seed=35 (only honored by Sonnet 5.5 / Opus 5.5)",
+          "cases": [
+            {
+              "viewport": "desktop",
+              "dimensions": {
+                "width": 1280,
+                "height": 720
+              },
+              "touch_emulated": false,
+              "checks": {
+                "start_button_visible": true,
+                "canvas_nonzero": true,
+                "no_horizontal_overflow": true,
+                "score_advances": true,
+                "keyboard_left": true,
+                "keyboard_right": true,
+                "jump": true,
+                "slide": true,
+                "pause": true,
+                "resume": true,
+                "no_uncaught_or_console_errors": true
+              },
+              "observations": {
+                "canvas": {
+                  "width": 1280,
+                  "height": 720,
+                  "rect": {
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                "start_state": {
+                  "phase": "playing",
+                  "alive": true,
+                  "lane": 1,
+                  "y": 0,
+                  "sliding": false,
+                  "score": 18,
+                  "distance": 9.186769444444433,
+                  "speed": 18.14233333333329,
+                  "seed": 35,
+                  "jumping": false
+                },
+                "blur_phase": "paused"
+              },
+              "errors": [],
+              "warnings": [],
+              "failed_requests": []
+            },
+            {
+              "viewport": "portrait",
+              "dimensions": {
+                "width": 390,
+                "height": 844
+              },
+              "touch_emulated": true,
+              "checks": {
+                "start_button_visible": true,
+                "canvas_nonzero": true,
+                "no_horizontal_overflow": true,
+                "score_advances": true,
+                "keyboard_left": true,
+                "keyboard_right": true,
+                "jump": true,
+                "slide": true,
+                "pause": true,
+                "resume": true,
+                "no_uncaught_or_console_errors": true
+              },
+              "observations": {
+                "canvas": {
+                  "width": 390,
+                  "height": 844,
+                  "rect": {
+                    "width": 390,
+                    "height": 844
+                  }
+                },
+                "start_state": {
+                  "phase": "playing",
+                  "alive": true,
+                  "lane": 1,
+                  "y": 0,
+                  "sliding": false,
+                  "score": 18,
+                  "distance": 9.035583333333323,
+                  "speed": 18.139999999999958,
+                  "seed": 35,
+                  "jumping": false
+                },
+                "blur_phase": "paused"
+              },
+              "errors": [],
+              "warnings": [],
+              "failed_requests": []
+            }
+          ],
+          "status": "passed"
+        },
+        "restricted_storage": {
+          "scenario": "localStorage getter throws, representing denied browser storage",
+          "errors": [],
+          "start_button_visible": true,
+          "status": "passed"
+        }
+      },
+      "implementation": {
+        "renderer": "Three.js WebGL, light-cycle model, custom grid shader, bloom, pooling/particles, bundled Orbitron; JavaScript",
+        "simulation": "Pure seeded simulation, fixed 120 Hz timestep; adjacent guaranteed safe lanes and wall-length restrictions; title/test autopilot",
+        "features": [
+          "Three lanes, buffered jump, slide/fast-fall, wall side-bump behavior",
+          "Barriers/gates/walls, bits, clean-dodge bonuses",
+          "Shield, magnet and double-score multiplier",
+          "Seeded URL replay, rising speed, title autopilot",
+          "HUD/power timers, pause/resume/quit, results/retry, local best",
+          "Procedural audio/music, persistent mute, adaptive quality",
+          "Keyboard/swipes, hidden-tab/blur pause, WebGL-unavailable error state",
+          "ESLint, unit tests and desktop/mobile browser tests"
+        ],
+        "optional_absent": [
+          "No separate TypeScript/typecheck setup",
+          "No phase power-up, multiple integrity lives or fullscreen control found"
+        ],
+        "sources": [
+          "src/main.js",
+          "src/game/config.js",
+          "src/game/game.js",
+          "src/render/view.js",
+          "src/audio.js",
+          "src/input.js",
+          "tests/e2e/game.spec.js"
+        ],
+        "defects": [],
+        "audio": {
+          "present": true,
+          "kind": "procedural Web Audio",
+          "source": [
+            "opus55-runner/src/audio.js"
+          ],
+          "audibility_in_comparison": "muted by release policy; not evaluated"
+        }
+      },
+      "quality_review": {
+        "prompt_compliance": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        },
+        "feature_completeness": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        },
+        "controls_gameplay_correctness": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        },
+        "visual_polish": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        },
+        "ui_completeness": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        },
+        "bugs": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        },
+        "crashes": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        },
+        "responsiveness": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        },
+        "implementation_defects": {
+          "manual_rating": null,
+          "manual_notes": null,
+          "reviewer": null,
+          "evidence": []
+        }
+      },
+      "sources": {
+        "session": "evidence/opus-5.5-session.json",
+        "inventory": "evidence/opus-5.5-inventory.json",
+        "package": "opus55-runner/package.json"
+      },
+      "unavailable": [
+        "Exact files created/changed across original run (no committed baseline; Bash writes not fully enumerated)",
+        "Original release-ready instant independent of session endpoint",
+        "Model training/version equivalence and original hardware load"
+      ],
+      "self_reported_metrics": {
+        "build_time_seconds": 1348,
+        "token_value": 193000,
+        "token_kind": "Approximate final context-window occupancy; includes overhead",
+        "source": "evidence/opus-5.5/BUILD_LOG.md",
+        "qualifier": "Self-reported release-ready checkpoint; budget arithmetic 193003 is separate"
+      },
+      "environment_original": {
+        "claude_code_versions": [
+          "2.1.284"
+        ],
+        "entrypoints": [
+          "claude-desktop"
+        ],
+        "skill_invocations": [
+          {
+            "source_line": 233,
+            "input": {
+              "skill": "anthropic-skills:built-in-browser"
+            }
+          }
+        ],
+        "initial_request_input_including_cache": 62024,
+        "sidechain_records": 0
+      },
+      "metric_provenance": {
+        "model_reasoning_effort": {
+          "source": "evidence/opus-5.5-session.json#model_evidence",
+          "method": "Exact assistant message.model and top-level effort; all assistant rows agree."
+        },
+        "original_prompt": {
+          "source": "evidence/opus-5.5-session.json#prompt",
+          "method": "First string user prompt; remove pasted_content wrapper only. Raw text retained."
+        },
+        "run_timestamps_wall_clock": {
+          "source": "evidence/opus-5.5-session.json#timing",
+          "method": "First human prompt to final assistant row; ISO timestamps and line numbers retained."
+        },
+        "tokens": {
+          "source": "evidence/opus-5.5-session.json#usage_records",
+          "method": "One identical raw usage object per unique assistant message.id; never sum repeated streamed blocks, iterations or cache TTL breakdown twice."
+        },
+        "file_count_loc_repo_size": {
+          "source": "evidence/opus-5.5-inventory.json",
+          "method": "Inventory of original filesystem snapshot; byte counts and file hashes. Definitions in methodology.md."
+        },
+        "created_changed_files": {
+          "source": "evidence/opus-5.5-session.json#git",
+          "method": "unavailable: absent/empty Git histories. Direct Write/Edit unique paths are a partial diagnostic only."
+        },
+        "dependencies": {
+          "source": "evidence/opus-5.5/package.json and package-lock.json when present",
+          "method": "Declared requirements and lockfile direct-package resolved versions."
+        },
+        "validation": {
+          "source": "validation/opus-5.5/",
+          "method": "Fresh source copy inside benchmark; commands, raw logs, browser results, screenshots and attempts retained."
+        },
+        "features_defects": {
+          "source": [
+            "opus55-runner/src/main.js",
+            "opus55-runner/src/game/config.js",
+            "opus55-runner/src/game/game.js",
+            "opus55-runner/src/render/view.js",
+            "opus55-runner/src/audio.js",
+            "opus55-runner/src/input.js",
+            "opus55-runner/tests/e2e/game.spec.js"
+          ],
+          "method": "Source inspection plus explicitly labeled runtime observations; optional absent features are not prompt failures."
+        },
+        "self_reports": {
+          "source": "evidence/opus-5.5/BUILD_LOG.md",
+          "method": "Raw author report retained separately; cannot substitute context occupancy for cumulative request usage."
+        }
+      }
+    }
+  ],
+  "last_updated_at_utc": "2026-10-01T20:57:18.530166+00:00",
+  "metric_definitions": {
+    "input_tokens": "Uncached input_tokens, raw API counter",
+    "cached_tokens": "cache_read_input_tokens only",
+    "cache_creation_input_tokens": "Cache-write input tokens, separately counted",
+    "input_tokens_including_cache": "input_tokens + cache_creation_input_tokens + cache_read_input_tokens",
+    "total_tokens": "input_tokens_including_cache + output_tokens; includes repeated cache reads; observed assistant requests only",
+    "loc_production": "All physical lines including comments/blanks in src code, index.html and root style.css; excludes tests, dependency/generated code, package locks and tooling/config",
+    "wall_clock_build_seconds": "Observed session duration, human prompt to final assistant message; not self-reported release-ready checkpoint"
+  },
+  "fairness_limitations": [
+    "One run per model; no statistical performance or quality conclusions.",
+    "Same normalized prompt and logged high effort; initial API context size, chosen stack/dependencies, tool usage and validation strategy differ.",
+    "Claude Desktop 2.1.284 on one host is recorded; original system prompt parity, model internals and hardware/load are unverified. Opus 5.5 explicitly invokes a browser skill.",
+    "Original Opus 5.5 and Sonnet 5.5 sessions overlap in wall time, so contention is possible.",
+    "Session timing includes setup, tests, browser QA and final narration; author checkpoints use different endpoints.",
+    "Aggregate token counts include repeated cached context, unlike the repositories context-growth reports; not a monetary cost estimate or complete invoice.",
+    "Authored test counts and scope are unequal. Common smoke tests improve comparability without asserting equal correctness.",
+    "Canvas versus WebGL, software renderer behavior, adaptive graphics and device/browser differences can change visual/performance results. No FPS ranking is inferred.",
+    "Native first attempts include an incomplete Sonnet 5.5 timeout and an invalid Opus 5.5 shared-port result; all retained and labeled.",
+    "Raw in-game scores, speed units, health and obstacle generation differ. Equal seed numbers do not generate equal tracks; only two games honor URL seeds.",
+    "Google Fonts in Sonnet 5 adds a network dependency; other games bundle fonts or draw without them.",
+    "No committed baseline is available; exact cumulative created/changed counts cannot be reconstructed reliably.",
+    "Gameplay MP4s are absent. Final audio/video decoding, timing alignment and manual gameplay reviews are deferred until originals are supplied."
+  ],
+  "release_projection": {
+    "source": "Existing benchmark summary, without changing any measured result",
+    "local_paths_redacted": true,
+    "study_type": "controlled one-shot artifact comparison",
+    "runs_per_model": 1,
+    "statistical_model_performance_benchmark": false,
+    "test_count_quality_score": false,
+    "publication_status": "approved_ready_to_publish",
+    "article_url": "https://majorminor.xyz/blog/claude-tron-runner-comparison",
+    "repository_url": "https://github.com/MAJORminorStudio/claude-tron-runner-comparison"
+  }
+}

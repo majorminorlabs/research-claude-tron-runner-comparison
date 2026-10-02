@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+    <meta name="theme-color" content="#01040a" />
+    <meta name="description" content="GRIDRUN — a neon 3-lane endless runner. Jump, slide and dodge through the Grid. Free, instant, in your browser." />
+    <meta property="og:title" content="GRIDRUN — neon endless runner" />
+    <meta property="og:description" content="Jump, slide and dodge through the Grid. 3 lanes, power-ups, no login." />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2301040a'/%3E%3Cpath d='M12 50 L26 14 M32 50 L32 14 M52 50 L38 14' stroke='%2319e6ff' stroke-width='4' stroke-linecap='round' fill='none'/%3E%3Cpath d='M8 50 H56' stroke='%23ff6a1a' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E" />
+    <title>GRIDRUN — Neon Endless Runner</title>
+  </head>
+  <body>
+    <canvas id="scene" aria-label="Game view"></canvas>
+
+    <!-- In-game HUD -->
+    <div id="hud" class="hud" hidden>
+      <div class="hud-left">
+        <div class="label">SCORE</div>
+        <div id="score" class="big" aria-live="off">0</div>
+        <div class="sub"><span id="bits">0</span> BITS &nbsp;·&nbsp; <span id="dist">0</span> M</div>
+      </div>
+      <div class="hud-center">
+        <div id="sector" class="sector">SECTOR 01</div>
+        <div class="speed" title="Speed"><div id="speedfill" class="speed-fill"></div></div>
+      </div>
+      <div class="hud-right">
+        <div class="label">BEST</div>
+        <div id="best" class="mid">0</div>
+        <div class="hud-buttons">
+          <button id="btn-mute" class="icon-btn" aria-label="Toggle sound (M)" title="Sound (M)">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path id="ico-sound" d="M4 9v6h4l5 4V5L8 9H4zm12.5 3a3.5 3.5 0 0 0-2-3.2v6.4a3.5 3.5 0 0 0 2-3.2zM14.5 4.3v2.1a6 6 0 0 1 0 11.2v2.1a8 8 0 0 0 0-15.4z"/></svg>
+          </button>
+          <button id="btn-pause" class="icon-btn" aria-label="Pause (P)" title="Pause (P)">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7zm6 0h4v14h-4z"/></svg>
+          </button>
+        </div>
+      </div>
+      <div id="powers" class="powers" aria-label="Active power-ups"></div>
+      <div id="popups" class="popups" aria-hidden="true"></div>
+    </div>
+
+    <div id="countdown" class="countdown" hidden aria-live="assertive"></div>
+    <div id="live" class="sr-only" aria-live="polite"></div>
+
+    <!-- Title -->
+    <main id="title" class="screen">
+      <div class="panel title-panel">
+        <p class="eyebrow">ESCAPE THE SYSTEM</p>
+        <h1 class="logo"><span>GRID</span><span class="alt">RUN</span></h1>
+        <p class="tag">Three lanes. One program. Don't get caught.</p>
+        <button id="btn-play" class="btn primary" autofocus>PLAY</button>
+        <div class="records" id="records"></div>
+        <ul class="legend" aria-label="Controls">
+          <li><kbd>←</kbd><kbd>→</kbd><span>Switch lane</span></li>
+          <li><kbd>↑</kbd><kbd>Space</kbd><span>Jump</span></li>
+          <li><kbd>↓</kbd><span>Slide</span></li>
+          <li><kbd>P</kbd><span>Pause</span></li>
+        </ul>
+        <p class="touch-hint">On touch: swipe left / right / up / down.</p>
+        <div class="legend-items" aria-label="Pickups and hazards">
+          <span class="chip good"><i class="dot bit"></i> Bits = points</span>
+          <span class="chip bad"><i class="dot haz"></i> Orange = deadly</span>
+          <span class="chip"><i class="dot sh"></i> Shield</span>
+          <span class="chip"><i class="dot mg"></i> Magnet</span>
+          <span class="chip"><i class="dot oc"></i> Overclock ×2</span>
+          <span class="chip"><i class="dot ph"></i> Phase</span>
+        </div>
+        <div class="toggles">
+          <button id="tgl-sound" class="link-btn" aria-pressed="true">SOUND: ON</button>
+          <button id="tgl-quality" class="link-btn">GRAPHICS: HIGH</button>
+        </div>
+        <p id="credit" class="credit"></p>
+      </div>
+    </main>
+
+    <!-- Pause -->
+    <section id="pause" class="screen" hidden aria-label="Paused">
+      <div class="panel">
+        <h2 class="heading">PAUSED</h2>
+        <div class="stack">
+          <button id="btn-resume" class="btn primary">RESUME</button>
+          <button id="btn-restart" class="btn">RESTART</button>
+          <button id="btn-quit" class="btn ghost">QUIT TO MENU</button>
+        </div>
+        <div class="toggles">
+          <button id="pause-sound" class="link-btn">SOUND: ON</button>
+          <button id="pause-quality" class="link-btn">GRAPHICS: HIGH</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Game over -->
+    <section id="over" class="screen" hidden aria-label="Game over">
+      <div class="panel">
+        <p class="eyebrow">PROGRAM TERMINATED</p>
+        <h2 class="heading bad">CONNECTION LOST</h2>
+        <p id="newbest" class="newbest" hidden>★ NEW PERSONAL BEST ★</p>
+        <div class="final">
+          <div class="final-score"><span class="label">SCORE</span><span id="f-score" class="huge">0</span></div>
+          <dl class="stats">
+            <div><dt>DISTANCE</dt><dd id="f-dist">0 M</dd></div>
+            <div><dt>BITS</dt><dd id="f-bits">0</dd></div>
+            <div><dt>CLEAN DODGES</dt><dd id="f-dodges">0</dd></div>
+            <div><dt>BEST</dt><dd id="f-best">0</dd></div>
+          </dl>
+        </div>
+        <div class="stack">
+          <button id="btn-retry" class="btn primary">RUN AGAIN</button>
+          <button id="btn-menu" class="btn ghost">MENU</button>
+        </div>
+        <p class="hint">Press <kbd>Enter</kbd> or <kbd>Space</kbd> to run again</p>
+      </div>
+    </section>
+
+    <noscript><div class="noscript">GRIDRUN needs JavaScript and WebGL. Please enable them to play.</div></noscript>
+    <div id="nogl" class="noscript" hidden>
+      Your browser couldn't start WebGL, which GRIDRUN needs. Try updating your browser or enabling hardware acceleration.
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+
+> gridrunner@1.0.0 build
+> tsc --noEmit && vite build
+
+vite v5.4.21 building for production...
+transforming...
+✓ 17 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                  5.96 kB │ gzip:  1.62 kB
+dist/assets/index-CJwJ-uxY.css   7.55 kB │ gzip:  2.45 kB
+dist/assets/index-D1Z04WPL.js   40.29 kB │ gzip: 13.28 kB
+✓ built in 121ms

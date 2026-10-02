@@ -1,0 +1,1711 @@
+{
+  "schema_version": "1.0.0",
+  "study_type": "controlled one-shot artifact comparison",
+  "runs_per_model": 1,
+  "publication_status": "approved_ready_to_publish",
+  "repository_url": "https://github.com/MAJORminorStudio/claude-tron-runner-comparison",
+  "article_url": "https://majorminor.xyz/blog/claude-tron-runner-comparison",
+  "game_source_policy": "Original source byte-for-byte; .claude configs, caches, build/test outputs and Git internals excluded",
+  "game_originals_unchanged": true,
+  "media_policy": "MP4s included in package/release assets, excluded from Git history; public source video packets equal original recordings, audio removed",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 292,
+      "sha256": "4443ee5bceab49306f514deb92fef35178544f9aaf68ef34e5ca160916385de0",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1069,
+      "sha256": "312bc1725542bf77aac0f11e4ea606888bdb8972ee503f5679409fcceac020c0",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "LICENSE-media",
+      "bytes": 1069,
+      "sha256": "312bc1725542bf77aac0f11e4ea606888bdb8972ee503f5679409fcceac020c0",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "LICENSING.md",
+      "bytes": 343,
+      "sha256": "58a5595a55b2750c4915178a3ce48f681d3d858f7c1e301ead03ae1f6a3d97f0",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6969,
+      "sha256": "cd1c40276145873eeb20b4604e997c3f258bea8d648fb597bc10631572db44fa",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 1195,
+      "sha256": "2f1b2f82d97a06a100fdefa6b28859510fca723a359f200b5e20ffd4b5cbaff8",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/README.md",
+      "bytes": 149,
+      "sha256": "a1e6d093cfe8719648d635eb4b3305d00b5ac405647e024b2020e80d466e5635",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/article.md",
+      "bytes": 12476,
+      "sha256": "2494bc4b98645df81358083183d471829d9c4b1f71e4356eb8e3b540853896b7",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/benchmark-summary.csv",
+      "bytes": 2692,
+      "sha256": "bc62ef519e20c4799e5e11a4b1ddde276871508c2fefa8ae6ecaa8bab27c18cc",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/benchmark-summary.json",
+      "bytes": 69023,
+      "sha256": "08e09396eae471bf6eb24c16f85049c6ec0689f3787f3933f77b2c6ccb7ef71b",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/comparison-table.md",
+      "bytes": 720,
+      "sha256": "dd611456f41e2bad647dd5bca7d165d7f08fabb5941d23b42993d2dc10bced33",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/evidence/licenses/@fontsource--orbitron/LICENSE",
+      "bytes": 4388,
+      "sha256": "075b0137b7a19be521031442001478342ebafc1923f01092b8dc51afc4341041",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/evidence/licenses/@fontsource--rajdhani/LICENSE",
+      "bytes": 4727,
+      "sha256": "078e327eb00525214cdce9780cfdf156141f137f1a095bec9798f470703d7d2d",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/evidence/licenses/remotion/LICENSE.md",
+      "bytes": 2823,
+      "sha256": "bd65083b940f61904f6ef298aade918a7cad72a3e35bc406e36fab365844b673",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/evidence/licenses/three/LICENSE",
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/evidence/opus-5/README.md",
+      "bytes": 4394,
+      "sha256": "20d1bfc21af02145166f4458558d474aa84e47801e72ade00428a5be015be136",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/evidence/opus-5/package-lock.json",
+      "bytes": 46724,
+      "sha256": "b821ff7e7dfefd36cabda5e3ffaa7512f6a61d774df37f4dbf206d65e6a73b98",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/evidence/opus-5/package.json",
+      "bytes": 488,
+      "sha256": "2697da3f4c31fcdb1109c17f65655494d0a67a8519c70a0615b8109d54d58b87",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/evidence/opus-5-final-report.md",
+      "bytes": 2751,
+      "sha256": "d23fde3a6077e3f041c97a761eda1fb60f7382235adf38e65c2afc806ab09e1b",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/evidence/opus-5-inventory.json",
+      "bytes": 8346,
+      "sha256": "5eb3daf80fb18ffc2ba7f5189995a57c2e04421ecc9673bcdcfab259180516a3",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/evidence/opus-5-session.json",
+      "bytes": 101004,
+      "sha256": "3e10a6322eb49fc71afe51dee243f2c2c26c082f305bfebafd90bf1dd7ac6525",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/evidence/opus-5.5/BUILD_LOG.md",
+      "bytes": 1869,
+      "sha256": "322b3ddab56a7f6ffa43f5347ab753c00b0c0438fffcfd4eef1a84c7d7f0e960",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/evidence/opus-5.5/README.md",
+      "bytes": 3201,
+      "sha256": "6696c0a802e5c1229f4f37c5f3b4e5d44aabdee31bc20d7f7bf8f8246739ee68",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/evidence/opus-5.5/package-lock.json",
+      "bytes": 76120,
+      "sha256": "81074df1ae73f00b1906566d34faa4a86aac23023c4cce2d2c32494cb44a0fdf",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/evidence/opus-5.5/package.json",
+      "bytes": 747,
+      "sha256": "18a865029615a6eb7d42990c9f4bdbe613908c5c67754ed5d7895cdf6e2824d4",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/evidence/opus-5.5-final-report.md",
+      "bytes": 3222,
+      "sha256": "1d157c21225cdb2e8d684ce1971b7f63037be4144ec613631a70f31bcea2f70d",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/evidence/opus-5.5-inventory.json",
+      "bytes": 9113,
+      "sha256": "dee0b09b70233df92126c67864d9af4c1494f377e3a5fc8eee9070da7203d72a",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/evidence/opus-5.5-session.json",
+      "bytes": 92827,
+      "sha256": "99675ac71308e2389d7a4b44b719380652a641a0700be67068075ef59ce077dc",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/evidence/original-prompt.txt",
+      "bytes": 277,
+      "sha256": "5246d4070723e55fb465c65c965f8afd3fd3b03572eb8970cc7c2111b706039a",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/evidence/prompts/opus-5-raw.txt",
+      "bytes": 334,
+      "sha256": "fbe9e1beb1e44214bdb37a4ee59c1c1c98791d3a552d1140858885256c46ca43",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/evidence/prompts/opus-5.5-raw.txt",
+      "bytes": 276,
+      "sha256": "a12929325d084784bc3e64ad8c553213d63beab373b19782c896c32647960871",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/evidence/prompts/sonnet-5-raw.txt",
+      "bytes": 334,
+      "sha256": "9fb3dea3b9ee90358c8dbce4776557098d4ef1b5ebc4a96b3e7b74ce4c3f81ce",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/evidence/prompts/sonnet-5.5-raw.txt",
+      "bytes": 334,
+      "sha256": "7617d9369a317c5bcabde18cb4ab56ad5a5b006ef4064df31479bd26217eaafb",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/evidence/sonnet-5/package.json",
+      "bytes": 263,
+      "sha256": "7d93c8004075c9c4bebc5df1b4bc4cc5acb691a88f10137fef2eda9862c13684",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/evidence/sonnet-5-final-report.md",
+      "bytes": 2166,
+      "sha256": "6c72144a3bc8fcf766dfa74bbe62d28e2195af202d1add0106861d852c3ec2cb",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/evidence/sonnet-5-inventory.json",
+      "bytes": 2202,
+      "sha256": "32e2e264e935e0d333e235dab75c548ba78c1b799bb722eaba29833d8ade6bc1",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/evidence/sonnet-5-session.json",
+      "bytes": 160686,
+      "sha256": "8f38c360cab5c895a7176c91fe58eb6f16599b32f2e7be9509a9db3ee57d6af0",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/evidence/sonnet-5.5/BUILD_STATS.md",
+      "bytes": 1788,
+      "sha256": "c63808d6aaa5fee67624e32f100ddf5326aa2ceddb2b8874c19e5daa98b59041",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/evidence/sonnet-5.5/README.md",
+      "bytes": 4480,
+      "sha256": "e4f742d32a5d8b0593ad211b809997c95763c5ad79baff50e7f70a7c7f1a3882",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/evidence/sonnet-5.5/package-lock.json",
+      "bytes": 57873,
+      "sha256": "58f9ca574fcfd714d1f7a0799dc11be1a25c7129565a436ad7b7f3be536837fd",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/evidence/sonnet-5.5/package.json",
+      "bytes": 901,
+      "sha256": "948d84a03b93e103e38dd93d724f2c9f2563198713e4912b853ba0ed1cb000d7",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/evidence/sonnet-5.5/scripts/build-meta.json",
+      "bytes": 668,
+      "sha256": "22715b5ec307c94684766ba3b94205f6ae004a517632e00bd1517a5a85c81f4a",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/evidence/sonnet-5.5-final-report.md",
+      "bytes": 3317,
+      "sha256": "2cd5c838c603c1a490bbf68e01ea5a5d0cbcbf3a4329bbc1beaecf92b3cc755f",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/evidence/sonnet-5.5-inventory.json",
+      "bytes": 14555,
+      "sha256": "8302ee35d1a83ac44b08ee83b1513d698a1edfa8d6076cfc963c9b4b90712282",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/evidence/sonnet-5.5-session.json",
+      "bytes": 117714,
+      "sha256": "27b0338739e788099198ce09636d422a9f480772ac46d8e5771d9692ec824d37",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/limitations.md",
+      "bytes": 2554,
+      "sha256": "f37b06f698509b4a940ecba312c7b095da8555517a28b2eadab631026438259f",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/media-provenance.json",
+      "bytes": 5888,
+      "sha256": "65ba6d7ae57b6e1b07ec9fba7a13956763e59cb5143ddeea2eaedc2fff736ef7",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/methodology.md",
+      "bytes": 15310,
+      "sha256": "9e3080ba2adf7eb5e999c01572138b08e84c1559c1e2e9d82bb088caaafa4608",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/quality-review-schema.json",
+      "bytes": 1963,
+      "sha256": "a6ccb097e0292000123d494e4345a2120f729b343ad294d69d46b19a96b4fb83",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/release-validation.json",
+      "bytes": 8272,
+      "sha256": "87c4c1a2e6c7159da37a7e5f4c30950a319d05be1bd7c9548c62e048ea3aa327",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/repo-analysis/opus-5.5.md",
+      "bytes": 6937,
+      "sha256": "b8cd545ece3abf219da4b4a684fdcd34962000c0deb65b86245496d212cd65e2",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/repo-analysis/opus-5.md",
+      "bytes": 5155,
+      "sha256": "58691805413176cd4d8b44323846d3d42708eca1235773e2060bbf9b80922898",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/repo-analysis/sonnet-5.5.md",
+      "bytes": 6833,
+      "sha256": "6b8620687528b742e6f828c122d23831e159adc065bd288efdb4d04dd02d4bb9",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/repo-analysis/sonnet-5.md",
+      "bytes": 4898,
+      "sha256": "f2b17f83aeb15bc39154a0a4b343625df62cc3378c4b7a1d3c78607effe0dce0",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/sanitization.json",
+      "bytes": 9599,
+      "sha256": "00c76000420394a493ab401b13ed4f196efe3b62ccf1b321bb77a9f7b9f8c48d",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/screenshots/comparison-poster.jpg",
+      "bytes": 151979,
+      "sha256": "f191deb8db2b5e8f03644536515bcc02c6c02511bd0e89d2836afdf10afa657e",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/screenshots/opus-5-recorded-gameplay.png",
+      "bytes": 311803,
+      "sha256": "626224121dd4ccefb7799df6a8c44ffd41437fe25f020bbe5377d7fd4a09f4aa",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/screenshots/opus-5.5-recorded-gameplay.png",
+      "bytes": 1218774,
+      "sha256": "1ddaa2ff4bc903b73068432d6ceb967f5ad074411ebbfa66793a70530930669a",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/screenshots/sonnet-5-recorded-gameplay.png",
+      "bytes": 150526,
+      "sha256": "68929d1eb4d90ec3d7295c22791adf65459a46e2f5dc37f99557ce31e31d7e71",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/screenshots/sonnet-5.5-recorded-gameplay.png",
+      "bytes": 835706,
+      "sha256": "f10ba5e8e3be3e4265285f95747ccaadea00011b11d79a436ac8b1522d8f0477",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/scripts/browser-smoke.mjs",
+      "bytes": 5814,
+      "sha256": "6046b11d4ec70ea7636a6a66ab0f772c4b369687862a8be0ed66541ab1a48e6b",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/scripts/browser-storage.mjs",
+      "bytes": 1984,
+      "sha256": "41548f05549a60a48ef2de6ecb819d8270f94cea2ef48d7c7f3b956cdad29889",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/scripts/native-e2e-isolated.py",
+      "bytes": 2336,
+      "sha256": "9542f44b234ab7b40bb2f56c3080a9e795ecfdcbe877d61d7360452fa9c11d9c",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/scripts/reproduce.py",
+      "bytes": 2526,
+      "sha256": "dd7851dfa138807518d326374ee4e39a65ab0cd3af400b8f79d32b7d55054e8e",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/scripts/syntax-check.mjs",
+      "bytes": 419,
+      "sha256": "378080601d131ff64842060d69107eb642ee198168a9b2f0a17c671dd19f030c",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/scripts/validate.py",
+      "bytes": 1870,
+      "sha256": "65d02e4ab69e039d1a84986504c010de13b0b92b12b7156a144f0c268e00546b",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/scripts/verify-release.py",
+      "bytes": 2615,
+      "sha256": "0bd79f358d7b176816f3956c928e0676e95632a6fd7653e2c36454ee54369c84",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/environment.json",
+      "bytes": 557,
+      "sha256": "3f05e7af4b1c825f95439e814dc36d26fbd89fb629cea497ef34980fb61168fe",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5/browser-smoke.json",
+      "bytes": 2235,
+      "sha256": "2c7ba4d15779b6ea9a05254abbb569f755501c42db9c1aa101a9661ecc6b182c",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5/build.log",
+      "bytes": 382,
+      "sha256": "4c8f879b92355fd5cf240575d64b83449fae4986e9f17fefcadca752b3066e7c",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5/checks.json",
+      "bytes": 1751,
+      "sha256": "cd93ff1b70caf7fa7f95433a7340a633d2f1b79cc06a9d1712f5b69128980ad0",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5/desktop-playing.png",
+      "bytes": 621171,
+      "sha256": "2cb2ce293124ff1ccadb563622a7a16ea42bcc9bdfdf627da867b42ea8a4ef97",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5/desktop-title.png",
+      "bytes": 311310,
+      "sha256": "9eb27634d7095692d87b00ac7aec65b0afc8bcf017f1f03efbc2547aab720cb8",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5/install.log",
+      "bytes": 28,
+      "sha256": "2206a3e62434416bf1fcd8b9d8e0b368d17088f61b5bfcebca6b62b12cd56d26",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5/javascript_syntax.log",
+      "bytes": 103,
+      "sha256": "ef04e36179957a0debf570d400bc7f67539f74a3822d535d6b19ce7c5dfa42de",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5/portrait-playing.png",
+      "bytes": 227156,
+      "sha256": "f44fe2df882c7b567137aea90c5ae72e760a49d2380856ca6683d5c745d64e48",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5/portrait-title.png",
+      "bytes": 123757,
+      "sha256": "faed8dc0a41179684201bd3e1621f9ebdc752c479b165e645b1b106e3d8e5b53",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5/restricted-storage.json",
+      "bytes": 154,
+      "sha256": "0483dbbb876390254b2199dc666b8d9cfe816d6bb9c6125d314607eda3fc6d7a",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5/test.log",
+      "bytes": 514,
+      "sha256": "716ee7a65061be3a382f057d76299ceae6cf742eb423cfa4829ced78e43c59f2",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5/typecheck.log",
+      "bytes": 46,
+      "sha256": "6168a3ddcdb1aaf528ff668e6b48a2fe387c27891a2b948c65e62ce40d913804",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/browser-smoke.json",
+      "bytes": 2428,
+      "sha256": "44bc2a30b719b1b984e0202a38483f543933b088101d27aba70aaebaa6fd30f8",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/build.log",
+      "bytes": 926,
+      "sha256": "0996b72ce0a97330f2039998bbd806297c2b591916423cd24bb26d2fdda29c77",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/checks.json",
+      "bytes": 2317,
+      "sha256": "358edd98bd4cd3d4a8bdd4684adc219ac86b46ca302d070f85755b0883ad06c0",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/desktop-playing.png",
+      "bytes": 550966,
+      "sha256": "b1fea52a7de08e9761af3b49f8dc05c1648cbdcb0ab0233535797bcd1bbf3576",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/desktop-title.png",
+      "bytes": 474450,
+      "sha256": "0b113b97b05f32de67580b0f9db3f044b6d5d13dd92fbd6235a328c2b6cc53f4",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/e2e-attempt-1-artifacts/game-boots-to-the-title-sc-4809e--attract-demo-and-no-errors-desktop/error-context.md",
+      "bytes": 8808,
+      "sha256": "b821aca83765de6e394007e69ea27a338c83c29876c4748e81cbe26a0686b17e",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/e2e-attempt-1-artifacts/game-boots-to-the-title-sc-4809e--attract-demo-and-no-errors-mobile/error-context.md",
+      "bytes": 8006,
+      "sha256": "f6d7a092c394fcad8b3db4a485e2cfad1461ed6e61c664f665e03a927a10bf66",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/e2e-attempt-1-artifacts/game-crashing-shows-result-8b41f-st-score-and-allows-a-retry-desktop/error-context.md",
+      "bytes": 8024,
+      "sha256": "21843426376144a844c060fdcc4fd4e9f49b7671d907017b909ec9589a447d24",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/e2e-attempt-1-artifacts/game-crashing-shows-result-8b41f-st-score-and-allows-a-retry-mobile/error-context.md",
+      "bytes": 8024,
+      "sha256": "21843426376144a844c060fdcc4fd4e9f49b7671d907017b909ec9589a447d24",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/e2e-attempt-1-artifacts/game-keyboard-controls-lanes-jump-and-slide-desktop/error-context.md",
+      "bytes": 8003,
+      "sha256": "f07e91c5cc8fddbb79f41297845e6d27fdc78d2d23ce51270ce6d1dfbe01484d",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/e2e-attempt-1-artifacts/game-losing-focus-auto-pauses-desktop/error-context.md",
+      "bytes": 7988,
+      "sha256": "bf84084411400b7f2aafd9dcca21a70d814eafaefe630a0e6380c4537d7d86e0",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/e2e-attempt-1-artifacts/game-losing-focus-auto-pauses-mobile/error-context.md",
+      "bytes": 7988,
+      "sha256": "bf84084411400b7f2aafd9dcca21a70d814eafaefe630a0e6380c4537d7d86e0",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/e2e-attempt-1-artifacts/game-menu-button-returns-to-the-title-screen-desktop/error-context.md",
+      "bytes": 8000,
+      "sha256": "054552326d56ec615f8c75f9ececdcd0362ebcdeb100ab82f34ccc036456677f",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/e2e-attempt-1-artifacts/game-menu-button-returns-to-the-title-screen-mobile/error-context.md",
+      "bytes": 8000,
+      "sha256": "054552326d56ec615f8c75f9ececdcd0362ebcdeb100ab82f34ccc036456677f",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/e2e-attempt-1-artifacts/game-mute-toggle-persists-across-reloads-desktop/error-context.md",
+      "bytes": 7975,
+      "sha256": "dfb0b2d0f0935dd855b9c3566c800c21ad3d73e99eb19e78433212ccd83b9091",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/e2e-attempt-1-artifacts/game-mute-toggle-persists-across-reloads-mobile/error-context.md",
+      "bytes": 7975,
+      "sha256": "dfb0b2d0f0935dd855b9c3566c800c21ad3d73e99eb19e78433212ccd83b9091",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/e2e-attempt-1-artifacts/game-pause-freezes-the-run-and-resume-continues-it-desktop/error-context.md",
+      "bytes": 8009,
+      "sha256": "020d4f81df1937815265f35837f695d66d049ca1cd0c03f2020c16aaddedb814",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/e2e-attempt-1-artifacts/game-pause-freezes-the-run-and-resume-continues-it-mobile/error-context.md",
+      "bytes": 8009,
+      "sha256": "020d4f81df1937815265f35837f695d66d049ca1cd0c03f2020c16aaddedb814",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/e2e-attempt-1-artifacts/game-shows-a-friendly-message-when-WebGL-is-unavailable-desktop/error-context.md",
+      "bytes": 7796,
+      "sha256": "82fb15d8e193caf284f4e330dc0658cec3a227370597cce7fce6dd79a7c4b437",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/e2e-attempt-1-artifacts/game-shows-a-friendly-message-when-WebGL-is-unavailable-mobile/error-context.md",
+      "bytes": 7796,
+      "sha256": "82fb15d8e193caf284f4e330dc0658cec3a227370597cce7fce6dd79a7c4b437",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/e2e-attempt-1-artifacts/game-starting-a-run-shows-the-HUD-and-the-score-climbs-desktop/error-context.md",
+      "bytes": 8790,
+      "sha256": "fdcc6c158671c0800227589aae934cded42fbfa8a3530694a8507f08963bf42a",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/e2e-attempt-1-artifacts/game-starting-a-run-shows-the-HUD-and-the-score-climbs-mobile/error-context.md",
+      "bytes": 8012,
+      "sha256": "549c12eb23969774fd1c19f4171caf26f6de550e6c09f4112aedcaae8e53402d",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/e2e-attempt-1-artifacts/game-swipe-controls-work-with-pointer-drags-desktop/error-context.md",
+      "bytes": 8001,
+      "sha256": "e22b932d4d187e3ed6340312a23d063be44cf593c0279e9bd8f8086f36803610",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/e2e-attempt-1-artifacts/game-swipe-controls-work-with-pointer-drags-mobile/error-context.md",
+      "bytes": 8001,
+      "sha256": "e22b932d4d187e3ed6340312a23d063be44cf593c0279e9bd8f8086f36803610",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/e2e-attempt-1-artifacts/game-works-without-localStorage-desktop/error-context.md",
+      "bytes": 7987,
+      "sha256": "753d95ea09e7a02918d2c95adc53b9c378d31ca91a902c32621f4df60e5bd266",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/e2e-attempt-1-artifacts/game-works-without-localStorage-mobile/error-context.md",
+      "bytes": 7987,
+      "sha256": "753d95ea09e7a02918d2c95adc53b9c378d31ca91a902c32621f4df60e5bd266",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/e2e-attempt-1.json",
+      "bytes": 495,
+      "sha256": "60341a09254e9d92fd86faad1ce2c2e9729823ba1979ebb01779cb197a423262",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/e2e-attempt-1.log",
+      "bytes": 39438,
+      "sha256": "06d67279e31b425e6376ce1f51c78a19b7489279119c14124f33c68c3eaf2c18",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/e2e-isolated-attempt-1.json",
+      "bytes": 652,
+      "sha256": "f7c4531580aaf2dd06d97137bdf85e89699f0ba586c550eeda47d9be2e88df55",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/e2e-isolated-attempt-1.log",
+      "bytes": 400,
+      "sha256": "c58218e3676a9a554eb85c9314fffb06697cadcf32add0ce7da28e90754a8ac2",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/e2e-isolated.json",
+      "bytes": 620,
+      "sha256": "a439793a5f0c40a22389e7f0448aa29ca0de7fc7ed904ef82c8f73d5ecbacb79",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/e2e-isolated.log",
+      "bytes": 2765,
+      "sha256": "95ac7b5bed05981106bdcfb9e248fd4f3caf1290861388be16dc086828c9cc7e",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/e2e.json",
+      "bytes": 495,
+      "sha256": "60341a09254e9d92fd86faad1ce2c2e9729823ba1979ebb01779cb197a423262",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/e2e.log",
+      "bytes": 39438,
+      "sha256": "06d67279e31b425e6376ce1f51c78a19b7489279119c14124f33c68c3eaf2c18",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/install.log",
+      "bytes": 26,
+      "sha256": "1b7abe5147733dce41b435b09b3014305fc3e7db06575adac573df001a8e3deb",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/javascript_syntax.log",
+      "bytes": 104,
+      "sha256": "bca3cc781b3e822285d9031764596f7bccad13247b12964b9e8873050c2d3a1e",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/lint.log",
+      "bytes": 38,
+      "sha256": "cc4bbc966db7adb034edb85726277f7748c43a5843701f666434e04853b99ae1",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/portrait-playing.png",
+      "bytes": 192155,
+      "sha256": "264cf1be17c6da19cabb7f3b0d15c34a53012119140a5ddf53a3809b96b1194c",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/portrait-title.png",
+      "bytes": 157743,
+      "sha256": "1526fc1861a30e8f30e147aaa162299a312e30652fdb0c777d32ac2c3c1ce0d0",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/restricted-storage.json",
+      "bytes": 154,
+      "sha256": "0483dbbb876390254b2199dc666b8d9cfe816d6bb9c6125d314607eda3fc6d7a",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/opus-5.5/test.log",
+      "bytes": 286,
+      "sha256": "2e80dc45510549cfdfe8f5391958e29667c0fb69d9306be9be2f5a142e7a60be",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/original-integrity.json",
+      "bytes": 913,
+      "sha256": "096cfb921ce0c8c1f59771dece40b576d6a0b25cf0a3024f5ba07a7218ddb045",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/sonnet-5/browser-smoke.json",
+      "bytes": 2223,
+      "sha256": "e6232e72f78c1358ae1daaf977ffa3b4b682e0411928650143b3c2ad34735de4",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/sonnet-5/checks.json",
+      "bytes": 1316,
+      "sha256": "0e2e2a6cffede2eff0b6f3f31e9ffba296f1886b77906aa1c569265729b4c2a1",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/sonnet-5/desktop-playing.png",
+      "bytes": 60010,
+      "sha256": "97221d2f0cf507813860afd3894dcf577a5fa60128104335b2cf201c32d8ec5b",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/sonnet-5/desktop-title.png",
+      "bytes": 102689,
+      "sha256": "895074834bacad92375b2519093193bfb7d502e2c4d28e3ec204024399cf5e8c",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/sonnet-5/javascript_syntax.log",
+      "bytes": 103,
+      "sha256": "64a2289709e22e416a8922d434c18d31e707654feb32a8d6a00ca534b5d983ee",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/sonnet-5/portrait-playing.png",
+      "bytes": 53621,
+      "sha256": "0ac0cda535e47c45a9133271967ab644afe81b54495724fbc324ad137620bef5",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/sonnet-5/portrait-title.png",
+      "bytes": 86255,
+      "sha256": "fc1f3e7080ef7d31b1014ccb3f71465f9f625505b223696820f419a0fcdf7e46",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/sonnet-5/restricted-storage.json",
+      "bytes": 195,
+      "sha256": "0e96ff0668f555f9d82b54e7a26016fc2cee75cf9fb501c7461de494f29e4ef5",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/sonnet-5/test.log",
+      "bytes": 2592,
+      "sha256": "8593fa3656d0404973c1196401c045fd2c127945e6ede781443f3b94a273853f",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/sonnet-5.5/browser-smoke.json",
+      "bytes": 2767,
+      "sha256": "d3322f52b7ec928658e501353c43dbc8e24b6bf877d7c6a15fb690b46f65c68a",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/sonnet-5.5/build.log",
+      "bytes": 1825,
+      "sha256": "ff62394f4979c3fe7f5b40e6f8253b69753e2f63f46961fdaeccbdc643b0d744",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/sonnet-5.5/checks.json",
+      "bytes": 1848,
+      "sha256": "9f2a927ddf7d8e6d2cf1f488fa0de10e4c7f48376baef4b39958679fc1930708",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/sonnet-5.5/desktop-playing.png",
+      "bytes": 432162,
+      "sha256": "874131986379c9c065bdd31e26bb6c9347753f814deefc431a943afb8a41d02f",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/sonnet-5.5/desktop-title.png",
+      "bytes": 510566,
+      "sha256": "057de8cd2e826bc69ab8f38633e79b3f199f83408a7fa76d0172caea3560eaef",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/sonnet-5.5/e2e-attempt-1-artifacts/game-death-retry-records-m-044f0--title-and-the-demo-resumes/error-context.md",
+      "bytes": 13781,
+      "sha256": "0bdafd80276792bddb1a28ac146a24f8afa84ed235423f867205bc0ec8317d8c",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/sonnet-5.5/e2e-attempt-1-artifacts/game-death-retry-records-p-e031b-y-skip-the-game-over-screen/error-context.md",
+      "bytes": 6499,
+      "sha256": "5acf49289ee6e1c638398f1b255aaee75c79c8a6fd6443a6a1d172daff21087e",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/sonnet-5.5/e2e-attempt-1-artifacts/game-death-retry-records-r-35d70-core-persists-across-reload/error-context.md",
+      "bytes": 13930,
+      "sha256": "7109bddc0de97724b9ec444fd8d0d79be1dc390560618f69caafe55270630fba",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/sonnet-5.5/e2e-attempt-1-artifacts/game-gameplay-flow-swipe-g-d672b-the-player-on-touch-devices/error-context.md",
+      "bytes": 14654,
+      "sha256": "fd78f66408d53eb699e3710d28cb3dc057091c7b56675e83679a1f046b65949f",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/sonnet-5.5/e2e-attempt-1.json",
+      "bytes": 259,
+      "sha256": "dd5329d7f930d0aa9a459bc5a23f78fd61fbd19c221f44cbc1b9a412884351a1",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/sonnet-5.5/e2e-attempt-1.log",
+      "bytes": 85,
+      "sha256": "7a3031d0f12072e2c06b5c4c9c7075b210b6e85fe1ff806112438cd4304c3c7a",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/sonnet-5.5/e2e-recheck.json",
+      "bytes": 490,
+      "sha256": "b7f99358984d8fa7f1f706ee2137d635bb344dc81971b994e8edf03710e9c0f7",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/sonnet-5.5/e2e-recheck.log",
+      "bytes": 3550,
+      "sha256": "6c8d1fb82a1a883e0225cac2c8fcb4d19b053be4b776a21e4d4a9385eeee0cf8",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/sonnet-5.5/e2e.json",
+      "bytes": 455,
+      "sha256": "73399a9037c5654e64ec28abd8cc5861f2fd47aafa9d72ba0863e22751aa2349",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/sonnet-5.5/e2e.log",
+      "bytes": 85,
+      "sha256": "7a3031d0f12072e2c06b5c4c9c7075b210b6e85fe1ff806112438cd4304c3c7a",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/sonnet-5.5/install.log",
+      "bytes": 25,
+      "sha256": "ba594150faa10b8f003189932eb1496ec721279c8215075ab051b93a44f74139",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/sonnet-5.5/javascript_syntax.log",
+      "bytes": 103,
+      "sha256": "97e45215eb957af0aa9f0b64c7ebc1394a8bd7f204c0f4816e9f986524522793",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/sonnet-5.5/portrait-playing.png",
+      "bytes": 71379,
+      "sha256": "ba14f8c577d4273aa1aa2eaea43d8970456a7ba747c325dff9cdf0b425475353",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/sonnet-5.5/portrait-title.png",
+      "bytes": 176962,
+      "sha256": "b858c7d68e2b1f3b537e462d10e907b227200f568ec7b1d0f7b2fd399ce95b40",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/sonnet-5.5/restricted-storage.json",
+      "bytes": 154,
+      "sha256": "0483dbbb876390254b2199dc666b8d9cfe816d6bb9c6125d314607eda3fc6d7a",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/sonnet-5.5/test.log",
+      "bytes": 293,
+      "sha256": "e08255027ea8bd90e3d79e1fcb06fcbcedde9e20f4a8f25f4494ccfd8fcedd84",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/validation/sonnet-5.5/typecheck.log",
+      "bytes": 52,
+      "sha256": "5837c8f2c5f9dd2f0f8e48eb3020f09be9afcd9cc687311a87013e38a271e01f",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/video/comparison-16x9.mp4",
+      "bytes": 67084685,
+      "sha256": "b042fe2cc204a79ba509fab148436ba4c94f326eab0c9f5555766d1e4d6da2d8",
+      "delivery": "github_release_asset_and_package"
+    },
+    {
+      "path": "benchmark/video/comparison-web.mp4",
+      "bytes": 22223608,
+      "sha256": "b9a8320e7e8b76f61a5c3d193f9eb8f0407403c76060a218859f2f331e2908d5",
+      "delivery": "github_release_asset_and_package"
+    },
+    {
+      "path": "benchmark/video/gameplay/README.md",
+      "bytes": 340,
+      "sha256": "b2d2bbaea64ba7fe821e1661d76808e90ff6676ab1d5f870c924cce4714a1b87",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/video/gameplay/opus-5.5.mp4",
+      "bytes": 91071473,
+      "sha256": "a1abd0de964277d2c717103bae997f243773df94a552d80d5673cf70111ac80a",
+      "delivery": "github_release_asset_and_package"
+    },
+    {
+      "path": "benchmark/video/gameplay/opus-5.mp4",
+      "bytes": 19725499,
+      "sha256": "00688c36bd4948e417c40d1a180d9b5700395835c9b4893cf42cd65b5aecd07f",
+      "delivery": "github_release_asset_and_package"
+    },
+    {
+      "path": "benchmark/video/gameplay/sonnet-5.5.mp4",
+      "bytes": 97649318,
+      "sha256": "1c53ae826f7260f080f86adacf916d0b11200fd1eb43ff32bd05f1e09b6c9ba9",
+      "delivery": "github_release_asset_and_package"
+    },
+    {
+      "path": "benchmark/video/gameplay/sonnet-5.mp4",
+      "bytes": 12072651,
+      "sha256": "8d688493cdccf02bc53de989bfaaa113db1b20e1a63ff3ac367526ced251bc7c",
+      "delivery": "github_release_asset_and_package"
+    },
+    {
+      "path": "benchmark/video/manifest.json",
+      "bytes": 1226,
+      "sha256": "6fa20675933c6562776822ab7ff12162d3000e3a256bf25880214e2c446e2c61",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/video/remotion/README.md",
+      "bytes": 4786,
+      "sha256": "6f5ffc54219e695a05b026699c727bce95ef0efd32a900fd37430622c423c686",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/video/remotion/package-lock.json",
+      "bytes": 143156,
+      "sha256": "d8b66c65b41684b9520f0097b8cbba01c716953ff30f73230aa0515b163ecacb",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/video/remotion/package.json",
+      "bytes": 737,
+      "sha256": "10fac97d61cc304f228ef0052a65ace31f9580360908c78d22d93030b0a8c411",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/video/remotion/scripts/config.mjs",
+      "bytes": 6013,
+      "sha256": "d697e0956daf150b537e65a5c7790de8d460da6c80fe69eaf4adaa23046d3ca0",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/video/remotion/scripts/preflight.mjs",
+      "bytes": 262,
+      "sha256": "5e4189bc5da3d8aa36726986e335ff1395e0499a5617f93ee877947a12b44ebf",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/video/remotion/scripts/qa-stills.mjs",
+      "bytes": 1471,
+      "sha256": "bcb68d19178ba68053cf26f21dc0bfaa646cd54408dc74d9c3d945ad3dc34b1c",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/video/remotion/scripts/render.mjs",
+      "bytes": 1226,
+      "sha256": "86399a6abbbed9a686cea6c82f0294ee942c4f1be1f8eaa1a30ac3a39583ba12",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/video/remotion/scripts/studio.mjs",
+      "bytes": 1156,
+      "sha256": "627d128f7925c1f7de6ed202a0a7c6db7544ea8a11b17094e4034414bc62f732",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/video/remotion/src/Comparison.tsx",
+      "bytes": 3643,
+      "sha256": "b8aca1be39a6c42d91d232732ea06326fe61197de228e2e9ad35580f8c3898fb",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/video/remotion/src/Root.tsx",
+      "bytes": 1541,
+      "sha256": "d3c8079b2eeac24ab13c630c665acf278ad903cabdd5d839df57c3e3e5347fcb",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/video/remotion/src/index.ts",
+      "bytes": 88,
+      "sha256": "2e0e358282a1b998a65387c653b97c2bb2eb7aae94cf200fc0b8d919f7be73a6",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/video/remotion/src/types.ts",
+      "bytes": 663,
+      "sha256": "cc65f7d2323a716f4ae7384fc09be0a3c0720ebb7eae2bc6c24d4375bfe1ad08",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/video/remotion/test/timeline.test.mjs",
+      "bytes": 2309,
+      "sha256": "9a8a4111dbc441c70db2aca55720dfbedcd72d1a52032f6dae1bb3a4ea2bb374",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "benchmark/video/remotion/tsconfig.json",
+      "bytes": 242,
+      "sha256": "2144477139440ba7353e0416f3a21ea074f0159af0dbe270032c0790597a1875",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus5-runner/.gitignore",
+      "bytes": 34,
+      "sha256": "dd70969fb0e63258af71d960052e6de9ff66ef389bf584e52e8b52dd6d85b1a6",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus5-runner/README.md",
+      "bytes": 4394,
+      "sha256": "20d1bfc21af02145166f4458558d474aa84e47801e72ade00428a5be015be136",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus5-runner/index.html",
+      "bytes": 5916,
+      "sha256": "dc3efee7672b06bd2d4465582a5f9f77ad2b81110f9006835604f112420b6e7b",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus5-runner/package-lock.json",
+      "bytes": 46724,
+      "sha256": "b821ff7e7dfefd36cabda5e3ffaa7512f6a61d774df37f4dbf206d65e6a73b98",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus5-runner/package.json",
+      "bytes": 488,
+      "sha256": "2697da3f4c31fcdb1109c17f65655494d0a67a8519c70a0615b8109d54d58b87",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus5-runner/src/audio.ts",
+      "bytes": 5711,
+      "sha256": "b94fd1a2469b624be19187f94d1a88390683ce2a9438b11fbe79a738cff94207",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus5-runner/src/core/autopilot.ts",
+      "bytes": 3154,
+      "sha256": "ea1e0631d1918d228f4615ad67939a20c79e46bf7fa37bf673df9891c76cbc78",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus5-runner/src/core/constants.ts",
+      "bytes": 4186,
+      "sha256": "cb361ede155a89b7743c18a73c3a30a5488c4be4dfbfeac9dc523f7dea7bc9ae",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus5-runner/src/core/game.ts",
+      "bytes": 13882,
+      "sha256": "6ab809b8b9588c3d4d431dcd58acbfaeab4c4e9c6c3ad7614d80360f4f7a055e",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus5-runner/src/core/rng.ts",
+      "bytes": 1639,
+      "sha256": "ed2d849d5144108d2ec20678ac1caed26204aa314b79798b3bee94dab87c8a93",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus5-runner/src/core/track.ts",
+      "bytes": 9066,
+      "sha256": "dbdff8acc16b6151fb70a62651fc46473f6e29464d95d403ef72ba44ac7ad563",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus5-runner/src/core/types.ts",
+      "bytes": 1641,
+      "sha256": "5de842116730f2bb4cca58b49353f9eab6650263ff1f9116835d56ff6af44e9b",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus5-runner/src/main.ts",
+      "bytes": 7199,
+      "sha256": "4031ccb159ab1c653121b3c58b5b5c2daf06076e92c117ca508e67a31d7f1511",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus5-runner/src/render/camera.ts",
+      "bytes": 2046,
+      "sha256": "16cd71eb63c980e6be5edfa3cf6f455669d05c20e6bd3d6857c90b6608392def",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus5-runner/src/render/palette.ts",
+      "bytes": 657,
+      "sha256": "2f5518c75237139d35607db5b341012a7b5f5907880763de7a319d41db730d3d",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus5-runner/src/render/particles.ts",
+      "bytes": 2260,
+      "sha256": "1fde81173b3bd22b7379a0af68bbdc00faedbb40d722dc4824b5f2969586b228",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus5-runner/src/render/renderer.ts",
+      "bytes": 29335,
+      "sha256": "a905257d5b784e0ff78536549b88544aac904abde0f5705c689bee6f30432bcc",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus5-runner/src/styles.css",
+      "bytes": 10201,
+      "sha256": "7052a06122849d264b1ee5f160e067f73c53d581da3c7abddca107f5b2c9f7c7",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus5-runner/src/ui/hud.ts",
+      "bytes": 5547,
+      "sha256": "eb4fd964a02c251e35cdc3bb08f96066f2fe504052ece92a8590e2c89fba7f40",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus5-runner/src/ui/input.ts",
+      "bytes": 4974,
+      "sha256": "a5476fb87a276a1fcb2b7cdc7532e9a45a88bc18a3f4dc56bcbcdf8036be9133",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus5-runner/src/ui/storage.ts",
+      "bytes": 645,
+      "sha256": "994fa0583cf62f74d95e4ba39b2e8e26c6de1c67f1f891045ba951ff6ff0bb83",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus5-runner/tests/helpers/scenario.ts",
+      "bytes": 1746,
+      "sha256": "31e0c9caa6664ac3df7e9976aa511c2deb863aaa5efbfd0755b6dadac2b1574c",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus5-runner/tests/invariants.test.ts",
+      "bytes": 4608,
+      "sha256": "c3de09b44bc70125b40839287d04be40c69714844dbf8301fc09c046f0d494bb",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus5-runner/tests/player.test.ts",
+      "bytes": 13441,
+      "sha256": "67e543c22aa1dc4d662c9696395aa46131249d0aef2df55453604f60479414e5",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus5-runner/tests/rng.test.ts",
+      "bytes": 2000,
+      "sha256": "1a61c7ce57b3381161bed7ada44fd6f0c2006fd20a6bd76938d4d20ade1d8713",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus5-runner/tests/simulation.test.ts",
+      "bytes": 6406,
+      "sha256": "c9d6c22e56ce832985bf45a240f2bcda783c7bef4e8db4b0c0f8d6b0bda2a035",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus5-runner/tests/track.test.ts",
+      "bytes": 6330,
+      "sha256": "8d480970754063396351116610d32d9506ad93109bbdbd258819cb8e96ce9156",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus5-runner/tsconfig.json",
+      "bytes": 576,
+      "sha256": "2e2e636e484a0c58f9232081f6e9e7369f74b59afe74c5c27c08061b60b685d0",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus5-runner/vite.config.ts",
+      "bytes": 240,
+      "sha256": "9fbc731d6258bdf292169a1dd2e14e6aa5092a363fea26d06c324bef484eed1e",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus55-runner/.gitignore",
+      "bytes": 59,
+      "sha256": "1963d7e4b6f5d2878b91ed9067e8ca688ba6302b19c1c168e09e6473efb7778b",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus55-runner/BUILD_LOG.md",
+      "bytes": 1869,
+      "sha256": "322b3ddab56a7f6ffa43f5347ab753c00b0c0438fffcfd4eef1a84c7d7f0e960",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus55-runner/README.md",
+      "bytes": 3201,
+      "sha256": "6696c0a802e5c1229f4f37c5f3b4e5d44aabdee31bc20d7f7bf8f8246739ee68",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus55-runner/eslint.config.js",
+      "bytes": 497,
+      "sha256": "a9fff446151332fe59545e1543720a0a5afa6fc94644b3b7a1ecaa43c3370eca",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus55-runner/index.html",
+      "bytes": 5150,
+      "sha256": "d79646a5dd1f76769a096085d8acb3bc1aeda9c2849cda53ecf02f6279bc8f08",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus55-runner/package-lock.json",
+      "bytes": 76120,
+      "sha256": "81074df1ae73f00b1906566d34faa4a86aac23023c4cce2d2c32494cb44a0fdf",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus55-runner/package.json",
+      "bytes": 747,
+      "sha256": "18a865029615a6eb7d42990c9f4bdbe613908c5c67754ed5d7895cdf6e2824d4",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus55-runner/playwright.config.js",
+      "bytes": 825,
+      "sha256": "93976fa513e0e8569847f2ca1dc6111c663b4aa185aacf80ce7ff9d20235401e",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus55-runner/public/favicon.svg",
+      "bytes": 340,
+      "sha256": "772ee0e999188e45af033eb169660f9fb93ca4ad11c7eacf29189a4f733a686c",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus55-runner/src/audio.js",
+      "bytes": 6574,
+      "sha256": "2651f197dfb397d4380c3870c9322bb4b234405b69eaefdd8747ddad03a79d41",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus55-runner/src/game/autopilot.js",
+      "bytes": 870,
+      "sha256": "56fdc7a38b8816c272223f23a25cbeefb0b4e90309a4b980669ae1020783d093",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus55-runner/src/game/config.js",
+      "bytes": 1341,
+      "sha256": "81049b33fe075097fa434386c60b35e6e683fd2a6a8bcd6566b06d0a71d974a2",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus55-runner/src/game/game.js",
+      "bytes": 12259,
+      "sha256": "b0732947ee2b25da991882d28978bc7cd9ec66cd5aa452108f5667d4309b00e9",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus55-runner/src/game/rng.js",
+      "bytes": 647,
+      "sha256": "9488c3b81f7919cfb21144a7e91e34ac1f73ad32e89ca665e37d5994fdf1e699",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus55-runner/src/input.js",
+      "bytes": 2407,
+      "sha256": "ff78a8aabcbaac55af76d97ed8852869324e15c9b9bc55f1d30a81447fcdb194",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus55-runner/src/main.js",
+      "bytes": 9948,
+      "sha256": "50e48e6d1eb4f94f4a6d3eb29eb520f3a9119d517ed8388448387310f9626fc5",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus55-runner/src/render/cycle.js",
+      "bytes": 4978,
+      "sha256": "1bd7dd26d22439c3e2161ed2c93b534c068735eb5007e1583e1ae200009c1783",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus55-runner/src/render/floor.js",
+      "bytes": 3031,
+      "sha256": "a00a2b56267b9fbc0bfa9b7574d96c99c7cbd322821408122c064ea472087b39",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus55-runner/src/render/materials.js",
+      "bytes": 3161,
+      "sha256": "848558c5e80bc066e9ae5e9b2e0a5009c3670fb3eacc227f0062e03de96db5d8",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus55-runner/src/render/particles.js",
+      "bytes": 3676,
+      "sha256": "81a5b746748632f9348c5b756b23449525de828911ca843456789de37f49afe8",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus55-runner/src/render/scenery.js",
+      "bytes": 4860,
+      "sha256": "0e9fb7768f788fcf1dd78bcd86bcc330dd7420a123ee9132e2d78c68c828e93d",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus55-runner/src/render/trail.js",
+      "bytes": 2759,
+      "sha256": "9cbdd262f4ffeb150a0ad9c67728dfe63e7df7ba6415e2c497bb40cf95549e5e",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus55-runner/src/render/view.js",
+      "bytes": 11838,
+      "sha256": "3513734b49f62909bc06d66380012a29b50253df1512c13c559e70394a93c3f3",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus55-runner/src/storage.js",
+      "bytes": 571,
+      "sha256": "44a3c8bc1f93e32024c0007405837bb4e74ef6bbfb40b2004276328b7c82d13e",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus55-runner/src/style.css",
+      "bytes": 10597,
+      "sha256": "af1c2fadad576d07158de6e35858d6a21f96ce02877c1246f9bb440410e5ca4a",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus55-runner/tests/e2e/game.spec.js",
+      "bytes": 7421,
+      "sha256": "e308a504bc32ebded14e926be2210cd9ec95987d763b4f9f6a060b1b3e6dd510",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus55-runner/tests/unit/game.test.js",
+      "bytes": 11687,
+      "sha256": "76d8c094cb4d405cdb98097883abfa88905801d3bc6ee85fa5a7be04a0db439b",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "opus55-runner/vite.config.js",
+      "bytes": 213,
+      "sha256": "88fafbe2aa11ea4a85bcacdb2b53c328ed43c43d4960cc60dbbd187db1992cbb",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet5-runner/index.html",
+      "bytes": 2360,
+      "sha256": "c7da734347b199ed57ed2c65e333f5e1a57030f0eed196d6f37a6d187bf719d3",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet5-runner/package.json",
+      "bytes": 263,
+      "sha256": "7d93c8004075c9c4bebc5df1b4bc4cc5acb691a88f10137fef2eda9862c13684",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet5-runner/src/game.js",
+      "bytes": 18417,
+      "sha256": "46ddabb35046c3c29e8fdf557db1d59114e88be57f4b59fe6767f844e7ebe3cd",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet5-runner/src/logic.js",
+      "bytes": 4392,
+      "sha256": "dea0355ae8e6f4ee27720abfa5bdd99bc4631f8997fd968e2c1e101f82df41ac",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet5-runner/style.css",
+      "bytes": 3776,
+      "sha256": "5d2c16c342fe42977d5962efcf0aca17875ddc6525854de100dd16954fac9226",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet5-runner/test/logic.test.js",
+      "bytes": 5111,
+      "sha256": "2d22c3f96bb53dbf4853fbc8e03609ea7f75569403dd22102347b9dfe116d3e3",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet5-runner/tools/serve.js",
+      "bytes": 1386,
+      "sha256": "f36509007d987c38ee5cc7fc0c16cf17d052a82cc350130a07eec5bffbe4d56d",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/.gitignore",
+      "bytes": 59,
+      "sha256": "1963d7e4b6f5d2878b91ed9067e8ca688ba6302b19c1c168e09e6473efb7778b",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/BUILD_STATS.md",
+      "bytes": 1788,
+      "sha256": "c63808d6aaa5fee67624e32f100ddf5326aa2ceddb2b8874c19e5daa98b59041",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/README.md",
+      "bytes": 4480,
+      "sha256": "e4f742d32a5d8b0593ad211b809997c95763c5ad79baff50e7f70a7c7f1a3882",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/index.html",
+      "bytes": 6238,
+      "sha256": "6c8a5144b4d18422b52c70a2ec68b58518a25da03302e4377bf7df6f8dd79c5c",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/package-lock.json",
+      "bytes": 57873,
+      "sha256": "58f9ca574fcfd714d1f7a0799dc11be1a25c7129565a436ad7b7f3be536837fd",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/package.json",
+      "bytes": 901,
+      "sha256": "948d84a03b93e103e38dd93d724f2c9f2563198713e4912b853ba0ed1cb000d7",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/playwright.config.ts",
+      "bytes": 668,
+      "sha256": "7e7eaf6938ebab31a7ac73ea21e31343863e422892b4c39a285e3da79efe32b8",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/scripts/build-meta.json",
+      "bytes": 668,
+      "sha256": "22715b5ec307c94684766ba3b94205f6ae004a517632e00bd1517a5a85c81f4a",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/scripts/build-stats.mjs",
+      "bytes": 3006,
+      "sha256": "d8582b597b457b28623fb9f6d0f1a2dd348ab9ccf0c55ff886ab98c026832905",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/scripts/snapshot.mjs",
+      "bytes": 695,
+      "sha256": "0d8292539739c1a990f07f76cfbacb22f05204512aa8061a032fd22682f2ce19",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/src/audio/audio.ts",
+      "bytes": 10795,
+      "sha256": "57ddb60619c8b8c4a0842ec4a0f1fd9c825122a5cf065fe319fe682cd4ce43fa",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/src/env.d.ts",
+      "bytes": 121,
+      "sha256": "f7769fb63fd6ddb80ded333ac6e0d5806adececc82e2fa77b5f67e44e72ee853",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/src/game/bot.ts",
+      "bytes": 1661,
+      "sha256": "5c28db3634664291d53637cddc1acc37800cdc86b3b6a5eb60827aacd8657476",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/src/game/config.ts",
+      "bytes": 1533,
+      "sha256": "9a4ef5e5c87301b9c392a480de4e60497191d1ca6fcd12bf5ffd137496d50d38",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/src/game/game.ts",
+      "bytes": 13138,
+      "sha256": "d515594c81c969a523b085aa792f295c510ed95b4d870ac09a959de38d9fd32e",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/src/game/generator.ts",
+      "bytes": 5577,
+      "sha256": "402c3ce77258f4915812f3695041b0a9acf7b94ce9796ac91a28b10692a4f415",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/src/game/rng.ts",
+      "bytes": 1200,
+      "sha256": "6f138268a90886eb23062ff60d96712ff2467d3673f475a26c3ed50369e16378",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/src/game/rules.ts",
+      "bytes": 1747,
+      "sha256": "67187b1c3dea86e55de986d40296db9e0ea67107070985ada254cfa432ddcf7f",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/src/game/solver.ts",
+      "bytes": 2409,
+      "sha256": "ca7d0601e588b8275289a76669a13778f07b1b0747e6934dd8b5681ddefb3ad2",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/src/input.ts",
+      "bytes": 2716,
+      "sha256": "e8284f1b5d425f74c96262ed5192089f124c248f5471ade08dfcf60bf1e8f829",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/src/main.ts",
+      "bytes": 12779,
+      "sha256": "521dc0e56533c7c6f879dc1f777bb7f568f72017888068ca51e160f7bee698f6",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/src/render/entities.ts",
+      "bytes": 8374,
+      "sha256": "5cb4a3ab865719a3f9e6091dc28557da69c9fe4d3825fc1d0cd22d18973f4b71",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/src/render/fx.ts",
+      "bytes": 5424,
+      "sha256": "dc9baf6c5a70281fbe5b17d143d9068c700b457853827361cfeaeea4352d2630",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/src/render/palette.ts",
+      "bytes": 428,
+      "sha256": "a69fb2cf6394c0715353ef122a025523ee3ac8093ebcbc235cfe64f73052b8e6",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/src/render/runner.ts",
+      "bytes": 12519,
+      "sha256": "26a54364fbf83b5c2b92904517e998dfeba5b51c391479d0e30bdaa3c513f1fa",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/src/render/view.ts",
+      "bytes": 8819,
+      "sha256": "94150980544c93b9a9c5b66acea1d91b94375bc1d4f6fe0f36c4eeb850233cf7",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/src/render/world.ts",
+      "bytes": 12011,
+      "sha256": "dba0015e87afe47608d6487a23149b55ef1c8fece222ebe241d5aba0471eb247",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/src/storage.ts",
+      "bytes": 1510,
+      "sha256": "aca3d3cdf108fc02ad546a23d94a23c3d8f5794014d66cf7b163e75ee1c54717",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/src/style.css",
+      "bytes": 11448,
+      "sha256": "4416e3dd562cf153a0d56e24cef783dcb70ea4c44be132293bf219dcd9780658",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/src/ui/dom.ts",
+      "bytes": 270,
+      "sha256": "baa05d77e438bb88064f7c49da5d85449ad2382d76547424095febf9b9124aea",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/src/ui/hud.ts",
+      "bytes": 5303,
+      "sha256": "a4a30f93c721f4edd3d69107b9df60472dd0b3e81d758dc22d8bafee2adf902e",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/tests/e2e/game.spec.ts",
+      "bytes": 16053,
+      "sha256": "d0019ce104d5d203ecc3c761e149bcc9446a9d99d299f99f24f1aab59fac819d",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/tests/e2e/helpers.ts",
+      "bytes": 3974,
+      "sha256": "e1a64a57e32ee476a75eab711decc405c5808afff7f1d4b20734a6035e0d9e78",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/tests/unit/_helpers.ts",
+      "bytes": 1530,
+      "sha256": "04217e843f22c6163850ab8121d607447902f788099065a188ea10c59e3be380",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/tests/unit/collisions.test.ts",
+      "bytes": 4412,
+      "sha256": "831b43baf40359261316abea2cbdaf3399e7504f4ddf3c11823fe73f7008ad31",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/tests/unit/generator.test.ts",
+      "bytes": 6979,
+      "sha256": "a298c62bc265bb20a6231e1a35c9a140901c3cea0be8e52219caf86c01160b36",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/tests/unit/pickups.test.ts",
+      "bytes": 3421,
+      "sha256": "cefbfcc48b45a1724a18ca52abacf52b8e9a302c4d069b2be062976a58a39a21",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/tests/unit/player.test.ts",
+      "bytes": 5427,
+      "sha256": "c3c097297c15ba94523ed2313ed986268521432cd413cf1acdb803dfff9b5199",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/tests/unit/rng.test.ts",
+      "bytes": 1103,
+      "sha256": "53da097f2f1583ab1ce20128b526704e0942f34f7a2920c0a529c30d1cba3c6e",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/tests/unit/rules.test.ts",
+      "bytes": 2078,
+      "sha256": "325ff95f74d73d7277e61e4fab6b32577630a20e5f16d69489039cd6cc0161b1",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/tests/unit/soak.test.ts",
+      "bytes": 2824,
+      "sha256": "c4fa35dc3f1e2a9a23019e7af08cb76d9be2198716c40094a6c2fe60d3ab0306",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/tests/unit/storage.test.ts",
+      "bytes": 2134,
+      "sha256": "d802c3202cbfb41adfb61edda0e50d31da3b4ccb81edf7ba1f6795a858e11b2b",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/tsconfig.json",
+      "bytes": 473,
+      "sha256": "1feac9694df250d82fa918884c0563958df07020cf4595670eaa2e9f50dcbaa7",
+      "delivery": "git_and_package"
+    },
+    {
+      "path": "sonnet55-runner/vite.config.ts",
+      "bytes": 1335,
+      "sha256": "d3cb5b2bb8e7d7e2561b3584190928ef5d2daaf078fdf7ddfca0ce62eb8ca3a1",
+      "delivery": "git_and_package"
+    }
+  ]
+}

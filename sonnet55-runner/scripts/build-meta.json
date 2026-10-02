@@ -1,0 +1,28 @@
+{
+  "startedAt": "2026-10-01T18:12:45Z",
+  "startEpoch": 1790878365,
+  "tokenSnapshots": [
+    {
+      "label": "baseline (before any work)",
+      "at": "2026-10-01T18:12:45Z",
+      "contextTokens": 64296,
+      "fiveHourPct": 8,
+      "weeklyPct": 25
+    },
+    {
+      "label": "core logic + 78 unit tests passing",
+      "at": "2026-10-01T18:20:35Z",
+      "contextTokens": 124652,
+      "fiveHourPct": 19,
+      "weeklyPct": 27
+    },
+    {
+      "label": "final (before last verification run)",
+      "at": "2026-10-01T18:45:12Z",
+      "contextTokens": 272743,
+      "fiveHourPct": 36,
+      "weeklyPct": 29
+    }
+  ],
+  "finishedAt": "2026-10-01T18:45:12Z"
+}

@@ -1,0 +1,339 @@
+{
+  "source_repo": "benchmark-set/sonnet55-runner",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 59,
+      "sha256": "1963d7e4b6f5d2878b91ed9067e8ca688ba6302b19c1c168e09e6473efb7778b",
+      "loc": null
+    },
+    {
+      "path": "BUILD_STATS.md",
+      "bytes": 1788,
+      "sha256": "c63808d6aaa5fee67624e32f100ddf5326aa2ceddb2b8874c19e5daa98b59041",
+      "loc": null
+    },
+    {
+      "path": "README.md",
+      "bytes": 4480,
+      "sha256": "e4f742d32a5d8b0593ad211b809997c95763c5ad79baff50e7f70a7c7f1a3882",
+      "loc": null
+    },
+    {
+      "path": "index.html",
+      "bytes": 6238,
+      "sha256": "6c8a5144b4d18422b52c70a2ec68b58518a25da03302e4377bf7df6f8dd79c5c",
+      "loc": 123
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 57873,
+      "sha256": "58f9ca574fcfd714d1f7a0799dc11be1a25c7129565a436ad7b7f3be536837fd",
+      "loc": null
+    },
+    {
+      "path": "package.json",
+      "bytes": 901,
+      "sha256": "948d84a03b93e103e38dd93d724f2c9f2563198713e4912b853ba0ed1cb000d7",
+      "loc": null
+    },
+    {
+      "path": "playwright.config.ts",
+      "bytes": 668,
+      "sha256": "7e7eaf6938ebab31a7ac73ea21e31343863e422892b4c39a285e3da79efe32b8",
+      "loc": 24
+    },
+    {
+      "path": "scripts/build-meta.json",
+      "bytes": 668,
+      "sha256": "22715b5ec307c94684766ba3b94205f6ae004a517632e00bd1517a5a85c81f4a",
+      "loc": null
+    },
+    {
+      "path": "scripts/build-stats.mjs",
+      "bytes": 3006,
+      "sha256": "d8582b597b457b28623fb9f6d0f1a2dd348ab9ccf0c55ff886ab98c026832905",
+      "loc": 65
+    },
+    {
+      "path": "scripts/snapshot.mjs",
+      "bytes": 695,
+      "sha256": "0d8292539739c1a990f07f76cfbacb22f05204512aa8061a032fd22682f2ce19",
+      "loc": 15
+    },
+    {
+      "path": "src/audio/audio.ts",
+      "bytes": 10795,
+      "sha256": "57ddb60619c8b8c4a0842ec4a0f1fd9c825122a5cf065fe319fe682cd4ce43fa",
+      "loc": 330
+    },
+    {
+      "path": "src/env.d.ts",
+      "bytes": 121,
+      "sha256": "f7769fb63fd6ddb80ded333ac6e0d5806adececc82e2fa77b5f67e44e72ee853",
+      "loc": 3
+    },
+    {
+      "path": "src/game/bot.ts",
+      "bytes": 1661,
+      "sha256": "5c28db3634664291d53637cddc1acc37800cdc86b3b6a5eb60827aacd8657476",
+      "loc": 51
+    },
+    {
+      "path": "src/game/config.ts",
+      "bytes": 1533,
+      "sha256": "9a4ef5e5c87301b9c392a480de4e60497191d1ca6fcd12bf5ffd137496d50d38",
+      "loc": 63
+    },
+    {
+      "path": "src/game/game.ts",
+      "bytes": 13138,
+      "sha256": "d515594c81c969a523b085aa792f295c510ed95b4d870ac09a959de38d9fd32e",
+      "loc": 460
+    },
+    {
+      "path": "src/game/generator.ts",
+      "bytes": 5577,
+      "sha256": "402c3ce77258f4915812f3695041b0a9acf7b94ce9796ac91a28b10692a4f415",
+      "loc": 159
+    },
+    {
+      "path": "src/game/rng.ts",
+      "bytes": 1200,
+      "sha256": "6f138268a90886eb23062ff60d96712ff2467d3673f475a26c3ed50369e16378",
+      "loc": 41
+    },
+    {
+      "path": "src/game/rules.ts",
+      "bytes": 1747,
+      "sha256": "67187b1c3dea86e55de986d40296db9e0ea67107070985ada254cfa432ddcf7f",
+      "loc": 53
+    },
+    {
+      "path": "src/game/solver.ts",
+      "bytes": 2409,
+      "sha256": "ca7d0601e588b8275289a76669a13778f07b1b0747e6934dd8b5681ddefb3ad2",
+      "loc": 72
+    },
+    {
+      "path": "src/input.ts",
+      "bytes": 2716,
+      "sha256": "e8284f1b5d425f74c96262ed5192089f124c248f5471ade08dfcf60bf1e8f829",
+      "loc": 87
+    },
+    {
+      "path": "src/main.ts",
+      "bytes": 12779,
+      "sha256": "521dc0e56533c7c6f879dc1f777bb7f568f72017888068ca51e160f7bee698f6",
+      "loc": 410
+    },
+    {
+      "path": "src/render/entities.ts",
+      "bytes": 8374,
+      "sha256": "5cb4a3ab865719a3f9e6091dc28557da69c9fe4d3825fc1d0cd22d18973f4b71",
+      "loc": 211
+    },
+    {
+      "path": "src/render/fx.ts",
+      "bytes": 5424,
+      "sha256": "dc9baf6c5a70281fbe5b17d143d9068c700b457853827361cfeaeea4352d2630",
+      "loc": 150
+    },
+    {
+      "path": "src/render/palette.ts",
+      "bytes": 428,
+      "sha256": "a69fb2cf6394c0715353ef122a025523ee3ac8093ebcbc235cfe64f73052b8e6",
+      "loc": 22
+    },
+    {
+      "path": "src/render/runner.ts",
+      "bytes": 12519,
+      "sha256": "26a54364fbf83b5c2b92904517e998dfeba5b51c391479d0e30bdaa3c513f1fa",
+      "loc": 345
+    },
+    {
+      "path": "src/render/view.ts",
+      "bytes": 8819,
+      "sha256": "94150980544c93b9a9c5b66acea1d91b94375bc1d4f6fe0f36c4eeb850233cf7",
+      "loc": 235
+    },
+    {
+      "path": "src/render/world.ts",
+      "bytes": 12011,
+      "sha256": "dba0015e87afe47608d6487a23149b55ef1c8fece222ebe241d5aba0471eb247",
+      "loc": 338
+    },
+    {
+      "path": "src/storage.ts",
+      "bytes": 1510,
+      "sha256": "aca3d3cdf108fc02ad546a23d94a23c3d8f5794014d66cf7b163e75ee1c54717",
+      "loc": 49
+    },
+    {
+      "path": "src/style.css",
+      "bytes": 11448,
+      "sha256": "4416e3dd562cf153a0d56e24cef783dcb70ea4c44be132293bf219dcd9780658",
+      "loc": 126
+    },
+    {
+      "path": "src/ui/dom.ts",
+      "bytes": 270,
+      "sha256": "baa05d77e438bb88064f7c49da5d85449ad2382d76547424095febf9b9124aea",
+      "loc": 7
+    },
+    {
+      "path": "src/ui/hud.ts",
+      "bytes": 5303,
+      "sha256": "a4a30f93c721f4edd3d69107b9df60472dd0b3e81d758dc22d8bafee2adf902e",
+      "loc": 165
+    },
+    {
+      "path": "tests/e2e/game.spec.ts",
+      "bytes": 16053,
+      "sha256": "d0019ce104d5d203ecc3c761e149bcc9446a9d99d299f99f24f1aab59fac819d",
+      "loc": 368
+    },
+    {
+      "path": "tests/e2e/helpers.ts",
+      "bytes": 3974,
+      "sha256": "e1a64a57e32ee476a75eab711decc405c5808afff7f1d4b20734a6035e0d9e78",
+      "loc": 119
+    },
+    {
+      "path": "tests/unit/_helpers.ts",
+      "bytes": 1530,
+      "sha256": "04217e843f22c6163850ab8121d607447902f788099065a188ea10c59e3be380",
+      "loc": 51
+    },
+    {
+      "path": "tests/unit/collisions.test.ts",
+      "bytes": 4412,
+      "sha256": "831b43baf40359261316abea2cbdaf3399e7504f4ddf3c11823fe73f7008ad31",
+      "loc": 152
+    },
+    {
+      "path": "tests/unit/generator.test.ts",
+      "bytes": 6979,
+      "sha256": "a298c62bc265bb20a6231e1a35c9a140901c3cea0be8e52219caf86c01160b36",
+      "loc": 181
+    },
+    {
+      "path": "tests/unit/pickups.test.ts",
+      "bytes": 3421,
+      "sha256": "cefbfcc48b45a1724a18ca52abacf52b8e9a302c4d069b2be062976a58a39a21",
+      "loc": 119
+    },
+    {
+      "path": "tests/unit/player.test.ts",
+      "bytes": 5427,
+      "sha256": "c3c097297c15ba94523ed2313ed986268521432cd413cf1acdb803dfff9b5199",
+      "loc": 196
+    },
+    {
+      "path": "tests/unit/rng.test.ts",
+      "bytes": 1103,
+      "sha256": "53da097f2f1583ab1ce20128b526704e0942f34f7a2920c0a529c30d1cba3c6e",
+      "loc": 35
+    },
+    {
+      "path": "tests/unit/rules.test.ts",
+      "bytes": 2078,
+      "sha256": "325ff95f74d73d7277e61e4fab6b32577630a20e5f16d69489039cd6cc0161b1",
+      "loc": 46
+    },
+    {
+      "path": "tests/unit/soak.test.ts",
+      "bytes": 2824,
+      "sha256": "c4fa35dc3f1e2a9a23019e7af08cb76d9be2198716c40094a6c2fe60d3ab0306",
+      "loc": 84
+    },
+    {
+      "path": "tests/unit/storage.test.ts",
+      "bytes": 2134,
+      "sha256": "d802c3202cbfb41adfb61edda0e50d31da3b4ccb81edf7ba1f6795a858e11b2b",
+      "loc": 62
+    },
+    {
+      "path": "tsconfig.json",
+      "bytes": 473,
+      "sha256": "1feac9694df250d82fa918884c0563958df07020cf4595670eaa2e9f50dcbaa7",
+      "loc": null
+    },
+    {
+      "path": "vite.config.ts",
+      "bytes": 1335,
+      "sha256": "d3cb5b2bb8e7d7e2561b3584190928ef5d2daaf078fdf7ddfca0ce62eb8ca3a1",
+      "loc": 41
+    }
+  ],
+  "artifact_hashes": {
+    ".gitignore": "1963d7e4b6f5d2878b91ed9067e8ca688ba6302b19c1c168e09e6473efb7778b",
+    "BUILD_STATS.md": "c63808d6aaa5fee67624e32f100ddf5326aa2ceddb2b8874c19e5daa98b59041",
+    "README.md": "e4f742d32a5d8b0593ad211b809997c95763c5ad79baff50e7f70a7c7f1a3882",
+    "dist/assets/index-6AhxMAB3.css": "71daed6cfe4a5c3e01200e10b6bbd0168cbf1dd25c5ce3648d4668d90372a307",
+    "dist/assets/index-RZL4wo6r.js": "14a8e15c17bf22c948b3e422261a9565201ebc922205de98195593ae079624e2",
+    "dist/assets/orbitron-latin-400-normal-DBk4Dmer.woff": "ed24ba80492abd2432aad674ea939909e31f54953f73da029cc73fe20f8f8ae6",
+    "dist/assets/orbitron-latin-400-normal-U6xZUhur.woff2": "9320ca80be2f4275e7aaa009bc058b9ea46264d4f92b06f0b822c3405cf45841",
+    "dist/assets/orbitron-latin-700-normal-4jsRXGGJ.woff2": "ee6acc5ad5349018f9ca71fab8118144160e110838931874150a1ac3f97db38d",
+    "dist/assets/orbitron-latin-700-normal-DmYOh-W9.woff": "f01cf5cf431e6d9dd10db7291bc2284eb123984e74785a05ef4e034aee82c558",
+    "dist/assets/orbitron-latin-900-normal-BbJatbhp.woff": "d85a2d2e0c8eb3badf419f27b29e8ac8517d84999bcecd609774a421de26b938",
+    "dist/assets/orbitron-latin-900-normal-DrIi7unX.woff2": "ce87e6a1b1955bbc7b1d2d1c30fb5b53af5e34edb5b93a33e28068054892ef74",
+    "dist/assets/rajdhani-devanagari-600-normal-BtY48IV_.woff": "67ab4f24d60e62e9a31191130773302c60921bb9872775ef0cd68b6445976a0f",
+    "dist/assets/rajdhani-devanagari-600-normal-DhS7ScYx.woff2": "93328dcb323f55b8d7feb192ebf969bbd4674e52d3a5a47c5cb1bce7ab266426",
+    "dist/assets/rajdhani-devanagari-700-normal-BQQOj9BB.woff2": "52dd95964b4141bdacd5b785e68079fd40ef2c4b2483bc0eb0b1a3190cedf2bc",
+    "dist/assets/rajdhani-devanagari-700-normal-DBRwWuxA.woff": "f3d613809edfc8e6f8f698d562ec5e67874728cabfabcd395e998abe04db1341",
+    "dist/assets/rajdhani-latin-600-normal-CXCVEoA9.woff2": "433a7007e4747a02a790167a6efa2625855f013970ba49b9b739a5d3db8b2601",
+    "dist/assets/rajdhani-latin-600-normal-Dx02qI2_.woff": "9d9d900358819a2a710085a5630d9024a139ea57e9316499d6d9eb3281674f3a",
+    "dist/assets/rajdhani-latin-700-normal-BPDUZo87.woff2": "5b7e4a6f97163c2636724d4de90304fc895653dcfe64c67a7a22f26331ca5c5f",
+    "dist/assets/rajdhani-latin-700-normal-e0Uj8ZlN.woff": "e4e5272051a3882943fa3bdf5cda8eca8c1853ac66c1572eb90fda8608d9bd31",
+    "dist/assets/rajdhani-latin-ext-600-normal-BleIgkPp.woff": "73d2f45895b780e9fcb525d4b8e5cefdd8f0c155eb0f3e1ff9f5d0543535baaf",
+    "dist/assets/rajdhani-latin-ext-600-normal-C9ZjJQAt.woff2": "f57c2b379ba92460d25730ef1f7b8745afb4eadb401d652900f2059f8ee2f2b6",
+    "dist/assets/rajdhani-latin-ext-700-normal-BPaQ7tlD.woff": "e6539b4ef36036a40a83179d7adb5a3388c48f92c358a158ae5c14b66a3d0803",
+    "dist/assets/rajdhani-latin-ext-700-normal-S6aYESQK.woff2": "c6b9df58743ccca1236e9521720b135138309bc4149d5d027a9bd10183cc8ed5",
+    "dist/assets/three-D5BMQLNn.js": "506bb0d073ae8c14c2a7e1da29fcef1bfdc8ddc70423a86a7a70d6e5bc5511bc",
+    "dist/index.html": "33e2545a5cc37d6afa4ae5ba98e1b4d2bd5fe747625433e8443d42e5c94a2447",
+    "index.html": "6c8a5144b4d18422b52c70a2ec68b58518a25da03302e4377bf7df6f8dd79c5c",
+    "package-lock.json": "58f9ca574fcfd714d1f7a0799dc11be1a25c7129565a436ad7b7f3be536837fd",
+    "package.json": "948d84a03b93e103e38dd93d724f2c9f2563198713e4912b853ba0ed1cb000d7",
+    "playwright.config.ts": "7e7eaf6938ebab31a7ac73ea21e31343863e422892b4c39a285e3da79efe32b8",
+    "scripts/build-meta.json": "22715b5ec307c94684766ba3b94205f6ae004a517632e00bd1517a5a85c81f4a",
+    "scripts/build-stats.mjs": "d8582b597b457b28623fb9f6d0f1a2dd348ab9ccf0c55ff886ab98c026832905",
+    "scripts/snapshot.mjs": "0d8292539739c1a990f07f76cfbacb22f05204512aa8061a032fd22682f2ce19",
+    "src/audio/audio.ts": "57ddb60619c8b8c4a0842ec4a0f1fd9c825122a5cf065fe319fe682cd4ce43fa",
+    "src/env.d.ts": "f7769fb63fd6ddb80ded333ac6e0d5806adececc82e2fa77b5f67e44e72ee853",
+    "src/game/bot.ts": "5c28db3634664291d53637cddc1acc37800cdc86b3b6a5eb60827aacd8657476",
+    "src/game/config.ts": "9a4ef5e5c87301b9c392a480de4e60497191d1ca6fcd12bf5ffd137496d50d38",
+    "src/game/game.ts": "d515594c81c969a523b085aa792f295c510ed95b4d870ac09a959de38d9fd32e",
+    "src/game/generator.ts": "402c3ce77258f4915812f3695041b0a9acf7b94ce9796ac91a28b10692a4f415",
+    "src/game/rng.ts": "6f138268a90886eb23062ff60d96712ff2467d3673f475a26c3ed50369e16378",
+    "src/game/rules.ts": "67187b1c3dea86e55de986d40296db9e0ea67107070985ada254cfa432ddcf7f",
+    "src/game/solver.ts": "ca7d0601e588b8275289a76669a13778f07b1b0747e6934dd8b5681ddefb3ad2",
+    "src/input.ts": "e8284f1b5d425f74c96262ed5192089f124c248f5471ade08dfcf60bf1e8f829",
+    "src/main.ts": "521dc0e56533c7c6f879dc1f777bb7f568f72017888068ca51e160f7bee698f6",
+    "src/render/entities.ts": "5cb4a3ab865719a3f9e6091dc28557da69c9fe4d3825fc1d0cd22d18973f4b71",
+    "src/render/fx.ts": "dc9baf6c5a70281fbe5b17d143d9068c700b457853827361cfeaeea4352d2630",
+    "src/render/palette.ts": "a69fb2cf6394c0715353ef122a025523ee3ac8093ebcbc235cfe64f73052b8e6",
+    "src/render/runner.ts": "26a54364fbf83b5c2b92904517e998dfeba5b51c391479d0e30bdaa3c513f1fa",
+    "src/render/view.ts": "94150980544c93b9a9c5b66acea1d91b94375bc1d4f6fe0f36c4eeb850233cf7",
+    "src/render/world.ts": "dba0015e87afe47608d6487a23149b55ef1c8fece222ebe241d5aba0471eb247",
+    "src/storage.ts": "aca3d3cdf108fc02ad546a23d94a23c3d8f5794014d66cf7b163e75ee1c54717",
+    "src/style.css": "4416e3dd562cf153a0d56e24cef783dcb70ea4c44be132293bf219dcd9780658",
+    "src/ui/dom.ts": "baa05d77e438bb88064f7c49da5d85449ad2382d76547424095febf9b9124aea",
+    "src/ui/hud.ts": "a4a30f93c721f4edd3d69107b9df60472dd0b3e81d758dc22d8bafee2adf902e",
+    "tests/e2e/game.spec.ts": "d0019ce104d5d203ecc3c761e149bcc9446a9d99d299f99f24f1aab59fac819d",
+    "tests/e2e/helpers.ts": "e1a64a57e32ee476a75eab711decc405c5808afff7f1d4b20734a6035e0d9e78",
+    "tests/unit/_helpers.ts": "04217e843f22c6163850ab8121d607447902f788099065a188ea10c59e3be380",
+    "tests/unit/collisions.test.ts": "831b43baf40359261316abea2cbdaf3399e7504f4ddf3c11823fe73f7008ad31",
+    "tests/unit/generator.test.ts": "a298c62bc265bb20a6231e1a35c9a140901c3cea0be8e52219caf86c01160b36",
+    "tests/unit/pickups.test.ts": "cefbfcc48b45a1724a18ca52abacf52b8e9a302c4d069b2be062976a58a39a21",
+    "tests/unit/player.test.ts": "c3c097297c15ba94523ed2313ed986268521432cd413cf1acdb803dfff9b5199",
+    "tests/unit/rng.test.ts": "53da097f2f1583ab1ce20128b526704e0942f34f7a2920c0a529c30d1cba3c6e",
+    "tests/unit/rules.test.ts": "325ff95f74d73d7277e61e4fab6b32577630a20e5f16d69489039cd6cc0161b1",
+    "tests/unit/soak.test.ts": "c4fa35dc3f1e2a9a23019e7af08cb76d9be2198716c40094a6c2fe60d3ab0306",
+    "tests/unit/storage.test.ts": "d802c3202cbfb41adfb61edda0e50d31da3b4ccb81edf7ba1f6795a858e11b2b",
+    "tsconfig.json": "1feac9694df250d82fa918884c0563958df07020cf4595670eaa2e9f50dcbaa7",
+    "vite.config.ts": "d3cb5b2bb8e7d7e2561b3584190928ef5d2daaf078fdf7ddfca0ce62eb8ca3a1"
+  },
+  "full_repo_logical_bytes": 124540681,
+  "full_repo_file_count": 4085
+}

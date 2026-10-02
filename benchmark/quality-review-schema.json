@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "quality-review-schema.json",
+  "title": "Manual observable gameplay review",
+  "description": "No overall score. Empty manual fields remain null. Assess only observed behavior against the recovered prompt; distinguish optional features from prompt requirements.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["prompt_compliance", "feature_completeness", "controls_gameplay_correctness", "visual_polish", "ui_completeness", "bugs", "crashes", "responsiveness", "implementation_defects"],
+  "properties": {
+    "prompt_compliance": {"$ref":"#/$defs/dimension"},
+    "feature_completeness": {"$ref":"#/$defs/dimension"},
+    "controls_gameplay_correctness": {"$ref":"#/$defs/dimension"},
+    "visual_polish": {"$ref":"#/$defs/dimension"},
+    "ui_completeness": {"$ref":"#/$defs/dimension"},
+    "bugs": {"$ref":"#/$defs/dimension"},
+    "crashes": {"$ref":"#/$defs/dimension"},
+    "responsiveness": {"$ref":"#/$defs/dimension"},
+    "implementation_defects": {"$ref":"#/$defs/dimension"}
+  },
+  "$defs": {
+    "dimension": {
+      "type":"object",
+      "additionalProperties": false,
+      "required":["manual_rating","manual_notes","reviewer","evidence"],
+      "properties": {
+        "manual_rating": {"type":["string","null"],"enum":[null,"meets_observed_requirements","partial","defect_observed","not_assessed","not_applicable"]},
+        "manual_notes": {"type":["string","null"]},
+        "reviewer": {"type":["string","null"]},
+        "evidence": {"type":"array","items":{"type":"object","required":["source","observation"],"properties":{"source":{"type":"string"},"observation":{"type":"string"},"video_time_seconds":{"type":["number","null"],"minimum":0},"reproduction_steps":{"type":"array","items":{"type":"string"}},"severity":{"type":["string","null"],"enum":[null,"low","medium","high","critical"]}},"additionalProperties":false}}
+      }
+    }
+  }
+}

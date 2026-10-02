@@ -1,0 +1,101 @@
+{
+  "browser": "Installed Google Chrome, headless, SwiftShader",
+  "query": "?debug&seed=35 (only honored by Sonnet 5.5 / Opus 5.5)",
+  "cases": [
+    {
+      "viewport": "desktop",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "touch_emulated": false,
+      "checks": {
+        "start_button_visible": true,
+        "canvas_nonzero": true,
+        "no_horizontal_overflow": true,
+        "score_advances": true,
+        "keyboard_left": true,
+        "keyboard_right": true,
+        "jump": true,
+        "slide": true,
+        "pause": true,
+        "resume": true,
+        "no_uncaught_or_console_errors": true
+      },
+      "observations": {
+        "canvas": {
+          "width": 1280,
+          "height": 720,
+          "rect": {
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "start_state": {
+          "phase": "playing",
+          "alive": true,
+          "lane": 1,
+          "y": 0,
+          "sliding": false,
+          "score": 18,
+          "distance": 9.186769444444433,
+          "speed": 18.14233333333329,
+          "seed": 35,
+          "jumping": false
+        },
+        "blur_phase": "paused"
+      },
+      "errors": [],
+      "warnings": [],
+      "failed_requests": []
+    },
+    {
+      "viewport": "portrait",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      },
+      "touch_emulated": true,
+      "checks": {
+        "start_button_visible": true,
+        "canvas_nonzero": true,
+        "no_horizontal_overflow": true,
+        "score_advances": true,
+        "keyboard_left": true,
+        "keyboard_right": true,
+        "jump": true,
+        "slide": true,
+        "pause": true,
+        "resume": true,
+        "no_uncaught_or_console_errors": true
+      },
+      "observations": {
+        "canvas": {
+          "width": 390,
+          "height": 844,
+          "rect": {
+            "width": 390,
+            "height": 844
+          }
+        },
+        "start_state": {
+          "phase": "playing",
+          "alive": true,
+          "lane": 1,
+          "y": 0,
+          "sliding": false,
+          "score": 18,
+          "distance": 9.035583333333323,
+          "speed": 18.139999999999958,
+          "seed": 35,
+          "jumping": false
+        },
+        "blur_phase": "paused"
+      },
+      "errors": [],
+      "warnings": [],
+      "failed_requests": []
+    }
+  ],
+  "status": "passed"
+}

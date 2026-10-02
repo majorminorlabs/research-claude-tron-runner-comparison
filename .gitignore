@@ -1,0 +1,16 @@
+**/node_modules/
+**/dist/
+**/.cache/
+**/.vite/
+**/.next/
+**/test-results/
+**/playwright-report/
+**/.DS_Store
+**/.claude/
+**/.env*
+benchmark/reproduction/
+benchmark/validation/workspaces/
+benchmark/video/remotion/out/
+# Publish large media as GitHub Release assets, not Git blobs.
+*.mp4
+*.mov

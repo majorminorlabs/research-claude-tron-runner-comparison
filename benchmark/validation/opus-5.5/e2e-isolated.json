@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "command": [
+    "npm",
+    "run",
+    "test:e2e",
+    "--",
+    "--config",
+    "benchmark-set/benchmark/validation/opus-5.5/native-playwright.config.js",
+    "--workers=1",
+    "--retries=0"
+  ],
+  "started_at_utc": "2026-10-01T20:54:11.949092+00:00",
+  "elapsed_seconds": 106.117,
+  "exit_code": 0,
+  "log": "validation/opus-5.5/e2e-isolated.log",
+  "config": "validation/opus-5.5/native-playwright.config.js",
+  "reason": "Native tests unchanged; benchmark wrapper isolates port and server ownership, uses already-built production bundle, one worker, zero retries, native browser flags."
+}

@@ -1,0 +1,222 @@
+{
+  "source_repo": "benchmark-set/opus5-runner",
+  "files": [
+    {
+      "path": ".claude/launch.json",
+      "bytes": 222,
+      "sha256": "ec5d1fe0ba12a4285118018392505651a31206fc3188e0e7cb46d8e535e6e561",
+      "loc": null
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 34,
+      "sha256": "dd70969fb0e63258af71d960052e6de9ff66ef389bf584e52e8b52dd6d85b1a6",
+      "loc": null
+    },
+    {
+      "path": "README.md",
+      "bytes": 4394,
+      "sha256": "20d1bfc21af02145166f4458558d474aa84e47801e72ade00428a5be015be136",
+      "loc": null
+    },
+    {
+      "path": "index.html",
+      "bytes": 5916,
+      "sha256": "dc3efee7672b06bd2d4465582a5f9f77ad2b81110f9006835604f112420b6e7b",
+      "loc": 144
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 46724,
+      "sha256": "b821ff7e7dfefd36cabda5e3ffaa7512f6a61d774df37f4dbf206d65e6a73b98",
+      "loc": null
+    },
+    {
+      "path": "package.json",
+      "bytes": 488,
+      "sha256": "2697da3f4c31fcdb1109c17f65655494d0a67a8519c70a0615b8109d54d58b87",
+      "loc": null
+    },
+    {
+      "path": "src/audio.ts",
+      "bytes": 5711,
+      "sha256": "b94fd1a2469b624be19187f94d1a88390683ce2a9438b11fbe79a738cff94207",
+      "loc": 191
+    },
+    {
+      "path": "src/core/autopilot.ts",
+      "bytes": 3154,
+      "sha256": "ea1e0631d1918d228f4615ad67939a20c79e46bf7fa37bf673df9891c76cbc78",
+      "loc": 100
+    },
+    {
+      "path": "src/core/constants.ts",
+      "bytes": 4186,
+      "sha256": "cb361ede155a89b7743c18a73c3a30a5488c4be4dfbfeac9dc523f7dea7bc9ae",
+      "loc": 100
+    },
+    {
+      "path": "src/core/game.ts",
+      "bytes": 13882,
+      "sha256": "6ab809b8b9588c3d4d431dcd58acbfaeab4c4e9c6c3ad7614d80360f4f7a055e",
+      "loc": 477
+    },
+    {
+      "path": "src/core/rng.ts",
+      "bytes": 1639,
+      "sha256": "ed2d849d5144108d2ec20678ac1caed26204aa314b79798b3bee94dab87c8a93",
+      "loc": 56
+    },
+    {
+      "path": "src/core/track.ts",
+      "bytes": 9066,
+      "sha256": "dbdff8acc16b6151fb70a62651fc46473f6e29464d95d403ef72ba44ac7ad563",
+      "loc": 249
+    },
+    {
+      "path": "src/core/types.ts",
+      "bytes": 1641,
+      "sha256": "5de842116730f2bb4cca58b49353f9eab6650263ff1f9116835d56ff6af44e9b",
+      "loc": 53
+    },
+    {
+      "path": "src/main.ts",
+      "bytes": 7199,
+      "sha256": "4031ccb159ab1c653121b3c58b5b5c2daf06076e92c117ca508e67a31d7f1511",
+      "loc": 247
+    },
+    {
+      "path": "src/render/camera.ts",
+      "bytes": 2046,
+      "sha256": "16cd71eb63c980e6be5edfa3cf6f455669d05c20e6bd3d6857c90b6608392def",
+      "loc": 68
+    },
+    {
+      "path": "src/render/palette.ts",
+      "bytes": 657,
+      "sha256": "2f5518c75237139d35607db5b341012a7b5f5907880763de7a319d41db730d3d",
+      "loc": 26
+    },
+    {
+      "path": "src/render/particles.ts",
+      "bytes": 2260,
+      "sha256": "1fde81173b3bd22b7379a0af68bbdc00faedbb40d722dc4824b5f2969586b228",
+      "loc": 93
+    },
+    {
+      "path": "src/render/renderer.ts",
+      "bytes": 29335,
+      "sha256": "a905257d5b784e0ff78536549b88544aac904abde0f5705c689bee6f30432bcc",
+      "loc": 889
+    },
+    {
+      "path": "src/styles.css",
+      "bytes": 10201,
+      "sha256": "7052a06122849d264b1ee5f160e067f73c53d581da3c7abddca107f5b2c9f7c7",
+      "loc": 538
+    },
+    {
+      "path": "src/ui/hud.ts",
+      "bytes": 5547,
+      "sha256": "eb4fd964a02c251e35cdc3bb08f96066f2fe504052ece92a8590e2c89fba7f40",
+      "loc": 174
+    },
+    {
+      "path": "src/ui/input.ts",
+      "bytes": 4974,
+      "sha256": "a5476fb87a276a1fcb2b7cdc7532e9a45a88bc18a3f4dc56bcbcdf8036be9133",
+      "loc": 162
+    },
+    {
+      "path": "src/ui/storage.ts",
+      "bytes": 645,
+      "sha256": "994fa0583cf62f74d95e4ba39b2e8e26c6de1c67f1f891045ba951ff6ff0bb83",
+      "loc": 24
+    },
+    {
+      "path": "tests/helpers/scenario.ts",
+      "bytes": 1746,
+      "sha256": "31e0c9caa6664ac3df7e9976aa511c2deb863aaa5efbfd0755b6dadac2b1574c",
+      "loc": 47
+    },
+    {
+      "path": "tests/invariants.test.ts",
+      "bytes": 4608,
+      "sha256": "c3de09b44bc70125b40839287d04be40c69714844dbf8301fc09c046f0d494bb",
+      "loc": 108
+    },
+    {
+      "path": "tests/player.test.ts",
+      "bytes": 13441,
+      "sha256": "67e543c22aa1dc4d662c9696395aa46131249d0aef2df55453604f60479414e5",
+      "loc": 409
+    },
+    {
+      "path": "tests/rng.test.ts",
+      "bytes": 2000,
+      "sha256": "1a61c7ce57b3381161bed7ada44fd6f0c2006fd20a6bd76938d4d20ade1d8713",
+      "loc": 63
+    },
+    {
+      "path": "tests/simulation.test.ts",
+      "bytes": 6406,
+      "sha256": "c9d6c22e56ce832985bf45a240f2bcda783c7bef4e8db4b0c0f8d6b0bda2a035",
+      "loc": 200
+    },
+    {
+      "path": "tests/track.test.ts",
+      "bytes": 6330,
+      "sha256": "8d480970754063396351116610d32d9506ad93109bbdbd258819cb8e96ce9156",
+      "loc": 176
+    },
+    {
+      "path": "tsconfig.json",
+      "bytes": 576,
+      "sha256": "2e2e636e484a0c58f9232081f6e9e7369f74b59afe74c5c27c08061b60b685d0",
+      "loc": null
+    },
+    {
+      "path": "vite.config.ts",
+      "bytes": 240,
+      "sha256": "9fbc731d6258bdf292169a1dd2e14e6aa5092a363fea26d06c324bef484eed1e",
+      "loc": 10
+    }
+  ],
+  "artifact_hashes": {
+    ".claude/launch.json": "ec5d1fe0ba12a4285118018392505651a31206fc3188e0e7cb46d8e535e6e561",
+    ".gitignore": "dd70969fb0e63258af71d960052e6de9ff66ef389bf584e52e8b52dd6d85b1a6",
+    "README.md": "20d1bfc21af02145166f4458558d474aa84e47801e72ade00428a5be015be136",
+    "dist/assets/index-CJwJ-uxY.css": "eb6cb3ad5e547e7d4110ec8e45d4fd1c093a7c9f297cc0669d75c99765456a38",
+    "dist/assets/index-D1Z04WPL.js": "55bceb7104edfb7a5e6c22dbd8a4353ebf65c5f676bad481253dd2303ff4bec4",
+    "dist/index.html": "a2cf5e2e6aec14c846af4640a5661ff8f103dcaa0737b49ce9be290c50659488",
+    "index.html": "dc3efee7672b06bd2d4465582a5f9f77ad2b81110f9006835604f112420b6e7b",
+    "package-lock.json": "b821ff7e7dfefd36cabda5e3ffaa7512f6a61d774df37f4dbf206d65e6a73b98",
+    "package.json": "2697da3f4c31fcdb1109c17f65655494d0a67a8519c70a0615b8109d54d58b87",
+    "src/audio.ts": "b94fd1a2469b624be19187f94d1a88390683ce2a9438b11fbe79a738cff94207",
+    "src/core/autopilot.ts": "ea1e0631d1918d228f4615ad67939a20c79e46bf7fa37bf673df9891c76cbc78",
+    "src/core/constants.ts": "cb361ede155a89b7743c18a73c3a30a5488c4be4dfbfeac9dc523f7dea7bc9ae",
+    "src/core/game.ts": "6ab809b8b9588c3d4d431dcd58acbfaeab4c4e9c6c3ad7614d80360f4f7a055e",
+    "src/core/rng.ts": "ed2d849d5144108d2ec20678ac1caed26204aa314b79798b3bee94dab87c8a93",
+    "src/core/track.ts": "dbdff8acc16b6151fb70a62651fc46473f6e29464d95d403ef72ba44ac7ad563",
+    "src/core/types.ts": "5de842116730f2bb4cca58b49353f9eab6650263ff1f9116835d56ff6af44e9b",
+    "src/main.ts": "4031ccb159ab1c653121b3c58b5b5c2daf06076e92c117ca508e67a31d7f1511",
+    "src/render/camera.ts": "16cd71eb63c980e6be5edfa3cf6f455669d05c20e6bd3d6857c90b6608392def",
+    "src/render/palette.ts": "2f5518c75237139d35607db5b341012a7b5f5907880763de7a319d41db730d3d",
+    "src/render/particles.ts": "1fde81173b3bd22b7379a0af68bbdc00faedbb40d722dc4824b5f2969586b228",
+    "src/render/renderer.ts": "a905257d5b784e0ff78536549b88544aac904abde0f5705c689bee6f30432bcc",
+    "src/styles.css": "7052a06122849d264b1ee5f160e067f73c53d581da3c7abddca107f5b2c9f7c7",
+    "src/ui/hud.ts": "eb4fd964a02c251e35cdc3bb08f96066f2fe504052ece92a8590e2c89fba7f40",
+    "src/ui/input.ts": "a5476fb87a276a1fcb2b7cdc7532e9a45a88bc18a3f4dc56bcbcdf8036be9133",
+    "src/ui/storage.ts": "994fa0583cf62f74d95e4ba39b2e8e26c6de1c67f1f891045ba951ff6ff0bb83",
+    "tests/helpers/scenario.ts": "31e0c9caa6664ac3df7e9976aa511c2deb863aaa5efbfd0755b6dadac2b1574c",
+    "tests/invariants.test.ts": "c3de09b44bc70125b40839287d04be40c69714844dbf8301fc09c046f0d494bb",
+    "tests/player.test.ts": "67e543c22aa1dc4d662c9696395aa46131249d0aef2df55453604f60479414e5",
+    "tests/rng.test.ts": "1a61c7ce57b3381161bed7ada44fd6f0c2006fd20a6bd76938d4d20ade1d8713",
+    "tests/simulation.test.ts": "c9d6c22e56ce832985bf45a240f2bcda783c7bef4e8db4b0c0f8d6b0bda2a035",
+    "tests/track.test.ts": "8d480970754063396351116610d32d9506ad93109bbdbd258819cb8e96ce9156",
+    "tsconfig.json": "2e2e636e484a0c58f9232081f6e9e7369f74b59afe74c5c27c08061b60b685d0",
+    "vite.config.ts": "9fbc731d6258bdf292169a1dd2e14e6aa5092a363fea26d06c324bef484eed1e"
+  },
+  "full_repo_logical_bytes": 66450861,
+  "full_repo_file_count": 915
+}

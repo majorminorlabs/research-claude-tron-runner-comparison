@@ -1,0 +1,18 @@
+
+> gridrunner@1.0.0 test
+> vitest run
+
+
+ RUN  v2.1.9 benchmark-set/benchmark/validation/workspaces/opus5-runner
+
+ ✓ tests/invariants.test.ts (17 tests) 2ms
+ ✓ tests/player.test.ts (34 tests) 19ms
+ ✓ tests/track.test.ts (12 tests) 136ms
+ ✓ tests/rng.test.ts (8 tests) 235ms
+ ✓ tests/simulation.test.ts (25 tests) 627ms
+
+ Test Files  5 passed (5)
+      Tests  96 passed (96)
+   Start at  15:36:29
+   Duration  925ms (transform 148ms, setup 0ms, collect 251ms, tests 1.02s, environment 1ms, prepare 214ms)
+

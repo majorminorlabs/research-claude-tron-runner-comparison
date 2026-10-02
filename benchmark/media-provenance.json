@@ -1,0 +1,162 @@
+[
+  {
+    "id": "sonnet-5",
+    "source": "sonnet 5.mov",
+    "source_sha256": "eafd4ec84aefc9726f634c84706efbb7469a63ecf201ed381b7fdbb69429f6d0",
+    "remux": "sonnet-5.mp4",
+    "remux_sha256": "2bad27ee6beb2d088b48cae7817f98ebbb675815dd07329ebb8354a9b4126ce4",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "60/1",
+          "duration": "109.416667"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "r_frame_rate": "0/0",
+          "duration": "109.396000"
+        }
+      ],
+      "format": {
+        "duration": "109.416667"
+      }
+    },
+    "video_packets_sha256": "SHA256=3d03baad85c78775f9e6831a9447333276ec4dab489da80986231904719fcdb9",
+    "video_packets_unchanged": true,
+    "identity_review": "8-second gameplay frame matches the source implementation and original benchmark screenshots",
+    "audio_policy": "Local remux retains audio; public source clips and final comparison omit audio to avoid publishing unreviewed captured sound.",
+    "public_file": "benchmark/video/gameplay/sonnet-5.mp4",
+    "public_sha256": "8d688493cdccf02bc53de989bfaaa113db1b20e1a63ff3ac367526ced251bc7c",
+    "public_audio_tracks": 0,
+    "public_video_packets_unchanged": true
+  },
+  {
+    "id": "sonnet-5.5",
+    "source": "sonnet 5-5.mov",
+    "source_sha256": "66efab12819f0b1c801ee91e4e207db8e7b1cd6391581067e67887a3b5707c99",
+    "remux": "sonnet-5.5.mp4",
+    "remux_sha256": "9c2957674c6eeef4561f33fc9e22a6a5ec0e7747d76083d3c7149898fec2c2a6",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "60/1",
+          "duration": "152.916667"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "r_frame_rate": "0/0",
+          "duration": "152.895000"
+        }
+      ],
+      "format": {
+        "duration": "152.916667"
+      }
+    },
+    "video_packets_sha256": "SHA256=e7b9421b30a59e1b8f97cd6026f8d20c82cb5105ae379a265762086936f466fb",
+    "video_packets_unchanged": true,
+    "identity_review": "8-second gameplay frame matches the source implementation and original benchmark screenshots",
+    "audio_policy": "Local remux retains audio; public source clips and final comparison omit audio to avoid publishing unreviewed captured sound.",
+    "public_file": "benchmark/video/gameplay/sonnet-5.5.mp4",
+    "public_sha256": "1c53ae826f7260f080f86adacf916d0b11200fd1eb43ff32bd05f1e09b6c9ba9",
+    "public_audio_tracks": 0,
+    "public_video_packets_unchanged": true
+  },
+  {
+    "id": "opus-5",
+    "source": "opus 5.mov",
+    "source_sha256": "f685439bd946464eb74c886f6b6c1e35246282852d341f90d5475623319e4e29",
+    "remux": "opus-5.mp4",
+    "remux_sha256": "d9cace86729d0632233de60429c2d8a6273976ff909a7d9ac8bbd7c346bd3fac",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "60/1",
+          "duration": "97.500000"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "r_frame_rate": "0/0",
+          "duration": "97.471000"
+        }
+      ],
+      "format": {
+        "duration": "97.500000"
+      }
+    },
+    "video_packets_sha256": "SHA256=1f4b23f03bf48f2fb6a9b7e47f9849ba9d80d325bce6f190ecec3dec20835e56",
+    "video_packets_unchanged": true,
+    "identity_review": "8-second gameplay frame matches the source implementation and original benchmark screenshots",
+    "audio_policy": "Local remux retains audio; public source clips and final comparison omit audio to avoid publishing unreviewed captured sound.",
+    "public_file": "benchmark/video/gameplay/opus-5.mp4",
+    "public_sha256": "00688c36bd4948e417c40d1a180d9b5700395835c9b4893cf42cd65b5aecd07f",
+    "public_audio_tracks": 0,
+    "public_video_packets_unchanged": true
+  },
+  {
+    "id": "opus-5.5",
+    "source": "opus 5-5.mov",
+    "source_sha256": "737e10d5ccf55c32e69639cf7170734d80e45612970a56a92511293103c797a5",
+    "remux": "opus-5.5.mp4",
+    "remux_sha256": "6fb76b66a12f625727ea2279f2f14f4d5f60054c67dfde2f93e99977ef708844",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "60/1",
+          "duration": "105.633333"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "r_frame_rate": "0/0",
+          "duration": "105.599000"
+        }
+      ],
+      "format": {
+        "duration": "105.633333"
+      }
+    },
+    "video_packets_sha256": "SHA256=f15ca09f4513d6da21a709ed6782f2ef876acc7fe0fb2c3d1c6788a6ee6fbdd4",
+    "video_packets_unchanged": true,
+    "identity_review": "8-second gameplay frame matches the source implementation and original benchmark screenshots",
+    "audio_policy": "Local remux retains audio; public source clips and final comparison omit audio to avoid publishing unreviewed captured sound.",
+    "public_file": "benchmark/video/gameplay/opus-5.5.mp4",
+    "public_sha256": "a1abd0de964277d2c717103bae997f243773df94a552d80d5673cf70111ac80a",
+    "public_audio_tracks": 0,
+    "public_video_packets_unchanged": true
+  }
+]

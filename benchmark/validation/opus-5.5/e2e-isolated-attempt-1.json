@@ -1,0 +1,19 @@
+{
+  "status": "invalid",
+  "command": [
+    "npm",
+    "run",
+    "test:e2e",
+    "--",
+    "--config",
+    "benchmark-set/benchmark/validation/opus-5.5/native-playwright.config.js",
+    "--workers=1",
+    "--retries=0"
+  ],
+  "started_at_utc": "2026-10-01T20:48:51.214954+00:00",
+  "elapsed_seconds": 120.656,
+  "exit_code": 1,
+  "log": "validation/opus-5.5/e2e-isolated-attempt-1.log",
+  "config": "validation/opus-5.5/native-playwright.config.js",
+  "reason": "Benchmark wrapper readiness address was 127.0.0.1 but inherited Opus preview bound localhost; no tests ran before webServer readiness timed out. Wrapper now explicitly binds 127.0.0.1."
+}

@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "command": [
+    "npm",
+    "run",
+    "test:e2e",
+    "--",
+    "--workers=1"
+  ],
+  "started_at_utc": "2026-10-01T20:47:47.092010+00:00",
+  "elapsed_seconds": 485.237,
+  "exit_code": 0,
+  "log": "validation/sonnet-5.5/e2e-recheck.log",
+  "reason": "Streamed rerun after common smoke and first renderer layout checks ended; owned Sonnet preview verified by successful native assertions. No claim of exclusive hardware load. Initial timeout/artifacts retained."
+}

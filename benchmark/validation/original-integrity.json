@@ -1,0 +1,30 @@
+[
+  {
+    "repo": "opus5-runner",
+    "unchanged": true,
+    "changed_or_removed": [],
+    "added": [],
+    "scope": "All original files including existing dist and test results, excluding node_modules and .git internals."
+  },
+  {
+    "repo": "opus55-runner",
+    "unchanged": true,
+    "changed_or_removed": [],
+    "added": [],
+    "scope": "All original files including existing dist and test results, excluding node_modules and .git internals."
+  },
+  {
+    "repo": "sonnet5-runner",
+    "unchanged": true,
+    "changed_or_removed": [],
+    "added": [],
+    "scope": "All original files including existing dist and test results, excluding node_modules and .git internals."
+  },
+  {
+    "repo": "sonnet55-runner",
+    "unchanged": true,
+    "changed_or_removed": [],
+    "added": [],
+    "scope": "All original files including existing dist and test results, excluding node_modules and .git internals."
+  }
+]
