@@ -1,6 +1,6 @@
 # Four Claude models, one runner prompt
 
-[Watch the four-way comparison](https://github.com/MAJORminorStudio/claude-tron-runner-comparison/releases/download/v1.0.0/comparison-web.mp4)
+[Watch the four-way comparison](https://github.com/majorminorlabs/research-claude-tron-runner-comparison/releases/download/v1.0.0/comparison-web.mp4)
 
 One prompt produced four browser games with different renderers, failure rules and feature sets. We kept the implementations, recovered the session evidence and validated them under the same current browser-smoke harness. The result is a controlled one-shot artifact comparison: one run per model, not a statistical model-performance benchmark.
 
@@ -16,7 +16,7 @@ Keep track of token usage and total time spent building the game.
 Do not stop until it passes all tests and is ready to release.
 ```
 
-This is the verbatim human prompt body used in all four sessions. Three logs wrap it in a pasted-content envelope; the fourth records it directly. The [raw per-session payloads](https://github.com/MAJORminorStudio/claude-tron-runner-comparison/tree/main/benchmark/evidence/prompts) preserve those transport differences. The prompt asks for three lanes, jump/slide/dodge, obstacles, rewards and a browser game without login or a leaderboard. It does not prescribe a renderer, character model, health system, power-up catalogue or test-suite size.
+This is the verbatim human prompt body used in all four sessions. Three logs wrap it in a pasted-content envelope; the fourth records it directly. The [raw per-session payloads](https://github.com/majorminorlabs/research-claude-tron-runner-comparison/tree/main/benchmark/evidence/prompts) preserve those transport differences. The prompt asks for three lanes, jump/slide/dodge, obstacles, rewards and a browser game without login or a leaderboard. It does not prescribe a renderer, character model, health system, power-up catalogue or test-suite size.
 
 The prompt was intentionally left thin: it set the genre, core controls and delivery constraints, then left each model to decide how to turn them into a playable game. Rendering, presentation, difficulty, reward systems and validation strategy were deliberately unspecified. This comparison examines the decisions each model made from that sparse brief; optional additions are observable choices, not retroactive requirements.
 
@@ -39,7 +39,7 @@ Time here has one boundary for all four runs: first user prompt to final assista
 
 The totals are large because the logs count context read on successive requests. We deduplicated streamed assistant rows by message ID, checked that repeated usage objects agreed, and summed uncached input, cache creation, cache reads and output once per distinct message. Nested iteration counters and thinking subtotals were not added again.
 
-They measure observed request usage, not unique text written, context occupancy or invoice-complete cost. Cache-heavy input has different cost semantics. The games' own build-stat displays and reports preserve their smaller context-window figures; those figures use another definition and are not substituted into this comparison. The [JSON](https://github.com/MAJORminorStudio/claude-tron-runner-comparison/blob/main/benchmark/benchmark-summary.json) retains each raw counter and source reference. No missing usage was estimated.
+They measure observed request usage, not unique text written, context occupancy or invoice-complete cost. Cache-heavy input has different cost semantics. The games' own build-stat displays and reports preserve their smaller context-window figures; those figures use another definition and are not substituted into this comparison. The [JSON](https://github.com/majorminorlabs/research-claude-tron-runner-comparison/blob/main/benchmark/benchmark-summary.json) retains each raw counter and source reference. No missing usage was estimated.
 
 ## Two rendering approaches
 
@@ -47,7 +47,7 @@ Sonnet 5 and Opus 5 use Canvas 2D with procedural perspective. Sonnet 5 has no n
 
 The 5.5 implementations use Three.js/WebGL, custom floor/grid shaders and bloom. Sonnet 5.5 draws an articulated runner amid illuminated buildings and mountain silhouettes. Opus 5.5 draws a light-cycle scene with wireframe towers, arches and orange/cyan lighting. Those are visible implementation choices. They do not establish that WebGL is necessary for prompt compliance or that a denser scene is a better game.
 
-Runtime packages also differ. Sonnet 5.5 bundles Three.js, Orbitron and Rajdhani; Opus 5.5 bundles Three.js and Orbitron. Sonnet 5 uses a remote Google Fonts stylesheet. Opus 5 uses system/procedural presentation without runtime npm dependencies. Dev tooling and exact lockfile versions are included in the [source repository](https://github.com/MAJORminorStudio/claude-tron-runner-comparison). These dependency choices change installation, offline-font and rendering requirements.
+Runtime packages also differ. Sonnet 5.5 bundles Three.js, Orbitron and Rajdhani; Opus 5.5 bundles Three.js and Orbitron. Sonnet 5 uses a remote Google Fonts stylesheet. Opus 5 uses system/procedural presentation without runtime npm dependencies. Dev tooling and exact lockfile versions are included in the [source repository](https://github.com/majorminorlabs/research-claude-tron-runner-comparison). These dependency choices change installation, offline-font and rendering requirements.
 
 ## The games make different mistakes survivable
 
@@ -90,6 +90,6 @@ Exact historical file-change counts, an independently proven release-ready insta
 
 ## Inspect and reproduce
 
-The [GitHub repository](https://github.com/MAJORminorStudio/claude-tron-runner-comparison) contains all four implementations, exact prompts, raw-derived session evidence, [results CSV](https://github.com/MAJORminorStudio/claude-tron-runner-comparison/blob/main/benchmark/benchmark-summary.csv), [methodology](https://github.com/MAJORminorStudio/claude-tron-runner-comparison/blob/main/benchmark/methodology.md), [limitations](https://github.com/MAJORminorStudio/claude-tron-runner-comparison/blob/main/benchmark/limitations.md), [validation logs and screenshots](https://github.com/MAJORminorStudio/claude-tron-runner-comparison/tree/main/benchmark/validation), source hashes and the reusable gameplay renderer. The release includes silent source recordings and both the master and web comparison video. No game source was repaired for publication.
+The [GitHub repository](https://github.com/majorminorlabs/research-claude-tron-runner-comparison) contains all four implementations, exact prompts, raw-derived session evidence, [results CSV](https://github.com/majorminorlabs/research-claude-tron-runner-comparison/blob/main/benchmark/benchmark-summary.csv), [methodology](https://github.com/majorminorlabs/research-claude-tron-runner-comparison/blob/main/benchmark/methodology.md), [limitations](https://github.com/majorminorlabs/research-claude-tron-runner-comparison/blob/main/benchmark/limitations.md), [validation logs and screenshots](https://github.com/majorminorlabs/research-claude-tron-runner-comparison/tree/main/benchmark/validation), source hashes and the reusable gameplay renderer. The release includes silent source recordings and both the master and web comparison video. No game source was repaired for publication.
 
 Every comparison should remain traceable to a source file, a check log or an observed frame. These artifacts let readers check the implementation choices and the failures without turning either code volume or test count into a fabricated ranking.
